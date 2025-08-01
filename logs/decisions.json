@@ -111,5 +111,78 @@
     "outcome": "simulated_success",
     "profitability": 8.5,
     "updatedAt": "2025-08-01T20:59:46.861Z"
+  },
+  {
+    "id": "mdtbl5gb2kgxhf03plu",
+    "timestamp": "2025-08-01T21:12:42.203Z",
+    "category": "aircraft",
+    "decision": "AI empfiehlt: Airbus A320neo light (5x) für QuestAir",
+    "reasoning": "AI-Empfehlung basierend auf Kosten-Nutzen-Analyse",
+    "data": {
+      "airline": {
+        "name": "QuestAir",
+        "code": "QXX",
+        "hub": "SFO"
+      },
+      "availableOptions": 11,
+      "budget": 8000000,
+      "totalCost": 208790000,
+      "currentBalance": 10000000,
+      "canAfford": false,
+      "affordabilityRatio": 0.04789501412902917
+    },
+    "outcome": "simulated_success",
+    "profitability": 8.5,
+    "updatedAt": "2025-08-01T21:12:44.206Z"
+  },
+  {
+    "id": "mdtc9tent2f4oey5gw",
+    "timestamp": "2025-08-01T21:31:52.991Z",
+    "category": "aircraft_leasing",
+    "decision": "AI empfiehlt Leasing: Britten-Norman BN-2B-26 Islander (2x) für QuestAir",
+    "reasoning": "AI-Empfehlung basierend auf Leasing-Analyse",
+    "data": {
+      "airline": {
+        "name": "QuestAir",
+        "code": "QXX",
+        "hub": "SFO"
+      },
+      "availableOptions": 181,
+      "budget": 8000000,
+      "totalSecurityDeposit": 244900,
+      "weeklyRateCost": 24490,
+      "currentBalance": 10000000,
+      "canAfford": true,
+      "affordabilityRatio": 40.83299305839118,
+      "leasingType": "new_leasing"
+    },
+    "outcome": "simulated_success",
+    "profitability": 8.5,
+    "updatedAt": "2025-08-01T21:31:54.994Z"
+  },
+  {
+    "id": "mdtcqkun7hoccjwr2yd",
+    "timestamp": "2025-08-01T21:44:55.055Z",
+    "category": "aircraft_leasing",
+    "decision": "AI empfiehlt Leasing: Britten-Norman BN-2B-26 Islander (1x) für QuestAir",
+    "reasoning": "AI-Empfehlung basierend auf Leasing-Analyse",
+    "data": {
+      "airline": {
+        "name": "QuestAir",
+        "code": "QXX",
+        "hub": "SFO"
+      },
+      "availableOptions": 181,
+      "budget": 8000000,
+      "totalSecurityDeposit": 122450,
+      "weeklyRateCost": 12245,
+      "currentBalance": 10000000,
+      "canAfford": true,
+      "affordabilityRatio": 81.66598611678236,
+      "leasingType": "new_leasing"
+    },
+    "outcome": "simulated_success",
+    "profitability": 8.5,
+    "updatedAt": "2025-08-01T21:44:57.058Z"
   }
 ]
