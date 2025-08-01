@@ -27,9 +27,9 @@ const runScript = (scriptPath) => {
 (async () => {
     try {
         console.log('Starting loginAutomation.js...');
-        await runScript('./loginAutomation.js');
+        await runScript('./modules/loginAutomation.js');
         await sleep(10000);
-        await runScript('./fillEnterpriseForm.js');
+        await runScript('./modules/fillEnterpriseForm.js');
 
         // Add more scripts here if needed
         // console.log('Starting anotherScript.js...');

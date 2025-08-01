@@ -1,4 +1,4 @@
-const { createBrowserWithCookies } = require('./puppeteerSettings');
+const { createBrowserWithCookies } = require('../services/puppeteerSettings');
 
 (async () => {
     const { browser, page } = await createBrowserWithCookies();

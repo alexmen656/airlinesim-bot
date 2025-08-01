@@ -1,5 +1,5 @@
-const aiService = require('./aiService');
-const { createBrowserWithCookies } = require('./puppeteerSettings');
+const aiService = require('../services/aiService');
+const { createBrowserWithCookies } = require('../services/puppeteerSettings');
 
 (async () => {
     const { browser, page } = await createBrowserWithCookies();
