@@ -1,3 +1,8 @@
 .env
 node_modules
 cookies.json
+old/*
+modules/old/*
+ai_shit/*
+.DS_Store
+websites/*

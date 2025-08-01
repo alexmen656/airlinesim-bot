@@ -1,0 +1,67 @@
+[
+  {
+    "id": "mdt9qds965ult1b6v09",
+    "timestamp": "2025-08-01T20:20:47.049Z",
+    "category": "system",
+    "decision": "Bot execution failed",
+    "reasoning": "Error occurred: Command failed: node ./modules/loginAutomation.js\nnode:internal/modules/cjs/loader:1404\n  throw err;\n  ^\n\nError: Cannot find module '/Users/alexpolan/Projects/airlinesim-bot/modules/loginAutomation.js'\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)\n    at Function._load (node:internal/modules/cjs/loader:1211:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49 {\n  code: 'MODULE_NOT_FOUND',\n  requireStack: []\n}\n\nNode.js v22.17.0\n",
+    "data": {
+      "error": "Error: Command failed: node ./modules/loginAutomation.js\nnode:internal/modules/cjs/loader:1404\n  throw err;\n  ^\n\nError: Cannot find module '/Users/alexpolan/Projects/airlinesim-bot/modules/loginAutomation.js'\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)\n    at Function._load (node:internal/modules/cjs/loader:1211:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49 {\n  code: 'MODULE_NOT_FOUND',\n  requireStack: []\n}\n\nNode.js v22.17.0\n\n    at genericNodeError (node:internal/errors:983:15)\n    at wrappedFn (node:internal/errors:537:14)\n    at ChildProcess.exithandler (node:child_process:415:12)\n    at ChildProcess.emit (node:events:518:28)\n    at maybeClose (node:internal/child_process:1101:16)\n    at ChildProcess._handle.onexit (node:internal/child_process:304:5)"
+    },
+    "outcome": null,
+    "profitability": null
+  },
+  {
+    "id": "mdt9rqake6tnlsfhmci",
+    "timestamp": "2025-08-01T20:21:49.916Z",
+    "category": "aircraft",
+    "decision": "Fleet-Management Fehler",
+    "reasoning": "Fehler aufgetreten: this.page.waitForTimeout is not a function",
+    "data": {
+      "error": "TypeError: this.page.waitForTimeout is not a function\n    at SimpleAircraftManager.checkFleetStatus (/Users/alexpolan/Projects/airlinesim-bot/modules/simpleAircraftManager.js:30:25)\n    at async SimpleAircraftManager.manageFleet (/Users/alexpolan/Projects/airlinesim-bot/modules/simpleAircraftManager.js:204:33)\n    at async /Users/alexpolan/Projects/airlinesim-bot/simpleLauncher.js:51:24"
+    },
+    "outcome": null,
+    "profitability": null
+  },
+  {
+    "id": "mdt9rqdqv6ge99e0eej",
+    "timestamp": "2025-08-01T20:21:50.030Z",
+    "category": "system",
+    "decision": "Bot execution failed",
+    "reasoning": "Error occurred: this.page.waitForTimeout is not a function",
+    "data": {
+      "error": "TypeError: this.page.waitForTimeout is not a function\n    at SimpleAircraftManager.checkFleetStatus (/Users/alexpolan/Projects/airlinesim-bot/modules/simpleAircraftManager.js:30:25)\n    at async SimpleAircraftManager.manageFleet (/Users/alexpolan/Projects/airlinesim-bot/modules/simpleAircraftManager.js:204:33)\n    at async /Users/alexpolan/Projects/airlinesim-bot/simpleLauncher.js:51:24"
+    },
+    "outcome": null,
+    "profitability": null
+  },
+  {
+    "id": "mdt9ugg776na8bzbj59",
+    "timestamp": "2025-08-01T20:23:57.127Z",
+    "category": "aircraft",
+    "decision": "Fleet-Check: Flugzeuge bereits vorhanden",
+    "reasoning": "Airline besitzt bereits Flugzeuge, daher kein automatischer Kauf",
+    "data": {
+      "hasDefaultFleet": false,
+      "hasNoAircraft": false,
+      "isEmpty": false
+    },
+    "outcome": null,
+    "profitability": null
+  },
+  {
+    "id": "mdt9y9w8pzrjehe3pd",
+    "timestamp": "2025-08-01T20:26:55.256Z",
+    "category": "aircraft",
+    "decision": "AI empfiehlt: Airbus A319neo light (1x)",
+    "reasoning": "Airbus A320neo heavy",
+    "data": {
+      "availableOptions": 11,
+      "budget": 50000000,
+      "totalCost": 35734000
+    },
+    "outcome": "simulated_success",
+    "profitability": 8.5,
+    "updatedAt": "2025-08-01T20:26:57.259Z"
+  }
+]
