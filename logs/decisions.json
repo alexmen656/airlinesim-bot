@@ -184,5 +184,33 @@
     "outcome": "simulated_success",
     "profitability": 8.5,
     "updatedAt": "2025-08-01T21:44:57.058Z"
+  },
+  {
+    "id": "mdtdj9dvf9pijieom8r",
+    "timestamp": "2025-08-01T22:07:13.219Z",
+    "category": "aircraft_leasing",
+    "decision": "AI empfiehlt Leasing: Boeing 787-10 (2x) für QuestAir",
+    "reasoning": "Das Boeing 787-10 ist das größte Flugzeugmodell in der Familie und bietet daher die beste Kapazität für den Hub in SFO. Es hat eine Reichweite von bis zu 16.100 km, was ausreichend ist für Ziele auf dem westlichen US-Kontinent und in Mexiko. Außerdem hat es ein sehr gutes Leistungsverhältnis bei niedrigen Betriebskosten, was sich gut für QuestAir (QXX) schneidet.",
+    "data": {
+      "airline": {
+        "name": "QuestAir",
+        "code": "QXX",
+        "hub": "SFO"
+      },
+      "availableOptions": 181,
+      "budget": 8000000,
+      "totalSecurityDeposit": 12781900,
+      "weeklyRateCost": 1278190,
+      "currentBalance": 10000000,
+      "canAfford": false,
+      "affordabilityRatio": 0.7823563007064678,
+      "leasingType": "two_stage_analysis",
+      "familyChosen": "787",
+      "analyzedAircraftCount": 3,
+      "totalAircraftInFamily": 3
+    },
+    "outcome": "simulated_success",
+    "profitability": 8.5,
+    "updatedAt": "2025-08-01T22:07:15.222Z"
   }
 ]
