@@ -2,11 +2,13 @@ const { createBrowserWithCookies } = require('../services/puppeteerSettings');
 const decisionLogger = require('../services/decisionLogger');
 const aiService = require('../services/aiService');
 const authService = require('../services/authService');
+const { BalanceService } = require('../services/balanceService');
 
 class SimpleAircraftManager {
     constructor() {
         this.browser = null;
         this.page = null;
+        this.balanceService = new BalanceService();
     }
 
     async initialize() {
@@ -16,6 +18,11 @@ class SimpleAircraftManager {
         
         // Validiere Login mit zentralem AuthService
         this.loginInfo = await authService.validateLogin(this.page);
+        
+        // Load current balance on initialization
+        console.log('💰 Loading current account balance...');
+        this.currentBalance = await this.balanceService.getCurrentBalance(this.page);
+        await this.balanceService.saveBalanceHistory(this.currentBalance);
     }
 
     async cleanup() {
@@ -44,6 +51,38 @@ class SimpleAircraftManager {
         console.log('📊 Fleet Status:', fleetStatus);
         
         return fleetStatus;
+    }
+
+    /**
+     * Updates current balance and checks affordability
+     * @param {number} requiredAmount - Amount needed for purchase (optional)
+     * @returns {Object} Balance info with affordability check
+     */
+    async checkBalanceAndAffordability(requiredAmount = null) {
+        try {
+            console.log('💰 Checking current balance...');
+            
+            // Update current balance
+            this.currentBalance = await this.balanceService.getCurrentBalance(this.page);
+            await this.balanceService.saveBalanceHistory(this.currentBalance);
+            
+            const balanceInfo = {
+                ...this.currentBalance,
+                canAfford: requiredAmount ? this.currentBalance.amount >= requiredAmount : null,
+                affordabilityRatio: requiredAmount ? this.currentBalance.amount / requiredAmount : null
+            };
+            
+            if (requiredAmount) {
+                const canAfford = balanceInfo.canAfford ? '✅' : '❌';
+                console.log(`${canAfford} Balance check: ${this.currentBalance.currency} ${this.currentBalance.amount.toLocaleString()} ${balanceInfo.canAfford ? '>=' : '<'} ${requiredAmount.toLocaleString()}`);
+            }
+            
+            return balanceInfo;
+            
+        } catch (error) {
+            console.error('❌ Error checking balance:', error.message);
+            throw error;
+        }
     }
 
     /**
@@ -99,13 +138,20 @@ class SimpleAircraftManager {
     /**
      * Analysiert mit AI, welches Flugzeug gekauft werden soll
      */
-    async analyzeAircraftChoice(availableAircraft, budget = 50000000) {
+    async analyzeAircraftChoice(availableAircraft, budget = null) {
         console.log('🧠 AI analysiert beste Flugzeug-Option...');
+        
+        // Use current balance as budget if not provided
+        if (!budget) {
+            const balanceInfo = await this.checkBalanceAndAffordability();
+            budget = Math.floor(balanceInfo.amount * 0.8); // Use 80% of available balance as safe budget
+            console.log(`💰 Using 80% of current balance as budget: ${budget.toLocaleString()} AS$`);
+        }
         
         const prompt = `
 Du bist ein AirlineSim-Experte. Analysiere folgende verfügbare Flugzeuge und empfehle das BESTE für eine neue Airline:
 
-Budget: ${budget.toLocaleString()} AS$
+Verfügbares Budget: ${budget.toLocaleString()} AS$ (aktueller Kontostand: ${this.currentBalance.amount.toLocaleString()} AS$)
 
 Verfügbare Flugzeuge:
 ${availableAircraft.map((aircraft, i) => 
@@ -119,7 +165,7 @@ ${availableAircraft.map((aircraft, i) =>
 Für eine neue Airline mit Hub in Deutschland (wahrscheinlich DUS/FRA/MUC):
 - Welches Flugzeug ist am besten?
 - Warum genau dieses Modell?
-- Wie viele sollten gekauft werden?
+- Wie viele sollten gekauft werden (aber im Budget bleiben!)?
 
 ANTWORTE NUR MIT:
 EMPFEHLUNG: [Exakter Flugzeugname]
@@ -134,7 +180,10 @@ KOSTEN: [Gesamtkosten]
         // Parse AI response
         const recommendation = this.parseAIRecommendation(aiResponse, availableAircraft);
         
-        // Log decision
+        // Check if we can afford the recommendation
+        const affordabilityCheck = await this.checkBalanceAndAffordability(recommendation.totalCost);
+        
+        // Log decision with balance info
         const decisionId = decisionLogger.logDecision(
             'aircraft',
             `AI empfiehlt: ${recommendation.model} (${recommendation.quantity}x)`,
@@ -142,11 +191,14 @@ KOSTEN: [Gesamtkosten]
             { 
                 availableOptions: availableAircraft.length,
                 budget,
-                totalCost: recommendation.totalCost
+                totalCost: recommendation.totalCost,
+                currentBalance: affordabilityCheck.amount,
+                canAfford: affordabilityCheck.canAfford,
+                affordabilityRatio: affordabilityCheck.affordabilityRatio
             }
         );
 
-        return { ...recommendation, decisionId };
+        return { ...recommendation, decisionId, balanceCheck: affordabilityCheck };
     }
 
     /**

@@ -93,5 +93,23 @@
     "outcome": "simulated_success",
     "profitability": 8.5,
     "updatedAt": "2025-08-01T20:39:35.918Z"
+  },
+  {
+    "id": "mdtb4hne2alhc74fqc",
+    "timestamp": "2025-08-01T20:59:44.858Z",
+    "category": "aircraft",
+    "decision": "AI empfiehlt: Airbus A319neo light (1x)",
+    "reasoning": "AI-Empfehlung basierend auf Kosten-Nutzen-Analyse",
+    "data": {
+      "availableOptions": 11,
+      "budget": 8000000,
+      "totalCost": 35734000,
+      "currentBalance": 10000000,
+      "canAfford": false,
+      "affordabilityRatio": 0.2798455252700509
+    },
+    "outcome": "simulated_success",
+    "profitability": 8.5,
+    "updatedAt": "2025-08-01T20:59:46.861Z"
   }
 ]
