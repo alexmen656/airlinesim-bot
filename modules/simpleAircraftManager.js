@@ -1,6 +1,7 @@
 const { createBrowserWithCookies } = require('../services/puppeteerSettings');
 const decisionLogger = require('../services/decisionLogger');
 const aiService = require('../services/aiService');
+const authService = require('../services/authService');
 
 class SimpleAircraftManager {
     constructor() {
@@ -13,42 +14,8 @@ class SimpleAircraftManager {
         this.browser = browser;
         this.page = page;
         
-        // Prüfe ob eingeloggt
-        await this.checkLoginStatus();
-    }
-
-    async checkLoginStatus() {
-        console.log('🔐 Überprüfe Login-Status...');
-        
-        try {
-            // Gehe zu einer geschützten Seite
-            await this.page.goto('https://free2.airlinesim.aero/app/enterprise/dashboard');
-            await new Promise(resolve => setTimeout(resolve, 2000));
-            
-            const isLoggedIn = await this.page.evaluate(() => {
-                // Prüfe ob Login-Formular oder Dashboard-Elemente vorhanden sind
-                const hasLoginForm = document.querySelector('input[type="email"]') || 
-                                   document.querySelector('input[type="password"]') ||
-                                   document.body.textContent.includes('Login');
-                
-                const hasDashboard = document.body.textContent.includes('QuestAir') ||
-                                   document.body.textContent.includes('AS$') ||
-                                   document.querySelector('.navbar .balance');
-                
-                return !hasLoginForm && hasDashboard;
-            });
-            
-            if (isLoggedIn) {
-                console.log('✅ Bereits eingeloggt');
-            } else {
-                console.log('❌ Nicht eingeloggt - bitte zuerst einloggen!');
-                throw new Error('User ist nicht eingeloggt. Bitte zuerst "node modules/loginAutomation.js" ausführen.');
-            }
-            
-        } catch (error) {
-            console.error('❌ Login-Status-Prüfung fehlgeschlagen:', error.message);
-            throw error;
-        }
+        // Validiere Login mit zentralem AuthService
+        this.loginInfo = await authService.validateLogin(this.page);
     }
 
     async cleanup() {
@@ -57,9 +24,6 @@ class SimpleAircraftManager {
         }
     }
 
-    /**
-     * Prüft, ob die Airline bereits Flugzeuge besitzt
-     */
     async checkFleetStatus() {
         console.log('🔍 Überprüfe aktuellen Fleet-Status...');
         

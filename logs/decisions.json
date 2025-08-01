@@ -63,5 +63,35 @@
     "outcome": "simulated_success",
     "profitability": 8.5,
     "updatedAt": "2025-08-01T20:26:57.259Z"
+  },
+  {
+    "id": "mdtac1gifp0i105gjf6",
+    "timestamp": "2025-08-01T20:37:37.506Z",
+    "category": "aircraft",
+    "decision": "AI empfiehlt: Airbus A319neo light (1x)",
+    "reasoning": "AI-Empfehlung basierend auf Kosten-Nutzen-Analyse",
+    "data": {
+      "availableOptions": 11,
+      "budget": 50000000,
+      "totalCost": 35734000
+    },
+    "outcome": "simulated_success",
+    "profitability": 8.5,
+    "updatedAt": "2025-08-01T20:37:39.513Z"
+  },
+  {
+    "id": "mdtaeja7thtysrh6eq",
+    "timestamp": "2025-08-01T20:39:33.919Z",
+    "category": "aircraft",
+    "decision": "AI empfiehlt: Airbus A320neo medium (15x)",
+    "reasoning": "Dieses Modell bietet die beste Reichweite und Sitzplatzkapazität im Budget von 50 Millionen AS$. Es eignet sich für Kurz- und Mitteldistanzflüge, was für den deutschen Markt typisch ist. Zudem verfügt es über eine günstige Kosten-Leistungs-Relation und weist ein hohes Zahlungsniveau auf dem Gebrauchtmarkt auf.",
+    "data": {
+      "availableOptions": 11,
+      "budget": 50000000,
+      "totalCost": 663840000
+    },
+    "outcome": "simulated_success",
+    "profitability": 8.5,
+    "updatedAt": "2025-08-01T20:39:35.918Z"
   }
 ]

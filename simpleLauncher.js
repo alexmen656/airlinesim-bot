@@ -1,6 +1,7 @@
 const { exec } = require('child_process');
 const SimpleAircraftManager = require('./modules/simpleAircraftManager');
 const decisionLogger = require('./services/decisionLogger');
+const authService = require('./services/authService');
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
 // Helper function to run a script
@@ -31,19 +32,15 @@ const runScript = (scriptPath) => {
         console.log('🚀 AirlineSim Simple AI Bot Starting...');
         console.log('=====================================');
         
-        // Step 1: Login (immer ausführen, um sicherzustellen, dass Cookies aktuell sind)
-        console.log('🔐 Step 1: Ensuring login...');
+        // Step 1: Login (intelligente Cookie-Verwaltung)
+        console.log('🔐 Step 1: Ensuring authentication...');
         
-        const fs = require('fs');
-        const cookiesExist = fs.existsSync('cookies.json');
-        
-        if (!cookiesExist) {
-            console.log('   No cookies found - running login automation...');
+        if (!authService.cookiesExist()) {
+            console.log('   No valid cookies found - running login automation...');
             await runScript('./modules/loginAutomation.js');
             await sleep(5000);
         } else {
-            console.log('   Cookies found - verifying session...');
-            // Login wird in SimpleAircraftManager überprüft
+            console.log('   Cookies found - login validation will happen in aircraft manager');
         }
 
         // Step 2: Create airline if needed (optional)
@@ -69,6 +66,11 @@ const runScript = (scriptPath) => {
             console.log(`   Quantity: ${result.recommendation.quantity}`);
             console.log(`   Total Cost: ${result.recommendation.totalCost.toLocaleString()} AS$`);
             console.log(`   Reasoning: ${result.recommendation.reasoning}`);
+        }
+
+        // Show airline info if available
+        if (aircraftManager.loginInfo && aircraftManager.loginInfo.airlineName) {
+            console.log(`\n✈️ Managing fleet for: ${aircraftManager.loginInfo.airlineName}`);
         }
 
         // Step 4: Show decision log
