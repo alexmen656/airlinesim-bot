@@ -94,41 +94,27 @@ class SimpleAircraftManager {
         }
     }
 
-    /**
-     * Scrapt verfügbare Flugzeuge mit neuer Service-Architektur
-     */
     async getAvailableAircraft(forceRefresh = false) {
         return await this.aircraftDataService.getAvailableAircraft(this.page, forceRefresh);
     }
 
-    /**
-     * Löscht den Aircraft-Cache (erzwingt Neuladen beim nächsten Aufruf)
-     */
     async clearAircraftCache() {
         return await this.aircraftDataService.clearAllCaches();
     }
 
-    /**
-     * Zeigt Cache-Statistiken an
-     */
     async getCacheInfo() {
         return await this.aircraftDataService.getCacheInfo();
     }
 
-    /**
-     * Analysiert mit AI, welches Flugzeug geleast werden soll (neue zweistufige Analyse)
-     */
     async analyzeAircraftChoice(availableAircraft, budget = null) {
         console.log('🧠 AI analysiert beste Flugzeug-Leasing-Option (2-stufig)...');
         
-        // Use current balance as budget if not provided
         if (!budget) {
             const balanceInfo = await this.checkBalanceAndAffordability();
-            budget = Math.floor(balanceInfo.amount * 0.8); // Use 80% of available balance as safe budget
+            budget = Math.floor(balanceInfo.amount * 0.8); // Use 80%
             console.log(`💰 Using 80% of current balance as budget: ${budget.toLocaleString()} AS$`);
         }
 
-        // Update AI analyzer with current balance
         this.aircraftAIAnalyzer.currentBalance = this.currentBalance;
         
         // Verwende die neue zweistufige AI-Analyse
@@ -165,9 +151,6 @@ class SimpleAircraftManager {
         return { ...recommendation, decisionId, balanceCheck: affordabilityCheck };
     }
 
-    /**
-     * Hauptfunktion: Prüft Fleet und kauft bei Bedarf Flugzeuge
-     */
     async manageFleet() {
         try {
             await this.initialize();
@@ -231,7 +214,6 @@ class SimpleAircraftManager {
             }
 
             // 4. Hier würde das tatsächliche Leasing stattfinden
-            // Für jetzt nur simulieren
             console.log('\n💡 SIMULATION: Flugzeug-Leasing würde jetzt durchgeführt');
             console.log('   (Echtes Leasing kann implementiert werden)');
             console.log('   📋 Nächste Schritte:');
