@@ -432,5 +432,1085 @@
     "outcome": "simulated_success",
     "profitability": 8.5,
     "updatedAt": "2025-08-02T10:55:23.649Z"
+  },
+  {
+    "id": "mdu5oddiv52e2vsdqjk",
+    "timestamp": "2025-08-02T11:15:00.918Z",
+    "category": "aircraft_leasing",
+    "decision": "AI empfiehlt Leasing: Boeing 737-8 HGW (10x) für QuestAir",
+    "reasoning": "AI-Empfehlung basierend auf Modell-Analyse",
+    "data": {
+      "airline": {
+        "name": "QuestAir",
+        "code": "QXX",
+        "hub": "SFO"
+      },
+      "availableOptions": 181,
+      "budget": 8000000,
+      "totalSecurityDeposit": 23271000,
+      "weeklyRateCost": 2327100,
+      "currentBalance": 10000000,
+      "canAfford": false,
+      "affordabilityRatio": 0.4297193932362168,
+      "leasingType": "two_stage_analysis",
+      "familyChosen": "737 MAX",
+      "analyzedAircraftCount": 2,
+      "totalAircraftInFamily": 6
+    },
+    "outcome": "simulated_success",
+    "profitability": 8.5,
+    "updatedAt": "2025-08-02T11:15:02.921Z"
+  },
+  {
+    "id": "mdu5pem8sdobjszmozl",
+    "timestamp": "2025-08-02T11:15:49.184Z",
+    "category": "station_management",
+    "decision": "Keine Station eröffnet - Budget zu niedrig",
+    "reasoning": "Alle empfohlenen Stationen übersteigen das verfügbare Budget",
+    "data": {
+      "aircraftRecommendation": "Boeing 737-8 HGW",
+      "budget": {
+        "available": -3981300,
+        "remaining": -13271000,
+        "afterAircraft": -13271000
+      },
+      "recommendations": 5
+    },
+    "outcome": null,
+    "profitability": null
+  },
+  {
+    "id": "mdu5peoe1t521bkg82r",
+    "timestamp": "2025-08-02T11:15:49.262Z",
+    "category": "integrated_airline_management",
+    "decision": "Vollständiges Airline Setup: Boeing 737-8 HGW + No Station",
+    "reasoning": "AI empfiehlt 10x Boeing 737-8 HGW und Station None für optimalen Start",
+    "data": {
+      "aircraftRecommendation": {
+        "model": "Boeing 737-8 HGW",
+        "aircraft": {
+          "model": "Boeing 737-8 HGW",
+          "family": "737 MAX",
+          "passengers": 189,
+          "cargo": "7,267 kg",
+          "range": "4,650-8,180 km",
+          "speed": "840 km/h",
+          "priceText": "46,542,000 AS$",
+          "purchasePrice": 46542000,
+          "securityDeposit": 2327100,
+          "weeklyRate": 232710,
+          "initialCost": 2327100,
+          "available": true,
+          "onAuction": 273
+        },
+        "quantity": 10,
+        "reasoning": "AI-Empfehlung basierend auf Modell-Analyse",
+        "familyChoice": {
+          "selectedFamily": {
+            "name": "737 MAX",
+            "aircraft": [
+              {
+                "model": "Boeing 737-8",
+                "family": "737 MAX",
+                "passengers": 189,
+                "cargo": "7,267 kg",
+                "range": "2,215-4,939 km",
+                "speed": "840 km/h",
+                "priceText": "38,928,000 AS$",
+                "purchasePrice": 38928000,
+                "securityDeposit": 1946400,
+                "weeklyRate": 194640,
+                "initialCost": 1946400,
+                "available": true,
+                "onAuction": 258
+              },
+              {
+                "model": "Boeing 737-8-200",
+                "family": "737 MAX",
+                "passengers": 210,
+                "cargo": "7,267 kg",
+                "range": "2,215-4,939 km",
+                "speed": "840 km/h",
+                "priceText": "39,033,000 AS$",
+                "purchasePrice": 39033000,
+                "securityDeposit": 1951650,
+                "weeklyRate": 195165,
+                "initialCost": 1951650,
+                "available": true,
+                "onAuction": 70
+              },
+              {
+                "model": "Boeing 737-9",
+                "family": "737 MAX",
+                "passengers": 220,
+                "cargo": "8,617 kg",
+                "range": "3,350-6,450 km",
+                "speed": "840 km/h",
+                "priceText": "40,959,000 AS$",
+                "purchasePrice": 40959000,
+                "securityDeposit": 2047950,
+                "weeklyRate": 204795,
+                "initialCost": 2047950,
+                "available": true,
+                "onAuction": 10
+              },
+              {
+                "model": "Boeing 737-8 HGW",
+                "family": "737 MAX",
+                "passengers": 189,
+                "cargo": "7,267 kg",
+                "range": "4,650-8,180 km",
+                "speed": "840 km/h",
+                "priceText": "46,542,000 AS$",
+                "purchasePrice": 46542000,
+                "securityDeposit": 2327100,
+                "weeklyRate": 232710,
+                "initialCost": 2327100,
+                "available": true,
+                "onAuction": 273
+              },
+              {
+                "model": "Boeing 737-8-200 HGW",
+                "family": "737 MAX",
+                "passengers": 210,
+                "cargo": "7,267 kg",
+                "range": "4,650-8,180 km",
+                "speed": "840 km/h",
+                "priceText": "46,647,000 AS$",
+                "purchasePrice": 46647000,
+                "securityDeposit": 2332350,
+                "weeklyRate": 233235,
+                "initialCost": 2332350,
+                "available": true,
+                "onAuction": 31
+              },
+              {
+                "model": "Boeing 737-9 HGW",
+                "family": "737 MAX",
+                "passengers": 220,
+                "cargo": "8,617 kg",
+                "range": "5,350-7,750 km",
+                "speed": "840 km/h",
+                "priceText": "50,845,000 AS$",
+                "purchasePrice": 50845000,
+                "securityDeposit": 2542250,
+                "weeklyRate": 254225,
+                "initialCost": 2542250,
+                "available": true,
+                "onAuction": 146
+              }
+            ],
+            "minSecurityDeposit": 1946400,
+            "maxSecurityDeposit": 2542250,
+            "minPassengers": 189,
+            "maxPassengers": 220,
+            "totalModels": 6
+          },
+          "reasoning": "AI-Empfehlung basierend auf Familie-Analyse",
+          "targetPassengers": 150,
+          "aiResponse": " Familie: 737 MAX\nGründe: Die 737 MAX Familie bietet ein günstiges Verhältnis zwischen Gewinn pro Flug und erschwinglichen Startkosten. Sie ist außerdem die neuesten Generation der 737-Familie, was bedeutet, dass sie mit modernsten Technologien und Wirtschaftlichkeit ausgestattet ist. Außerdem verfügt sie über eine hohe Reichweite und kann für zahlreiche Strecken von SFO genutzt werden, wie zum Beispiel nach Seattle, Portland, Denver oder Chicago. Für den Hub SFO ist die 737 MAX Family daher optimal geeignet.\nPassagierziel: Ein 189-sitziges Modell wäre am besten für hohe Gewinne und schnelles Wachstum auf Basis der angegebenen Kriterien."
+        },
+        "totalSecurityDeposit": 23271000,
+        "weeklyRateCost": 2327100,
+        "securityDepositPerUnit": 2327100,
+        "weeklyRatePerUnit": 232710,
+        "totalCost": 23271000,
+        "pricePerUnit": 2327100,
+        "aiResponse": " Empfehlung: Boeing 737-8 HGW\nAnzahl: 10\nGründe: Das Boeing 737-8 HGW Modell bietet das beste Verhältnis aus Gewinn und erschwinglichen Gesamtkosten. Es verfügt über eine höhere Reichweite und kann mehr Passagiere befördern, was zu einem erhöhten Gewinn pro Flug führt. Zudem ist es eines der moderneren Modelle und bietet mehr Komfort für die Passagiere. Mit einer Reichweite von bis zu 8180 km kann es fast alle populären Strecken abdecken und ermöglicht das schnelle Wachstum der Airline.\nSecurity Deposits: 2,327,100 AS$\nWochenkosten ab Woche 2: 232,710 AS$",
+        "aiSecurityEstimate": 0,
+        "aiWeeklyEstimate": 0,
+        "analyzedAircraftCount": 2,
+        "totalAircraftInFamily": 6,
+        "decisionId": "mdu5oddiv52e2vsdqjk",
+        "balanceCheck": {
+          "amount": 10000000,
+          "currency": "AS$",
+          "rawAmount": "10,000,000",
+          "isPositive": true,
+          "timestamp": "2025-08-02T11:15:00.917Z",
+          "url": "https://free2.airlinesim.aero/action/portal/index",
+          "canAfford": false,
+          "affordabilityRatio": 0.4297193932362168
+        }
+      },
+      "stationRecommendation": null,
+      "totalInitialCost": 23271000,
+      "totalWeeklyCost": 2327100,
+      "aircraftDecisionId": "mdu5oddiv52e2vsdqjk",
+      "budgetAnalysis": {
+        "initialBalance": 10000000,
+        "afterAircraft": -13271000,
+        "afterStation": -13271000,
+        "canAffordBoth": false
+      }
+    },
+    "outcome": null,
+    "profitability": null
+  },
+  {
+    "id": "mdu5peof4n8i8cz84wu",
+    "timestamp": "2025-08-02T11:15:49.263Z",
+    "category": "system",
+    "decision": "Integrated bot execution failed",
+    "reasoning": "Error occurred: decisionLogger.getAnalytics is not a function",
+    "data": {
+      "error": "TypeError: decisionLogger.getAnalytics is not a function\n    at runIntegratedAirlineBot (/Users/alexpolan/Projects/airlinesim-bot2/simpleLauncher.js:56:42)"
+    },
+    "outcome": null,
+    "profitability": null
+  },
+  {
+    "id": "mdu6gjrqku28koldwv",
+    "timestamp": "2025-08-02T11:36:55.574Z",
+    "category": "aircraft_leasing",
+    "decision": "AI empfiehlt Leasing: Boeing 737-8 HGW (5x) für QuestAir",
+    "reasoning": "AI-Empfehlung basierend auf Modell-Analyse",
+    "data": {
+      "airline": {
+        "name": "QuestAir",
+        "code": "QXX",
+        "hub": "SFO"
+      },
+      "availableOptions": 181,
+      "budget": 8000000,
+      "totalSecurityDeposit": 11635500,
+      "weeklyRateCost": 1163550,
+      "currentBalance": 10000000,
+      "canAfford": false,
+      "affordabilityRatio": 0.8594387864724335,
+      "leasingType": "two_stage_analysis",
+      "familyChosen": "737 MAX",
+      "analyzedAircraftCount": 2,
+      "totalAircraftInFamily": 6
+    },
+    "outcome": "simulated_success",
+    "profitability": 8.5,
+    "updatedAt": "2025-08-02T11:36:57.576Z"
+  },
+  {
+    "id": "mdu6ho3kwsn73t50h1",
+    "timestamp": "2025-08-02T11:37:47.840Z",
+    "category": "station_management",
+    "decision": "Station-Management Fehler",
+    "reasoning": "Fehler aufgetreten: Cannot read properties of undefined (reading 'toLocaleString')",
+    "data": {
+      "error": "TypeError: Cannot read properties of undefined (reading 'toLocaleString')\n    at StationManager.manageStations (/Users/alexpolan/Projects/airlinesim-bot2/modules/stationManager.js:217:83)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async IntegratedAirlineManager.manageAirline (/Users/alexpolan/Projects/airlinesim-bot2/modules/integratedAirlineManager.js:50:35)\n    at async runIntegratedAirlineBot (/Users/alexpolan/Projects/airlinesim-bot2/simpleLauncher.js:12:24)",
+      "aircraftRecommendation": "Boeing 737-8 HGW"
+    },
+    "outcome": null,
+    "profitability": null
+  },
+  {
+    "id": "mdu6ho5n6q7xbovnuzv",
+    "timestamp": "2025-08-02T11:37:47.915Z",
+    "category": "integrated_airline_management",
+    "decision": "Integriertes Airline-Management Fehler",
+    "reasoning": "Fehler aufgetreten: Cannot read properties of undefined (reading 'toLocaleString')",
+    "data": {
+      "error": "TypeError: Cannot read properties of undefined (reading 'toLocaleString')\n    at StationManager.manageStations (/Users/alexpolan/Projects/airlinesim-bot2/modules/stationManager.js:217:83)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async IntegratedAirlineManager.manageAirline (/Users/alexpolan/Projects/airlinesim-bot2/modules/integratedAirlineManager.js:50:35)\n    at async runIntegratedAirlineBot (/Users/alexpolan/Projects/airlinesim-bot2/simpleLauncher.js:12:24)"
+    },
+    "outcome": null,
+    "profitability": null
+  },
+  {
+    "id": "mdu6ho5n6sfbocxmqpd",
+    "timestamp": "2025-08-02T11:37:47.915Z",
+    "category": "system",
+    "decision": "Integrated bot execution failed",
+    "reasoning": "Error occurred: Cannot read properties of undefined (reading 'toLocaleString')",
+    "data": {
+      "error": "TypeError: Cannot read properties of undefined (reading 'toLocaleString')\n    at StationManager.manageStations (/Users/alexpolan/Projects/airlinesim-bot2/modules/stationManager.js:217:83)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async IntegratedAirlineManager.manageAirline (/Users/alexpolan/Projects/airlinesim-bot2/modules/integratedAirlineManager.js:50:35)\n    at async runIntegratedAirlineBot (/Users/alexpolan/Projects/airlinesim-bot2/simpleLauncher.js:12:24)"
+    },
+    "outcome": null,
+    "profitability": null
+  },
+  {
+    "id": "mdu6mmk1g72d8x0tgs7",
+    "timestamp": "2025-08-02T11:41:39.121Z",
+    "category": "aircraft_leasing",
+    "decision": "AI empfiehlt Leasing: Airbus A319neo heavy (5x) für QuestAir",
+    "reasoning": "AI-Empfehlung basierend auf Modell-Analyse",
+    "data": {
+      "airline": {
+        "name": "QuestAir",
+        "code": "QXX",
+        "hub": "SFO"
+      },
+      "availableOptions": 181,
+      "budget": 8000000,
+      "totalSecurityDeposit": 10966500,
+      "weeklyRateCost": 1096650,
+      "currentBalance": 10000000,
+      "canAfford": false,
+      "affordabilityRatio": 0.911867961519172,
+      "leasingType": "two_stage_analysis",
+      "familyChosen": "A319 / A320 / A321 NEO",
+      "analyzedAircraftCount": 7,
+      "totalAircraftInFamily": 11
+    },
+    "outcome": "simulated_success",
+    "profitability": 8.5,
+    "updatedAt": "2025-08-02T11:41:41.124Z"
+  },
+  {
+    "id": "mdu6ouxudm92e5tiyr",
+    "timestamp": "2025-08-02T11:43:23.298Z",
+    "category": "station_management",
+    "decision": "AI empfiehlt Station: London Heathrow (LHR) für Airbus A319neo heavy",
+    "reasoning": "London ist ein wichtiger internationaler Flughafen mit hoher Passagiernachfrage und geringer Konkurrenz auf Langstreckenrouten. Die Nähe zu Potential-Zielmärkten in Nordamerika, Nahost und Ostasien macht LHR zu einem idealen Drehkreuz für die Expansion der Airline.",
+    "data": {
+      "aircraftInfo": {
+        "model": "Airbus A319neo heavy",
+        "quantity": 5,
+        "passengers": 156,
+        "range": "5,050-9,190 km"
+      },
+      "selectedStation": {
+        "rank": 1,
+        "name": "London Heathrow",
+        "code": "LHR",
+        "country": "Vereinigtes Königreich",
+        "reasoning": "London ist ein wichtiger internationaler Flughafen mit hoher Passagiernachfrage und geringer Konkurrenz auf Langstreckenrouten. Die Nähe zu Potential-Zielmärkten in Nordamerika, Nahost und Ostasien macht LHR zu einem idealen Drehkreuz für die Expansion der Airline.",
+        "route": "SFO ↔ LHR",
+        "expectedPassengers": 100,
+        "estimatedCost": 0
+      },
+      "budget": {
+        "availableForOperations": -193300,
+        "remaining": -966500,
+        "afterAircraft": -966500,
+        "stationOpeningCost": 0
+      },
+      "totalRecommendations": 5,
+      "existingStations": 1,
+      "route": "SFO ↔ LHR",
+      "expectedPassengers": 100
+    },
+    "outcome": null,
+    "profitability": null
+  },
+  {
+    "id": "mdu6ouzzj6cxu84ey7s",
+    "timestamp": "2025-08-02T11:43:23.375Z",
+    "category": "integrated_airline_management",
+    "decision": "Vollständiges Airline Setup: Airbus A319neo heavy + London Heathrow",
+    "reasoning": "AI empfiehlt 5x Airbus A319neo heavy und Station LHR für optimalen Start",
+    "data": {
+      "aircraftRecommendation": {
+        "model": "Airbus A319neo heavy",
+        "aircraft": {
+          "model": "Airbus A319neo heavy",
+          "family": "A319 / A320 / A321 NEO",
+          "passengers": 156,
+          "cargo": "3,606 kg",
+          "range": "5,050-9,190 km",
+          "speed": "840 km/h",
+          "priceText": "43,866,000 AS$",
+          "purchasePrice": 43866000,
+          "securityDeposit": 2193300,
+          "weeklyRate": 219330,
+          "initialCost": 2193300,
+          "available": true,
+          "onAuction": 5
+        },
+        "quantity": 5,
+        "reasoning": "AI-Empfehlung basierend auf Modell-Analyse",
+        "familyChoice": {
+          "selectedFamily": {
+            "name": "A319 / A320 / A321 NEO",
+            "aircraft": [
+              {
+                "model": "Airbus A319neo light",
+                "family": "A319 / A320 / A321 NEO",
+                "passengers": 156,
+                "cargo": "3,606 kg",
+                "range": "1,160-8,200 km",
+                "speed": "840 km/h",
+                "priceText": "35,734,000 AS$",
+                "purchasePrice": 35734000,
+                "securityDeposit": 1786700,
+                "weeklyRate": 178670,
+                "initialCost": 1786700,
+                "available": true,
+                "onAuction": 0
+              },
+              {
+                "model": "Airbus A320neo light SHARP",
+                "family": "A319 / A320 / A321 NEO",
+                "passengers": 189,
+                "cargo": "5,180 kg",
+                "range": "3,050-7,250 km",
+                "speed": "840 km/h",
+                "priceText": "41,059,000 AS$",
+                "purchasePrice": 41059000,
+                "securityDeposit": 2052950,
+                "weeklyRate": 205295,
+                "initialCost": 2052950,
+                "available": true,
+                "onAuction": 7
+              },
+              {
+                "model": "Airbus A319neo medium",
+                "family": "A319 / A320 / A321 NEO",
+                "passengers": 156,
+                "cargo": "3,606 kg",
+                "range": "5,050-8,200 km",
+                "speed": "840 km/h",
+                "priceText": "41,342,000 AS$",
+                "purchasePrice": 41342000,
+                "securityDeposit": 2067100,
+                "weeklyRate": 206710,
+                "initialCost": 2067100,
+                "available": true,
+                "onAuction": 0
+              },
+              {
+                "model": "Airbus A320neo light",
+                "family": "A319 / A320 / A321 NEO",
+                "passengers": 189,
+                "cargo": "5,180 kg",
+                "range": "3,148-7,917 km",
+                "speed": "840 km/h",
+                "priceText": "41,758,000 AS$",
+                "purchasePrice": 41758000,
+                "securityDeposit": 2087900,
+                "weeklyRate": 208790,
+                "initialCost": 2087900,
+                "available": true,
+                "onAuction": 1
+              },
+              {
+                "model": "Airbus A321neo light",
+                "family": "A319 / A320 / A321 NEO",
+                "passengers": 240,
+                "cargo": "6,988 kg",
+                "range": "4,074-6,019 km",
+                "speed": "840 km/h",
+                "priceText": "43,523,000 AS$",
+                "purchasePrice": 43523000,
+                "securityDeposit": 2176150,
+                "weeklyRate": 217615,
+                "initialCost": 2176150,
+                "available": true,
+                "onAuction": 33
+              },
+              {
+                "model": "Airbus A319neo heavy",
+                "family": "A319 / A320 / A321 NEO",
+                "passengers": 156,
+                "cargo": "3,606 kg",
+                "range": "5,050-9,190 km",
+                "speed": "840 km/h",
+                "priceText": "43,866,000 AS$",
+                "purchasePrice": 43866000,
+                "securityDeposit": 2193300,
+                "weeklyRate": 219330,
+                "initialCost": 2193300,
+                "available": true,
+                "onAuction": 5
+              },
+              {
+                "model": "Airbus A320neo medium",
+                "family": "A319 / A320 / A321 NEO",
+                "passengers": 189,
+                "cargo": "5,180 kg",
+                "range": "4,537-7,917 km",
+                "speed": "840 km/h",
+                "priceText": "44,256,000 AS$",
+                "purchasePrice": 44256000,
+                "securityDeposit": 2212800,
+                "weeklyRate": 221280,
+                "initialCost": 2212800,
+                "available": true,
+                "onAuction": 226
+              },
+              {
+                "model": "Airbus A320neo heavy",
+                "family": "A319 / A320 / A321 NEO",
+                "passengers": 189,
+                "cargo": "5,180 kg",
+                "range": "4,537-8,843 km",
+                "speed": "840 km/h",
+                "priceText": "46,122,000 AS$",
+                "purchasePrice": 46122000,
+                "securityDeposit": 2306100,
+                "weeklyRate": 230610,
+                "initialCost": 2306100,
+                "available": true,
+                "onAuction": 0
+              },
+              {
+                "model": "Airbus A321neo medium",
+                "family": "A319 / A320 / A321 NEO",
+                "passengers": 240,
+                "cargo": "6,988 kg",
+                "range": "4,690-7,030 km",
+                "speed": "840 km/h",
+                "priceText": "50,551,000 AS$",
+                "purchasePrice": 50551000,
+                "securityDeposit": 2527550,
+                "weeklyRate": 252755,
+                "initialCost": 2527550,
+                "available": true,
+                "onAuction": 132
+              },
+              {
+                "model": "Airbus A321neo heavy",
+                "family": "A319 / A320 / A321 NEO",
+                "passengers": 240,
+                "cargo": "6,988 kg",
+                "range": "4,690-7,890 km",
+                "speed": "840 km/h",
+                "priceText": "51,214,000 AS$",
+                "purchasePrice": 51214000,
+                "securityDeposit": 2560700,
+                "weeklyRate": 256070,
+                "initialCost": 2560700,
+                "available": true,
+                "onAuction": 7
+              },
+              {
+                "model": "Airbus A321LR",
+                "family": "A319 / A320 / A321 NEO",
+                "passengers": 240,
+                "cargo": "4,585 kg",
+                "range": "5,125-9,295 km",
+                "speed": "840 km/h",
+                "priceText": "53,561,000 AS$",
+                "purchasePrice": 53561000,
+                "securityDeposit": 2678050,
+                "weeklyRate": 267805,
+                "initialCost": 2678050,
+                "available": true,
+                "onAuction": 32
+              }
+            ],
+            "minSecurityDeposit": 1786700,
+            "maxSecurityDeposit": 2678050,
+            "minPassengers": 156,
+            "maxPassengers": 240,
+            "totalModels": 11
+          },
+          "reasoning": "AI-Empfehlung basierend auf Familie-Analyse",
+          "targetPassengers": 150,
+          "aiResponse": " Familie: A320 NEO\nGründe: Die A320 NEO-Familie bietet ein gutes Verhältnis aus Gewinn pro Flug und erschwinglichen Startkosten. Sie ist leicht zu fliegender, sparte 16% an Treibstoff und erreicht einen höheren Durchschnittsgewinn pro Sitzplatz als ältere Modelle. Der Hub SFO bietet viele lukrative Routenmöglichkeiten, insbesondere nach Asien und in den Pazifik, die mit diesem Flugzeugtyp profitabel bedient werden können.\nPassagierziel: Für das beste Ergebnis sollte ein Flugzeug vom Typ A320-214 geleast werden, welches eine maximale Sitzplatzanzahl von 220 bietet und einen Durchschnittsgewinn pro Sitzplatz von 5 Cent pro Meilen ermöglicht. Dieses Modell ist besonders für hohe Passagierzahlen und schnelle Expansion gut geeignet."
+        },
+        "totalSecurityDeposit": 10966500,
+        "weeklyRateCost": 1096650,
+        "securityDepositPerUnit": 2193300,
+        "weeklyRatePerUnit": 219330,
+        "totalCost": 10966500,
+        "pricePerUnit": 2193300,
+        "aiResponse": " Empfehlung: Airbus A319neo heavy\nAnzahl: 5\nGründe: Das Airbus A319neo heavy bietet das beste Verhältnis aus Gewinn und erschwinglichen Gesamtkosten. Es kann bis zu 5 Passagiere mehr als die nächstkleinere Variante des Typs transportieren, ohne dass die Reichweite oder Geschwindigkeit merklich sinken würden. Gleichzeitig ist es das günstigste Modell der Familie und hat nur eine kleine Kostenvorleistung für den Security Deposit, was das Wachstum der Airline begünstigt. Die zusätzlichen 50.000-200.000 AS$ für die Bestuhlung sind im Vergleich zum Kaufpreis ein vernünftiger Betrag und können mit dem Erlössprung bei mehr Passagieren kompensiert werden.\nSecurity Deposits: 1,193,300 AS$ (2 x 596,650 AS$)\nWöchentliche Kosten ab Woche 2: 47,000 AS$ (2 x 23,500 AS$)",
+        "aiSecurityEstimate": 0,
+        "aiWeeklyEstimate": 0,
+        "analyzedAircraftCount": 7,
+        "totalAircraftInFamily": 11,
+        "decisionId": "mdu6mmk1g72d8x0tgs7",
+        "balanceCheck": {
+          "amount": 10000000,
+          "currency": "AS$",
+          "rawAmount": "10,000,000",
+          "isPositive": true,
+          "timestamp": "2025-08-02T11:41:39.120Z",
+          "url": "https://free2.airlinesim.aero/action/portal/index",
+          "canAfford": false,
+          "affordabilityRatio": 0.911867961519172
+        }
+      },
+      "stationRecommendation": {
+        "rank": 1,
+        "name": "London Heathrow",
+        "code": "LHR",
+        "country": "Vereinigtes Königreich",
+        "reasoning": "London ist ein wichtiger internationaler Flughafen mit hoher Passagiernachfrage und geringer Konkurrenz auf Langstreckenrouten. Die Nähe zu Potential-Zielmärkten in Nordamerika, Nahost und Ostasien macht LHR zu einem idealen Drehkreuz für die Expansion der Airline.",
+        "route": "SFO ↔ LHR",
+        "expectedPassengers": 100,
+        "estimatedCost": 0
+      },
+      "totalInitialCost": 10966500,
+      "totalWeeklyCost": 1096650,
+      "aircraftDecisionId": "mdu6mmk1g72d8x0tgs7",
+      "stationDecisionId": "mdu6ouxudm92e5tiyr",
+      "budgetAnalysis": {
+        "initialBalance": 10000000,
+        "afterAircraft": -966500,
+        "afterStation": -966500,
+        "canAffordBoth": false
+      }
+    },
+    "outcome": null,
+    "profitability": null
+  },
+  {
+    "id": "mdu6ov013r9bi1a8gw2",
+    "timestamp": "2025-08-02T11:43:23.377Z",
+    "category": "system",
+    "decision": "Integrated bot execution failed",
+    "reasoning": "Error occurred: decisionLogger.getAnalytics is not a function",
+    "data": {
+      "error": "TypeError: decisionLogger.getAnalytics is not a function\n    at runIntegratedAirlineBot (/Users/alexpolan/Projects/airlinesim-bot2/simpleLauncher.js:56:42)"
+    },
+    "outcome": null,
+    "profitability": null
+  },
+  {
+    "id": "mdu6v94by0ke9jzgdeh",
+    "timestamp": "2025-08-02T11:48:21.611Z",
+    "category": "aircraft_leasing",
+    "decision": "AI empfiehlt Leasing: Boeing 737-8 (50x) für QuestAir",
+    "reasoning": "AI-Empfehlung basierend auf Modell-Analyse",
+    "data": {
+      "airline": {
+        "name": "QuestAir",
+        "code": "QXX",
+        "hub": "SFO"
+      },
+      "availableOptions": 181,
+      "budget": 8000000,
+      "totalSecurityDeposit": 97320000,
+      "weeklyRateCost": 9732000,
+      "currentBalance": 10000000,
+      "canAfford": false,
+      "affordabilityRatio": 0.10275380189066996,
+      "leasingType": "two_stage_analysis",
+      "familyChosen": "737 MAX",
+      "analyzedAircraftCount": 2,
+      "totalAircraftInFamily": 6
+    },
+    "outcome": "simulated_success",
+    "profitability": 8.5,
+    "updatedAt": "2025-08-02T11:48:23.614Z"
+  },
+  {
+    "id": "mdu6xfu0ah1oe5ijw7",
+    "timestamp": "2025-08-02T11:50:03.624Z",
+    "category": "station_management",
+    "decision": "Keine Station eröffnet - Budget zu niedrig",
+    "reasoning": "Alle empfohlenen Stationen übersteigen das verfügbare Budget",
+    "data": {
+      "aircraftRecommendation": "Boeing 737-8",
+      "budget": {
+        "availableForOperations": -17464000,
+        "remaining": -87320000,
+        "afterAircraft": -87320000,
+        "stationOpeningCost": 0
+      },
+      "recommendations": 0
+    },
+    "outcome": null,
+    "profitability": null
+  },
+  {
+    "id": "mdu6xfwenf7rrwt0od",
+    "timestamp": "2025-08-02T11:50:03.710Z",
+    "category": "integrated_airline_management",
+    "decision": "Vollständiges Airline Setup: Boeing 737-8 + No Station",
+    "reasoning": "AI empfiehlt 50x Boeing 737-8 und Station None für optimalen Start",
+    "data": {
+      "aircraftRecommendation": {
+        "model": "Boeing 737-8",
+        "aircraft": {
+          "model": "Boeing 737-8",
+          "family": "737 MAX",
+          "passengers": 189,
+          "cargo": "7,267 kg",
+          "range": "2,215-4,939 km",
+          "speed": "840 km/h",
+          "priceText": "38,928,000 AS$",
+          "purchasePrice": 38928000,
+          "securityDeposit": 1946400,
+          "weeklyRate": 194640,
+          "initialCost": 1946400,
+          "available": true,
+          "onAuction": 258
+        },
+        "quantity": 50,
+        "reasoning": "AI-Empfehlung basierend auf Modell-Analyse",
+        "familyChoice": {
+          "selectedFamily": {
+            "name": "737 MAX",
+            "aircraft": [
+              {
+                "model": "Boeing 737-8",
+                "family": "737 MAX",
+                "passengers": 189,
+                "cargo": "7,267 kg",
+                "range": "2,215-4,939 km",
+                "speed": "840 km/h",
+                "priceText": "38,928,000 AS$",
+                "purchasePrice": 38928000,
+                "securityDeposit": 1946400,
+                "weeklyRate": 194640,
+                "initialCost": 1946400,
+                "available": true,
+                "onAuction": 258
+              },
+              {
+                "model": "Boeing 737-8-200",
+                "family": "737 MAX",
+                "passengers": 210,
+                "cargo": "7,267 kg",
+                "range": "2,215-4,939 km",
+                "speed": "840 km/h",
+                "priceText": "39,033,000 AS$",
+                "purchasePrice": 39033000,
+                "securityDeposit": 1951650,
+                "weeklyRate": 195165,
+                "initialCost": 1951650,
+                "available": true,
+                "onAuction": 70
+              },
+              {
+                "model": "Boeing 737-9",
+                "family": "737 MAX",
+                "passengers": 220,
+                "cargo": "8,617 kg",
+                "range": "3,350-6,450 km",
+                "speed": "840 km/h",
+                "priceText": "40,959,000 AS$",
+                "purchasePrice": 40959000,
+                "securityDeposit": 2047950,
+                "weeklyRate": 204795,
+                "initialCost": 2047950,
+                "available": true,
+                "onAuction": 10
+              },
+              {
+                "model": "Boeing 737-8 HGW",
+                "family": "737 MAX",
+                "passengers": 189,
+                "cargo": "7,267 kg",
+                "range": "4,650-8,180 km",
+                "speed": "840 km/h",
+                "priceText": "46,542,000 AS$",
+                "purchasePrice": 46542000,
+                "securityDeposit": 2327100,
+                "weeklyRate": 232710,
+                "initialCost": 2327100,
+                "available": true,
+                "onAuction": 273
+              },
+              {
+                "model": "Boeing 737-8-200 HGW",
+                "family": "737 MAX",
+                "passengers": 210,
+                "cargo": "7,267 kg",
+                "range": "4,650-8,180 km",
+                "speed": "840 km/h",
+                "priceText": "46,647,000 AS$",
+                "purchasePrice": 46647000,
+                "securityDeposit": 2332350,
+                "weeklyRate": 233235,
+                "initialCost": 2332350,
+                "available": true,
+                "onAuction": 31
+              },
+              {
+                "model": "Boeing 737-9 HGW",
+                "family": "737 MAX",
+                "passengers": 220,
+                "cargo": "8,617 kg",
+                "range": "5,350-7,750 km",
+                "speed": "840 km/h",
+                "priceText": "50,845,000 AS$",
+                "purchasePrice": 50845000,
+                "securityDeposit": 2542250,
+                "weeklyRate": 254225,
+                "initialCost": 2542250,
+                "available": true,
+                "onAuction": 146
+              }
+            ],
+            "minSecurityDeposit": 1946400,
+            "maxSecurityDeposit": 2542250,
+            "minPassengers": 189,
+            "maxPassengers": 220,
+            "totalModels": 6
+          },
+          "reasoning": "AI-Empfehlung basierend auf Familie-Analyse",
+          "targetPassengers": 150,
+          "aiResponse": " Familie: Boeing 737 MAX\nGründe: Die Boeing 737 MAX ist die ideale Flugzeugfamilie für den Aufbau einer hochprofitable und schnell wachsenden Airline am Hub SFO. Sie bietet ein günstiges Verhältnis zwischen Gewinn pro Flug und Startkosten sowie eine große Passagierkapazität, was es ermöglicht, mehr Flüge im Tagesablauf durchzuführen und somit mehr Umsatz zu generieren. Zusätzlich verfügt der Hub SFO über lukrative Routenmöglichkeiten innerhalb Nordamerikas und nach Asien, die mit dem 737 MAX optimal genutzt werden können.\nPassagierziel: Der ideale Passagieranzahl für das optimale Modell der Boeing 737 MAX am Hub SFO liegt zwischen 189 und 220 Passagieren. Dies erlaubt es, den Großteil der Routepunkte im nordamerikanischen Raum und nach Asien anzufliegen, während eine ausreichende Kapazität für die Bedürfnisse des Verkehrsangebots gewährleistet wird."
+        },
+        "totalSecurityDeposit": 97320000,
+        "weeklyRateCost": 9732000,
+        "securityDepositPerUnit": 1946400,
+        "weeklyRatePerUnit": 194640,
+        "totalCost": 97320000,
+        "pricePerUnit": 1946400,
+        "aiResponse": " Empfehlung: Boeing 737-8\nAnzahl: 50\nGründe: Das Modell ist das günstigste und leistungsfähigste unter den verfügbaren 737 MAX-Flugzeugen. Es bietet einen sehr hohen Passagierkomfort mit einer Reichweite von über 4.000 km, was einen Großteil der wünschenswerten Ziele abdeckt. Mit einem Kaufpreis von rund 39 Millionen AS$ und einem Security Deposit von 19,46 Millionen AS$ ist es auch relativ erschwinglich zum Leasing. Die zusätzlichen Kosten für die Bestuhlung würden auf etwa 250 Millionen AS$ kommen, wodurch der Gewinn pro Flugzeug und Passagier hoch ist. Zudem bietet es sich aufgrund seiner Eigenschaften hervorragend für den schnellen Wachstum einer Airline an.\nSecurity Deposits: 97,300,000 AS$\nWochenkosten: 1,946,400 AS$ (ab Woche 2)",
+        "aiSecurityEstimate": 0,
+        "aiWeeklyEstimate": 1946400,
+        "analyzedAircraftCount": 2,
+        "totalAircraftInFamily": 6,
+        "decisionId": "mdu6v94by0ke9jzgdeh",
+        "balanceCheck": {
+          "amount": 10000000,
+          "currency": "AS$",
+          "rawAmount": "10,000,000",
+          "isPositive": true,
+          "timestamp": "2025-08-02T11:48:21.610Z",
+          "url": "https://free2.airlinesim.aero/action/portal/index",
+          "canAfford": false,
+          "affordabilityRatio": 0.10275380189066996
+        }
+      },
+      "stationRecommendation": null,
+      "totalInitialCost": 97320000,
+      "totalWeeklyCost": 9732000,
+      "aircraftDecisionId": "mdu6v94by0ke9jzgdeh",
+      "budgetAnalysis": {
+        "initialBalance": 10000000,
+        "afterAircraft": -87320000,
+        "afterStation": -87320000,
+        "canAffordBoth": false
+      }
+    },
+    "outcome": null,
+    "profitability": null
+  },
+  {
+    "id": "mdum7nr8nqlo4lko0t",
+    "timestamp": "2025-08-02T18:57:54.692Z",
+    "category": "aircraft_leasing",
+    "decision": "AI empfiehlt Leasing: Boeing 737-8 (10x) für QuestAir",
+    "reasoning": "AI-Empfehlung basierend auf Modell-Analyse",
+    "data": {
+      "airline": {
+        "name": "QuestAir",
+        "code": "QXX",
+        "hub": "SFO"
+      },
+      "availableOptions": 181,
+      "budget": 8000000,
+      "totalSecurityDeposit": 19464000,
+      "weeklyRateCost": 1946400,
+      "currentBalance": 10000000,
+      "canAfford": false,
+      "affordabilityRatio": 0.5137690094533498,
+      "leasingType": "two_stage_analysis",
+      "familyChosen": "737 MAX",
+      "analyzedAircraftCount": 2,
+      "totalAircraftInFamily": 6
+    },
+    "outcome": "simulated_success",
+    "profitability": 8.5,
+    "updatedAt": "2025-08-02T18:57:56.695Z"
+  },
+  {
+    "id": "mdum8itf1pzga1ugr0n",
+    "timestamp": "2025-08-02T18:58:34.947Z",
+    "category": "station_management",
+    "decision": "AI empfiehlt Station: Los Angeles International Airport (LAX) für Boeing 737-8",
+    "reasoning": "Los Angeles ist einer der größten Städte in den USA und verfügt über eine hohe Passagiernachfrage. Außerdem hat LAX eine gute Anbindung an weitere internationale Ziele, was die Expansion der Airline erleichtern würde.",
+    "data": {
+      "aircraftInfo": {
+        "model": "Boeing 737-8",
+        "quantity": 10,
+        "passengers": 189,
+        "range": "2,215-4,939 km"
+      },
+      "selectedStation": {
+        "rank": 1,
+        "name": "Los Angeles International Airport",
+        "code": "LAX",
+        "country": "USA",
+        "reasoning": "Los Angeles ist einer der größten Städte in den USA und verfügt über eine hohe Passagiernachfrage. Außerdem hat LAX eine gute Anbindung an weitere internationale Ziele, was die Expansion der Airline erleichtern würde.",
+        "route": "SFO ↔ LAX",
+        "expectedPassengers": 100,
+        "estimatedCost": 0
+      },
+      "budget": {
+        "availableForOperations": -9464000,
+        "remaining": -9464000,
+        "afterAircraft": -9464000,
+        "stationCosts": 0,
+        "personalCosts": 0
+      },
+      "totalRecommendations": 5,
+      "existingStations": 1,
+      "route": "SFO ↔ LAX",
+      "expectedPassengers": 100
+    },
+    "outcome": null,
+    "profitability": null
+  },
+  {
+    "id": "mdum8ivgntv7s1y9cx",
+    "timestamp": "2025-08-02T18:58:35.020Z",
+    "category": "integrated_airline_management",
+    "decision": "Vollständiges Airline Setup: Boeing 737-8 + Los Angeles International Airport",
+    "reasoning": "AI empfiehlt 10x Boeing 737-8 und Station LAX für optimalen Start",
+    "data": {
+      "aircraftRecommendation": {
+        "model": "Boeing 737-8",
+        "aircraft": {
+          "model": "Boeing 737-8",
+          "family": "737 MAX",
+          "passengers": 189,
+          "cargo": "7,267 kg",
+          "range": "2,215-4,939 km",
+          "speed": "840 km/h",
+          "priceText": "38,928,000 AS$",
+          "purchasePrice": 38928000,
+          "securityDeposit": 1946400,
+          "weeklyRate": 194640,
+          "initialCost": 1946400,
+          "available": true,
+          "onAuction": 258
+        },
+        "quantity": 10,
+        "reasoning": "AI-Empfehlung basierend auf Modell-Analyse",
+        "familyChoice": {
+          "selectedFamily": {
+            "name": "737 MAX",
+            "aircraft": [
+              {
+                "model": "Boeing 737-8",
+                "family": "737 MAX",
+                "passengers": 189,
+                "cargo": "7,267 kg",
+                "range": "2,215-4,939 km",
+                "speed": "840 km/h",
+                "priceText": "38,928,000 AS$",
+                "purchasePrice": 38928000,
+                "securityDeposit": 1946400,
+                "weeklyRate": 194640,
+                "initialCost": 1946400,
+                "available": true,
+                "onAuction": 258
+              },
+              {
+                "model": "Boeing 737-8-200",
+                "family": "737 MAX",
+                "passengers": 210,
+                "cargo": "7,267 kg",
+                "range": "2,215-4,939 km",
+                "speed": "840 km/h",
+                "priceText": "39,033,000 AS$",
+                "purchasePrice": 39033000,
+                "securityDeposit": 1951650,
+                "weeklyRate": 195165,
+                "initialCost": 1951650,
+                "available": true,
+                "onAuction": 70
+              },
+              {
+                "model": "Boeing 737-9",
+                "family": "737 MAX",
+                "passengers": 220,
+                "cargo": "8,617 kg",
+                "range": "3,350-6,450 km",
+                "speed": "840 km/h",
+                "priceText": "40,959,000 AS$",
+                "purchasePrice": 40959000,
+                "securityDeposit": 2047950,
+                "weeklyRate": 204795,
+                "initialCost": 2047950,
+                "available": true,
+                "onAuction": 10
+              },
+              {
+                "model": "Boeing 737-8 HGW",
+                "family": "737 MAX",
+                "passengers": 189,
+                "cargo": "7,267 kg",
+                "range": "4,650-8,180 km",
+                "speed": "840 km/h",
+                "priceText": "46,542,000 AS$",
+                "purchasePrice": 46542000,
+                "securityDeposit": 2327100,
+                "weeklyRate": 232710,
+                "initialCost": 2327100,
+                "available": true,
+                "onAuction": 273
+              },
+              {
+                "model": "Boeing 737-8-200 HGW",
+                "family": "737 MAX",
+                "passengers": 210,
+                "cargo": "7,267 kg",
+                "range": "4,650-8,180 km",
+                "speed": "840 km/h",
+                "priceText": "46,647,000 AS$",
+                "purchasePrice": 46647000,
+                "securityDeposit": 2332350,
+                "weeklyRate": 233235,
+                "initialCost": 2332350,
+                "available": true,
+                "onAuction": 31
+              },
+              {
+                "model": "Boeing 737-9 HGW",
+                "family": "737 MAX",
+                "passengers": 220,
+                "cargo": "8,617 kg",
+                "range": "5,350-7,750 km",
+                "speed": "840 km/h",
+                "priceText": "50,845,000 AS$",
+                "purchasePrice": 50845000,
+                "securityDeposit": 2542250,
+                "weeklyRate": 254225,
+                "initialCost": 2542250,
+                "available": true,
+                "onAuction": 146
+              }
+            ],
+            "minSecurityDeposit": 1946400,
+            "maxSecurityDeposit": 2542250,
+            "minPassengers": 189,
+            "maxPassengers": 220,
+            "totalModels": 6
+          },
+          "reasoning": "Die Boeing 737 MAX Family bietet das beste Preis-Leistungs-Verhältnis und ist ideal für den Aufbau einer profitablen Fluggesellschaft am Hub SFO. Sie ermöglicht es, schnell und kosteneffizient viele Flüge anzubieten, was zu hohen Umsätzen führt.",
+          "targetPassengers": 150,
+          "aiResponse": " FAMILIE: Boeing 737 MAX\nGRUND: Die Boeing 737 MAX Family bietet das beste Preis-Leistungs-Verhältnis und ist ideal für den Aufbau einer profitablen Fluggesellschaft am Hub SFO. Sie ermöglicht es, schnell und kosteneffizient viele Flüge anzubieten, was zu hohen Umsätzen führt.\nPASSAGIER_ZIEL: [189 Passagiere]"
+        },
+        "totalSecurityDeposit": 19464000,
+        "weeklyRateCost": 1946400,
+        "securityDepositPerUnit": 1946400,
+        "weeklyRatePerUnit": 194640,
+        "totalCost": 19464000,
+        "pricePerUnit": 1946400,
+        "aiResponse": " Empfehlung: Boeing 737-8\nAnzahl: 10\nGründe: Das Boeing 737-8 Modell ist das günstigste und am besten geeignete Flugzeugmodell zur Aufnahme eines erfolgreichen Airline-Unternehmens. Es bietet eine hohe Profitabilität pro Flug, schnelle Wachstumsraten und verfügt über einen hohen Aktionsradius von 2.215 bis 4.939 km. Zusätzlich zum günstigen Kaufpreis und niedrigen Unterhaltskosten ist es mit 189 Passagieren für eine optimale Auslastung gut geeignet. Mit diesem Modell können wir ein AirlineSim-Unternehmen aufbauen, das in der Lage ist, einen hohen Gewinn zu erwirtschaften und eine Marktführerschaft zu erlangen.\nSecurity Deposits: 1,946,400 AS$ (für 10 Flugzeuge)\nWochenkosten: 194,640 AS$ (ab Woche 2 für jedes Flugzeug)",
+        "aiSecurityEstimate": 0,
+        "aiWeeklyEstimate": 194640,
+        "analyzedAircraftCount": 2,
+        "totalAircraftInFamily": 6,
+        "decisionId": "mdum7nr8nqlo4lko0t",
+        "balanceCheck": {
+          "amount": 10000000,
+          "currency": "AS$",
+          "rawAmount": "10,000,000",
+          "isPositive": true,
+          "timestamp": "2025-08-02T18:57:54.691Z",
+          "url": "https://free2.airlinesim.aero/action/portal/index",
+          "canAfford": false,
+          "affordabilityRatio": 0.5137690094533498
+        }
+      },
+      "stationRecommendation": {
+        "rank": 1,
+        "name": "Los Angeles International Airport",
+        "code": "LAX",
+        "country": "USA",
+        "reasoning": "Los Angeles ist einer der größten Städte in den USA und verfügt über eine hohe Passagiernachfrage. Außerdem hat LAX eine gute Anbindung an weitere internationale Ziele, was die Expansion der Airline erleichtern würde.",
+        "route": "SFO ↔ LAX",
+        "expectedPassengers": 100,
+        "estimatedCost": 0
+      },
+      "totalInitialCost": 19464000,
+      "totalWeeklyCost": 1946400,
+      "aircraftDecisionId": "mdum7nr8nqlo4lko0t",
+      "stationDecisionId": "mdum8itf1pzga1ugr0n",
+      "budgetAnalysis": {
+        "initialBalance": 10000000,
+        "afterAircraft": -9464000,
+        "afterStation": -9464000,
+        "canAffordBoth": false
+      }
+    },
+    "outcome": null,
+    "profitability": null
   }
 ]

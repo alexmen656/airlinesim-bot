@@ -144,6 +144,20 @@ class DecisionLogger {
         return report;
     }
 
+    getAnalytics() {
+        const logs = this.readLogFile();
+        const totalDecisions = logs.length;
+        const successfulDecisions = logs.filter(log => log.outcome === 'success').length;
+        const categories = [...new Set(logs.map(log => log.category))];
+        
+        return {
+            totalDecisions,
+            successRate: totalDecisions > 0 ? successfulDecisions / totalDecisions : 0,
+            categories,
+            recentDecisions: logs.slice(-5)
+        };
+    }
+
     generateId() {
         return Date.now().toString(36) + Math.random().toString(36).substr(2);
     }

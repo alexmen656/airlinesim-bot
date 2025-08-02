@@ -50,7 +50,7 @@ Für Hub ${this.airlineConfig.airlineInfo.hub}:
 WICHTIG: 
 - Fokus auf PROFITABILITÄT und SKALIERBARKEIT, aber INNERHALB des Budgets!
 - NIEMALS mehr als 70% des Budgets für Security Deposits verwenden!
-- Berücksichtige ZUSÄTZLICHE Kosten: Bestuhlung (50k-200k AS$) + Personal (100k-300k AS$/Jahr)
+- Berücksichtige ZUSÄTZLICHE Kosten: Bestuhlung (50k-200k AS$)
 - Welche Familie bietet das beste Verhältnis aus Gewinn pro Flug und erschwinglichen Startkosten?
 - Berücksichtige Hub-Größe und lukrative Routen-Möglichkeiten
 - Erste Woche Leasing ist kostenlos!
@@ -184,7 +184,7 @@ Für Hub ${this.airlineConfig.airlineInfo.hub}:
 WICHTIG: 
 - BUDGET-LIMIT: Security Deposit + Bestuhlung DARF NICHT mehr als 70% des Budgets betragen!
 - Fokus auf PROFITABILITÄT pro Flug, aber nur erschwingliche Optionen wählen!
-- Berücksichtige ZUSÄTZLICHE Kosten: Bestuhlung (50k-200k AS$) + Personal (100k-300k AS$/Jahr)
+- Berücksichtige ZUSÄTZLICHE Kosten: Bestuhlung (50k-200k AS$)
 - Welches Modell bietet das beste Verhältnis aus Gewinn und erschwinglichen Gesamtkosten?
 - Erste Woche Leasing ist kostenlos!
 - Ab Woche 2: Wochenrate pro Flugzeug
