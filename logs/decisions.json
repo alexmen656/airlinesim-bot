@@ -296,5 +296,141 @@
     "outcome": "simulated_success",
     "profitability": 8.5,
     "updatedAt": "2025-08-02T10:32:15.305Z"
+  },
+  {
+    "id": "mdu4ftwhw9q9wlvo8q8",
+    "timestamp": "2025-08-02T10:40:22.817Z",
+    "category": "aircraft_leasing",
+    "decision": "AI empfiehlt Leasing: De Havilland DHC-6-400 (1x) für QuestAir",
+    "reasoning": "AI-Empfehlung basierend auf Modell-Analyse",
+    "data": {
+      "airline": {
+        "name": "QuestAir",
+        "code": "QXX",
+        "hub": "SFO"
+      },
+      "availableOptions": 181,
+      "budget": 8000000,
+      "totalSecurityDeposit": 183350,
+      "weeklyRateCost": 18335,
+      "currentBalance": 10000000,
+      "canAfford": true,
+      "affordabilityRatio": 54.540496318516496,
+      "leasingType": "two_stage_analysis",
+      "familyChosen": "DHC-6",
+      "analyzedAircraftCount": 1,
+      "totalAircraftInFamily": 1
+    },
+    "outcome": "simulated_success",
+    "profitability": 8.5,
+    "updatedAt": "2025-08-02T10:40:24.821Z"
+  },
+  {
+    "id": "mdu4mm5gc22t178qdmv",
+    "timestamp": "2025-08-02T10:45:39.364Z",
+    "category": "aircraft_leasing",
+    "decision": "AI empfiehlt Leasing: Tupolev TU-204-300 (2x) für QuestAir",
+    "reasoning": "AI-Empfehlung basierend auf Modell-Analyse",
+    "data": {
+      "airline": {
+        "name": "QuestAir",
+        "code": "QXX",
+        "hub": "SFO"
+      },
+      "availableOptions": 181,
+      "budget": 8000000,
+      "totalSecurityDeposit": 5543300,
+      "weeklyRateCost": 554330,
+      "currentBalance": 10000000,
+      "canAfford": true,
+      "affordabilityRatio": 1.8039795789511663,
+      "leasingType": "two_stage_analysis",
+      "familyChosen": "TU-204/214",
+      "analyzedAircraftCount": 1,
+      "totalAircraftInFamily": 5
+    },
+    "outcome": "simulated_success",
+    "profitability": 8.5,
+    "updatedAt": "2025-08-02T10:45:41.367Z"
+  },
+  {
+    "id": "mdu4pn8j96b7s3uvvj",
+    "timestamp": "2025-08-02T10:48:00.739Z",
+    "category": "aircraft",
+    "decision": "Fleet-Management Fehler",
+    "reasoning": "Fehler aufgetreten: log is not defined",
+    "data": {
+      "error": "ReferenceError: log is not defined\n    at AircraftAIAnalyzer.chooseBestFamily (/Users/alexpolan/Projects/airlinesim-bot2/services/aircraftAIAnalyzer.js:59:17)\n    at AircraftAIAnalyzer.analyzeAircraftChoice (/Users/alexpolan/Projects/airlinesim-bot2/services/aircraftAIAnalyzer.js:264:41)\n    at SimpleAircraftManager.analyzeAircraftChoice (/Users/alexpolan/Projects/airlinesim-bot2/modules/simpleAircraftManager.js:113:62)\n    at async SimpleAircraftManager.manageFleet (/Users/alexpolan/Projects/airlinesim-bot2/modules/simpleAircraftManager.js:174:36)\n    at async /Users/alexpolan/Projects/airlinesim-bot2/simpleLauncher.js:58:24"
+    },
+    "outcome": null,
+    "profitability": null
+  },
+  {
+    "id": "mdu4pnb8jqrlb1j8wpt",
+    "timestamp": "2025-08-02T10:48:00.836Z",
+    "category": "system",
+    "decision": "Bot execution failed",
+    "reasoning": "Error occurred: log is not defined",
+    "data": {
+      "error": "ReferenceError: log is not defined\n    at AircraftAIAnalyzer.chooseBestFamily (/Users/alexpolan/Projects/airlinesim-bot2/services/aircraftAIAnalyzer.js:59:17)\n    at AircraftAIAnalyzer.analyzeAircraftChoice (/Users/alexpolan/Projects/airlinesim-bot2/services/aircraftAIAnalyzer.js:264:41)\n    at SimpleAircraftManager.analyzeAircraftChoice (/Users/alexpolan/Projects/airlinesim-bot2/modules/simpleAircraftManager.js:113:62)\n    at async SimpleAircraftManager.manageFleet (/Users/alexpolan/Projects/airlinesim-bot2/modules/simpleAircraftManager.js:174:36)\n    at async /Users/alexpolan/Projects/airlinesim-bot2/simpleLauncher.js:58:24"
+    },
+    "outcome": null,
+    "profitability": null
+  },
+  {
+    "id": "mdu4rhqndmyx3elmkxh",
+    "timestamp": "2025-08-02T10:49:26.927Z",
+    "category": "aircraft_leasing",
+    "decision": "AI empfiehlt Leasing: Airbus A319neo heavy (5x) für QuestAir",
+    "reasoning": "AI-Empfehlung basierend auf Modell-Analyse",
+    "data": {
+      "airline": {
+        "name": "QuestAir",
+        "code": "QXX",
+        "hub": "SFO"
+      },
+      "availableOptions": 181,
+      "budget": 8000000,
+      "totalSecurityDeposit": 10966500,
+      "weeklyRateCost": 1096650,
+      "currentBalance": 10000000,
+      "canAfford": false,
+      "affordabilityRatio": 0.911867961519172,
+      "leasingType": "two_stage_analysis",
+      "familyChosen": "A319 / A320 / A321 NEO",
+      "analyzedAircraftCount": 7,
+      "totalAircraftInFamily": 11
+    },
+    "outcome": "simulated_success",
+    "profitability": 8.5,
+    "updatedAt": "2025-08-02T10:49:28.930Z"
+  },
+  {
+    "id": "mdu4z3fx6u5pzy777e9",
+    "timestamp": "2025-08-02T10:55:21.645Z",
+    "category": "aircraft_leasing",
+    "decision": "AI empfiehlt Leasing: Boeing 737-8 HGW (10x) für QuestAir",
+    "reasoning": "AI-Empfehlung basierend auf Modell-Analyse",
+    "data": {
+      "airline": {
+        "name": "QuestAir",
+        "code": "QXX",
+        "hub": "SFO"
+      },
+      "availableOptions": 181,
+      "budget": 8000000,
+      "totalSecurityDeposit": 23271000,
+      "weeklyRateCost": 2327100,
+      "currentBalance": 10000000,
+      "canAfford": false,
+      "affordabilityRatio": 0.4297193932362168,
+      "leasingType": "two_stage_analysis",
+      "familyChosen": "737 MAX",
+      "analyzedAircraftCount": 6,
+      "totalAircraftInFamily": 6
+    },
+    "outcome": "simulated_success",
+    "profitability": 8.5,
+    "updatedAt": "2025-08-02T10:55:23.649Z"
   }
 ]
