@@ -212,5 +212,89 @@
     "outcome": "simulated_success",
     "profitability": 8.5,
     "updatedAt": "2025-08-01T22:07:15.222Z"
+  },
+  {
+    "id": "mdtdq0nqmlqiq56cugi",
+    "timestamp": "2025-08-01T22:12:28.502Z",
+    "category": "aircraft_leasing",
+    "decision": "AI empfiehlt Leasing: LET 410UVP (3x) für QuestAir",
+    "reasoning": "AI-Empfehlung basierend auf Modell-Analyse",
+    "data": {
+      "airline": {
+        "name": "QuestAir",
+        "code": "QXX",
+        "hub": "SFO"
+      },
+      "availableOptions": 181,
+      "budget": 8000000,
+      "totalSecurityDeposit": 710550,
+      "weeklyRateCost": 71055,
+      "currentBalance": 10000000,
+      "canAfford": true,
+      "affordabilityRatio": 14.073604953908944,
+      "leasingType": "two_stage_analysis",
+      "familyChosen": "410",
+      "analyzedAircraftCount": 2,
+      "totalAircraftInFamily": 2
+    },
+    "outcome": "simulated_success",
+    "profitability": 8.5,
+    "updatedAt": "2025-08-01T22:12:30.504Z"
+  },
+  {
+    "id": "mdtdrous4c7yxa7k6ew",
+    "timestamp": "2025-08-01T22:13:46.516Z",
+    "category": "aircraft_leasing",
+    "decision": "AI empfiehlt Leasing: De Havilland DHC-6-400 (1x) für QuestAir",
+    "reasoning": "AI-Empfehlung basierend auf Modell-Analyse",
+    "data": {
+      "airline": {
+        "name": "QuestAir",
+        "code": "QXX",
+        "hub": "SFO"
+      },
+      "availableOptions": 181,
+      "budget": 8000000,
+      "totalSecurityDeposit": 183350,
+      "weeklyRateCost": 18335,
+      "currentBalance": 10000000,
+      "canAfford": true,
+      "affordabilityRatio": 54.540496318516496,
+      "leasingType": "two_stage_analysis",
+      "familyChosen": "DHC-6",
+      "analyzedAircraftCount": 1,
+      "totalAircraftInFamily": 1
+    },
+    "outcome": "simulated_success",
+    "profitability": 8.5,
+    "updatedAt": "2025-08-01T22:13:48.518Z"
+  },
+  {
+    "id": "mdu45c6u27f9grkd157",
+    "timestamp": "2025-08-02T10:32:13.302Z",
+    "category": "aircraft_leasing",
+    "decision": "AI empfiehlt Leasing: Britten-Norman BN-2B-26 Islander (10x) für QuestAir",
+    "reasoning": "AI-Empfehlung basierend auf Modell-Analyse",
+    "data": {
+      "airline": {
+        "name": "QuestAir",
+        "code": "QXX",
+        "hub": "SFO"
+      },
+      "availableOptions": 181,
+      "budget": 8000000,
+      "totalSecurityDeposit": 1224500,
+      "weeklyRateCost": 122450,
+      "currentBalance": 10000000,
+      "canAfford": true,
+      "affordabilityRatio": 8.166598611678236,
+      "leasingType": "two_stage_analysis",
+      "familyChosen": "Islander / Trislander",
+      "analyzedAircraftCount": 2,
+      "totalAircraftInFamily": 2
+    },
+    "outcome": "simulated_success",
+    "profitability": 8.5,
+    "updatedAt": "2025-08-02T10:32:15.305Z"
   }
 ]

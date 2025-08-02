@@ -1,6 +1,5 @@
 const { createBrowserWithCookies } = require('../services/puppeteerSettings');
 const decisionLogger = require('../services/decisionLogger');
-const aiService = require('../services/aiService');
 const authService = require('../services/authService');
 const { BalanceService } = require('../services/balanceService');
 const { AirlineConfigService } = require('../services/airlineConfigService');
@@ -14,7 +13,7 @@ class SimpleAircraftManager {
         this.balanceService = new BalanceService();
         this.airlineConfig = new AirlineConfigService();
         this.aircraftDataService = new AircraftDataService();
-        this.aircraftAIAnalyzer = null; // Wird nach der Initialisierung erstellt
+        this.aircraftAIAnalyzer = null;
     }
 
     async initialize() {
@@ -24,13 +23,9 @@ class SimpleAircraftManager {
         
         this.airlineInfo = await this.airlineConfig.loadAirlineConfig();
         this.loginInfo = await authService.validateLogin(this.page);
-        
-        // Load current balance on initialization
-        console.log('💰 Loading current account balance...');
         this.currentBalance = await this.balanceService.getCurrentBalance(this.page);
-        await this.balanceService.saveBalanceHistory(this.currentBalance);
 
-        // Erstelle AI Analyzer nach Balance-Load
+        await this.balanceService.saveBalanceHistory(this.currentBalance);
         this.aircraftAIAnalyzer = new AircraftAIAnalyzer(this.airlineConfig, this.currentBalance);
     }
 
@@ -68,9 +63,7 @@ class SimpleAircraftManager {
      * @returns {Object} Balance info with affordability check
      */
     async checkBalanceAndAffordability(requiredAmount = null) {
-        try {
-            console.log('💰 Checking current balance...');
-            
+        try {            
             // Update current balance
             this.currentBalance = await this.balanceService.getCurrentBalance(this.page);
             await this.balanceService.saveBalanceHistory(this.currentBalance);
@@ -117,14 +110,12 @@ class SimpleAircraftManager {
 
         this.aircraftAIAnalyzer.currentBalance = this.currentBalance;
         
-        // Verwende die neue zweistufige AI-Analyse
         const recommendation = await this.aircraftAIAnalyzer.analyzeAircraftChoice(
             availableAircraft, 
             this.aircraftDataService, 
             budget
         );
         
-        // Check if we can afford the recommendation (Security Deposits)
         const affordabilityCheck = await this.checkBalanceAndAffordability(recommendation.totalSecurityDeposit);
         
         // Log decision with balance info
@@ -154,10 +145,6 @@ class SimpleAircraftManager {
     async manageFleet() {
         try {
             await this.initialize();
-
-            console.log('🚀 Starte Fleet-Management...');
-            
-            // 1. Prüfe aktuellen Fleet-Status
             const fleetStatus = await this.checkFleetStatus();
             
             if (!fleetStatus.isEmpty) {
@@ -199,8 +186,7 @@ class SimpleAircraftManager {
             console.log('   💰 LEASING-KOSTEN:');
             console.log(`     Security Deposit (einmalig): ${recommendation.totalSecurityDeposit.toLocaleString()} AS$`);
             console.log(`     Wochenrate (ab Woche 2): ${recommendation.weeklyRateCost.toLocaleString()} AS$/Woche`);
-            console.log(`     Erste Woche: KOSTENLOS`);
-            console.log(`   Begründung: ${recommendation.reasoning}`);
+            console.log(`     Begründung: ${recommendation.reasoning}`);
             
             // Balance-Check anzeigen
             if (recommendation.balanceCheck) {
@@ -214,12 +200,6 @@ class SimpleAircraftManager {
             }
 
             // 4. Hier würde das tatsächliche Leasing stattfinden
-            console.log('\n💡 SIMULATION: Flugzeug-Leasing würde jetzt durchgeführt');
-            console.log('   (Echtes Leasing kann implementiert werden)');
-            console.log('   📋 Nächste Schritte:');
-            console.log(`     1. Security Deposit zahlen: ${recommendation.totalSecurityDeposit.toLocaleString()} AS$`);
-            console.log(`     2. Erste Woche: Kostenlos fliegen`);
-            console.log(`     3. Ab Woche 2: ${recommendation.weeklyRateCost.toLocaleString()} AS$ pro Woche zahlen`);
 
             // Update decision outcome
             setTimeout(() => {
@@ -252,7 +232,6 @@ class SimpleAircraftManager {
         }
     }
 
-    // Hilfsfunktionen
     parsePrice(priceString) {
         return parseInt(priceString.replace(/[^\d]/g, '')) || 0;
     }
