@@ -6,98 +6,74 @@ class AircraftAIAnalyzer {
         this.currentBalance = currentBalance;
     }
 
-    /**
-     * Schritt 1: AI wählt die beste Flugzeugfamilie aus
-     */
     async chooseBestFamily(familyGroups, budget) {
-        console.log('🧠 AI Schritt 1: Wähle beste Flugzeugfamilie...');
-        
-        const prompt = `
-Du bist ein AirlineSim-Experte. Wähle die BESTE Flugzeugfamilie für eine neue Airline mit dem strategischen Ziel, eine HOCHPROFITABLE und GROSSE Airline aufzubauen.
+        console.log('Wähle beste Flugzeugfamilie...');
 
-STRATEGISCHE ZIELE:
-- Maximale Profitabilität pro Flug und Passagier
-- Schnelles Wachstum und Skalierbarkeit
-- Aufbau einer großen, dominanten Airline
-- Langfristige Marktführerschaft anstreben
+        const prompt = `Wähle die beste Flugzeugfamilie für Hub ${this.airlineConfig.airlineInfo.hub} mit Budget ${budget.toLocaleString()} AS$.
 
-Verfügbares Budget: ${budget.toLocaleString()} AS$ (aktueller Kontostand: ${this.currentBalance.amount.toLocaleString()} AS$)
+            VERFÜGBARE FAMILIEN:
+            ${familyGroups.map((group, i) =>
+            `${i + 1}. ${group.name}
+            Passagiere: ${group.minPassengers}-${group.maxPassengers}
+            Security Deposit: ${group.minSecurityDeposit.toLocaleString()}-${group.maxSecurityDeposit.toLocaleString()} AS$`
+        ).join('\n')}
 
-LEASING-KONDITIONEN:
-- Security Deposit: 1/20 des Kaufpreises (einmalig zu zahlen)
-- Wöchentliche Rate: 1/200 des Kaufpreises (erste Woche KOSTENLOS)
-- Sofortige Kosten = nur Security Deposit
+            REGEL: Security Deposit + Bestuhlung (50k-200k AS$) < 80% Budget
 
-ZUSÄTZLICHE KOSTEN PRO FLUGZEUG:
-- Bestuhlung: ~50,000-200,000 AS$ pro Flugzeug (je nach Größe)
+            Du MUSST zB exakt so antworten:
+            FAMILIE: A319 / A320 / A321 NEO
+            GRUND: Beste Profitabilität für mittelstrecken
+            PASSAGIER_ZIEL: 180
 
-BUDGET-REGEL: Wähle NUR Flugzeuge wo Security Deposit + Bestuhlung < 70% des Budgets!
+            oder: 
 
-Verfügbare Flugzeugfamilien:
-${familyGroups.map((group, i) => 
-    `${i+1}. ${group.name}
-   - Anzahl Modelle: ${group.totalModels}
-   - Passagiere: ${group.minPassengers} - ${group.maxPassengers}
-   - Security Deposit Spanne: ${group.minSecurityDeposit.toLocaleString()} - ${group.maxSecurityDeposit.toLocaleString()} AS$
-   - Günstigstes Modell: ${group.minSecurityDeposit.toLocaleString()} AS$ Security Deposit`
-).join('\n\n')}
+            FAMILIE: 787
+            GRUND: Ideal für Langstrecken
+            PASSAGIER_ZIEL: 240
 
-Für Hub ${this.airlineConfig.airlineInfo.hub}:
-- Welche Familie ist am besten für Leasing zum Aufbau einer HOCHPROFITABLEN und GROSSEN Airline?
-- Warum genau diese Familie für maximale Profitabilität und Wachstum in ${this.airlineConfig.airlineInfo.hub}?
-- Welche Größenkategorie (Passagiere) ist optimal für hohe Gewinne und schnelle Expansion?
-
-WICHTIG: 
-- Fokus auf PROFITABILITÄT und SKALIERBARKEIT, aber INNERHALB des Budgets!
-- NIEMALS mehr als 70% des Budgets für Security Deposits verwenden!
-- Berücksichtige ZUSÄTZLICHE Kosten: Bestuhlung (50k-200k AS$)
-- Welche Familie bietet das beste Verhältnis aus Gewinn pro Flug und erschwinglichen Startkosten?
-- Berücksichtige Hub-Größe und lukrative Routen-Möglichkeiten
-- Erste Woche Leasing ist kostenlos!
-
-ANTWORTE NUR MIT:
-FAMILIE: [Exakter Familienname]
-GRUND: [Kurze präzise Begründung in 1-2 Sätzen]
-PASSAGIER_ZIEL: [Gewünschte Passagieranzahl für optimales Modell]
-        `;
-
-        console.log('🧠 AI Prompt für Familienwahl:', prompt);
+            WICHTIG: Verwende den EXAKTEN Namen aus der Liste oben! Zum Beispiel:
+            - "A319 / A320 / A321 NEO" (NICHT "A320 NEO")
+            - "737 MAX" (NICHT "Boeing 737 MAX")
+            - "ERJ 135/140/145" (NICHT "Embraer ERJ")`;
 
         const aiResponse = await aiService.generateText(prompt);
-        console.log('🤖 AI Familie-Wahl:', aiResponse);
+        console.log('==================================================')
+        console.log('==================================================')
 
-        // Parse AI response
+        console.log('AI Familie-Wahl Prompt:', prompt);
+        console.log('==================================================')
+        console.log('==================================================')
+
+        console.log('AI Familie-Wahl:', aiResponse);
+        console.log('==================================================')
+        console.log('==================================================')
+
         const familienMatch = aiResponse.match(/FAMILIE:\s*(.+)/i);
         const grundMatch = aiResponse.match(/GRUND:\s*(.+?)(?=PASSAGIER_ZIEL:|$)/is);
         const passagierMatch = aiResponse.match(/PASSAGIER_ZIEL:\s*(\d+)/i);
-        
+
         const gewählteFamilie = familienMatch ? familienMatch[1].trim() : '';
         const grund = grundMatch ? grundMatch[1].trim() : 'AI-Empfehlung basierend auf Familie-Analyse';
         const zielPassagiere = passagierMatch ? parseInt(passagierMatch[1]) : 150;
 
-        // Finde die gewählte Familie
-        let selectedFamily = familyGroups.find(group => 
+        let selectedFamily = familyGroups.find(group =>
             group.name.toLowerCase() === gewählteFamilie.toLowerCase()
         );
 
-        // Fallback: Partial match
         if (!selectedFamily) {
-            selectedFamily = familyGroups.find(group => 
+            selectedFamily = familyGroups.find(group =>
                 group.name.toLowerCase().includes(gewählteFamilie.toLowerCase()) ||
                 gewählteFamilie.toLowerCase().includes(group.name.toLowerCase())
             );
         }
 
-        // Weiterer Fallback: Familie mit bestem Preis-Leistungs-Verhältnis (nicht nur günstigste)
         if (!selectedFamily && familyGroups.length > 0) {
-            // Finde Familie mit niedrigsten Security Deposits, die ins Budget passen
-            const maxAffordableDeposit = budget * 0.5; // 50% für Security Deposit, Rest für Bestuhlung etc.
-            const affordableFamilies = familyGroups.filter(group => 
+            const maxAffordableDeposit = budget * 0.8;
+            const affordableFamilies = familyGroups.filter(group =>
                 group.minSecurityDeposit <= maxAffordableDeposit
             );
-            
+
             if (affordableFamilies.length > 0) {
-                // Wähle Familie mit bestem Verhältnis: niedrige Kosten aber hohe Passagierzahl
                 selectedFamily = affordableFamilies.reduce((best, current) => {
                     const bestRatio = best.maxPassengers / best.minSecurityDeposit;
                     const currentRatio = current.maxPassengers / current.minSecurityDeposit;
@@ -105,11 +81,7 @@ PASSAGIER_ZIEL: [Gewünschte Passagieranzahl für optimales Modell]
                 });
                 console.warn(`⚠️ Familie "${gewählteFamilie}" nicht gefunden, verwende budgetfreundlichste mit gutem Preis-Leistungs-Verhältnis: ${selectedFamily.name}`);
             } else {
-                // Notfall: Günstigste Familie nehmen
-                selectedFamily = familyGroups.reduce((cheapest, current) => 
-                    current.minSecurityDeposit < cheapest.minSecurityDeposit ? current : cheapest
-                );
-                console.warn(`⚠️ Familie "${gewählteFamilie}" nicht gefunden und keine budgetfreundliche Option verfügbar, verwende günstigste: ${selectedFamily.name}`);
+                console.warn(`⚠️ Familie "${gewählteFamilie}" nicht gefunden und kein Geld`);
             }
         }
 
@@ -121,82 +93,33 @@ PASSAGIER_ZIEL: [Gewünschte Passagieranzahl für optimales Modell]
         };
     }
 
-    /**
-     * Schritt 2: AI wählt das beste spezifische Modell aus der Familie
-     */
     async chooseBestModel(familyAircraft, familyChoice, budget) {
-        console.log('🧠 AI Schritt 2: Wähle bestes Modell aus Familie...');
-        
-        // Filter Flugzeuge nach Zielpassagierzahl (±50 Passagiere Toleranz)
-        const targetPassengers = familyChoice.targetPassengers;
-        const filteredAircraft = familyAircraft.filter(aircraft => 
-            Math.abs(aircraft.passengers - targetPassengers) <= 50
-        );
+        console.log('AI Schritt 2: Wähle bestes Modell aus Familie...');
 
-        // Verwende gefilterte Liste, falls vorhanden, sonst alle
-        const aircraftToAnalyze = filteredAircraft.length > 0 ? filteredAircraft : familyAircraft;
-        
-        // Limitiere auf Top 20 günstigste Modelle um AI-Context zu reduzieren
-        const topAircraft = aircraftToAnalyze
-            .sort((a, b) => a.securityDeposit - b.securityDeposit)
-            .slice(0, 20);
+        const topAircraft = familyAircraft;
 
-        const prompt = `
-Du bist ein AirlineSim-Experte. Wähle das BESTE spezifische Flugzeugmodell aus der Familie "${familyChoice.selectedFamily.name}" mit dem strategischen Ziel, eine HOCHPROFITABLE und GROSSE Airline aufzubauen.
+        const prompt = `Wähle das beste Modell aus Familie "${familyChoice.selectedFamily.name}" für Hub ${this.airlineConfig.airlineInfo.hub} mit Budget ${budget.toLocaleString()} AS$.
 
-STRATEGISCHE ZIELE:
-- Maximale Profitabilität pro Flug und Passagier
-- Schnelles Wachstum und Skalierbarkeit
-- Aufbau einer großen, dominanten Airline
-- Langfristige Marktführerschaft anstreben
+VERFÜGBARE MODELLE:
+${topAircraft.map((aircraft, i) =>
+            `${i + 1}. ${aircraft.model}
+   Passagiere: ${aircraft.passengers} | Reichweite: ${aircraft.range}
+   Security Deposit: ${aircraft.securityDeposit.toLocaleString()} AS$ | Wochenrate: ${aircraft.weeklyRate.toLocaleString()} AS$`
+        ).join('\n')}
 
-Verfügbares Budget: ${budget.toLocaleString()} AS$ (aktueller Kontostand: ${this.currentBalance.amount.toLocaleString()} AS$)
+REGEL: Security Deposits + Bestuhlung < 80% Budget
 
-${this.airlineConfig.getAIContext()}
+Du MUSST exakt so antworten:
 
-LEASING-KONDITIONEN:
-- Security Deposit: 1/20 des Kaufpreises (einmalig zu zahlen)
-- Wöchentliche Rate: 1/200 des Kaufpreises (erste Woche KOSTENLOS)
-- Sofortige Kosten = nur Security Deposit
+EMPFEHLUNG: A320-251N
+ANZAHL: 3
+GRUND: Optimale Größe für profitabilität
+SECURITY_DEPOSITS: 5000000
+WOCHENKOSTEN: 250000
 
-ZUSÄTZLICHE KOSTEN PRO FLUGZEUG:
-- Bestuhlung: ~50,000-200,000 AS$ pro Flugzeug (je nach Größe)
+WICHTIG: Verwende den EXAKTEN Modellnamen aus der Liste oben!
 
-BUDGET-REGEL: Security Deposit + Bestuhlung DARF NICHT mehr als 70% des Budgets betragen!
-
-Verfügbare Modelle in Familie "${familyChoice.selectedFamily.name}" (Top 20 günstigste):
-${topAircraft.map((aircraft, i) => 
-    `${i+1}. ${aircraft.model}
-   - Passagiere: ${aircraft.passengers}
-   - Reichweite: ${aircraft.range}
-   - Geschwindigkeit: ${aircraft.speed}
-   - Kaufpreis: ${aircraft.priceText}
-   - Security Deposit: ${aircraft.securityDeposit.toLocaleString()} AS$ (sofort fällig)
-   - Wochenrate: ${aircraft.weeklyRate.toLocaleString()} AS$ (ab Woche 2)
-   - Gebraucht verfügbar: ${aircraft.onAuction}`
-).join('\n\n')}
-
-Für Hub ${this.airlineConfig.airlineInfo.hub}:
-- Welches Modell ist am besten für LEASING zum Aufbau einer HOCHPROFITABLEN und GROSSEN Airline?
-- Warum genau dieses Modell für maximale Profitabilität und schnelles Wachstum?
-- Wie viele sollten geleast werden für optimalen Start einer großen Airline (Budget reicht nur für Security Deposits!)?
-
-WICHTIG: 
-- BUDGET-LIMIT: Security Deposit + Bestuhlung DARF NICHT mehr als 70% des Budgets betragen!
-- Fokus auf PROFITABILITÄT pro Flug, aber nur erschwingliche Optionen wählen!
-- Berücksichtige ZUSÄTZLICHE Kosten: Bestuhlung (50k-200k AS$)
-- Welches Modell bietet das beste Verhältnis aus Gewinn und erschwinglichen Gesamtkosten?
-- Erste Woche Leasing ist kostenlos!
-- Ab Woche 2: Wochenrate pro Flugzeug
-- Berücksichtige Passagieranzahl für maximale Auslastung und Gewinne
-
-ANTWORTE NUR MIT:
-EMPFEHLUNG: [Exakter Flugzeugname]
-ANZAHL: [Nummer]
-GRUND: [Kurze präzise Begründung in 1-2 Sätzen]
-SECURITY_DEPOSITS: [Gesamte Security Deposits in AS$]
-WOCHENKOSTEN: [Wöchentliche Kosten ab Woche 2 in AS$]
-        `;
+Deine Antwort:`;
 
         const aiResponse = await aiService.generateText(prompt);
         console.log('🤖 AI Modell-Wahl:', aiResponse);
@@ -207,19 +130,19 @@ WOCHENKOSTEN: [Wöchentliche Kosten ab Woche 2 in AS$]
         const grundMatch = aiResponse.match(/GRUND:\s*(.+?)(?=SECURITY_DEPOSITS:|$)/is);
         const securityMatch = aiResponse.match(/SECURITY_DEPOSITS:\s*([\d,]+)/i);
         const wochenMatch = aiResponse.match(/WOCHENKOSTEN:\s*([\d,]+)/i);
-        
+
         const empfohlenerName = empfehlungMatch ? empfehlungMatch[1].trim() : '';
         const anzahl = anzahlMatch ? parseInt(anzahlMatch[1]) : 1;
         const grund = grundMatch ? grundMatch[1].trim() : 'AI-Empfehlung basierend auf Modell-Analyse';
 
         // Finde das Flugzeug in der Familie (exact match zuerst)
-        let recommendedAircraft = topAircraft.find(aircraft => 
+        let recommendedAircraft = topAircraft.find(aircraft =>
             aircraft.model.toLowerCase() === empfohlenerName.toLowerCase()
         );
 
         // Fallback: Partial match
         if (!recommendedAircraft) {
-            recommendedAircraft = topAircraft.find(aircraft => 
+            recommendedAircraft = topAircraft.find(aircraft =>
                 aircraft.model.toLowerCase().includes(empfohlenerName.toLowerCase()) ||
                 empfohlenerName.toLowerCase().includes(aircraft.model.toLowerCase())
             );
@@ -229,10 +152,10 @@ WOCHENKOSTEN: [Wöchentliche Kosten ab Woche 2 in AS$]
         if (!recommendedAircraft && topAircraft.length > 0) {
             // Filtere Flugzeuge die ins Budget passen (Security Deposit + geschätzte Bestuhlung < 70% Budget)
             const maxAffordableDeposit = budget * 0.5; // 50% für Security Deposit, 20% für Bestuhlung
-            const affordableAircraft = topAircraft.filter(aircraft => 
+            const affordableAircraft = topAircraft.filter(aircraft =>
                 aircraft.securityDeposit <= maxAffordableDeposit
             );
-            
+
             if (affordableAircraft.length > 0) {
                 // Wähle Flugzeug mit bestem Verhältnis: Passagiere pro AS$ Security Deposit
                 recommendedAircraft = affordableAircraft.reduce((best, current) => {
@@ -255,7 +178,7 @@ WOCHENKOSTEN: [Wöchentliche Kosten ab Woche 2 in AS$]
         // Validiere AI-Kostenberechnung
         const aiSecurityEstimate = securityMatch ? parseInt(securityMatch[1].replace(/,/g, '')) : 0;
         const aiWeeklyEstimate = wochenMatch ? parseInt(wochenMatch[1].replace(/,/g, '')) : 0;
-        
+
         if (aiSecurityEstimate > 0 && Math.abs(totalSecurityDeposit - aiSecurityEstimate) > totalSecurityDeposit * 0.1) {
             console.warn(`⚠️ AI Security Deposit ungenau: AI sagte ${aiSecurityEstimate.toLocaleString()} AS$, real: ${totalSecurityDeposit.toLocaleString()} AS$`);
         }
@@ -292,7 +215,7 @@ WOCHENKOSTEN: [Wöchentliche Kosten ab Woche 2 in AS$]
      */
     async analyzeAircraftChoice(allAircraft, aircraftDataService, budget = null) {
         console.log('🧠 Starte zweistufige AI-Analyse für Flugzeug-Leasing...');
-        
+
         // Use current balance as budget if not provided - mehr konservativ für zusätzliche Kosten
         if (!budget) {
             budget = Math.floor(this.currentBalance.amount * 0.6); // Use nur 60% für Security Deposits (Rest für Bestuhlung, Personal etc.)
@@ -305,7 +228,7 @@ WOCHENKOSTEN: [Wöchentliche Kosten ab Woche 2 in AS$]
 
         // Schritt 2: AI wählt beste Familie
         const familyChoice = await this.chooseBestFamily(familyGroups, budget);
-        
+
         if (!familyChoice.selectedFamily) {
             throw new Error('AI konnte keine geeignete Flugzeugfamilie finden');
         }
@@ -314,8 +237,8 @@ WOCHENKOSTEN: [Wöchentliche Kosten ab Woche 2 in AS$]
 
         // Schritt 3: AI wählt bestes Modell aus der Familie
         const modelChoice = await this.chooseBestModel(
-            familyChoice.selectedFamily.aircraft, 
-            familyChoice, 
+            familyChoice.selectedFamily.aircraft,
+            familyChoice,
             budget
         );
 
