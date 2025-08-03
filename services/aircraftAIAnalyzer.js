@@ -7,46 +7,49 @@ class AircraftAIAnalyzer {
     }
 
     async chooseBestFamily(familyGroups, budget) {
-        console.log('Wähle beste Flugzeugfamilie...');
+        console.log('Wähle beste Flugzeugfamilie...', true);
 
-        const prompt = `Wähle die beste Flugzeugfamilie für Hub ${this.airlineConfig.airlineInfo.hub} mit Budget ${budget.toLocaleString()} AS$.
+        const prompt = `Du bist ein deutscher AirlineSim-Experte. Antworte NUR auf DEUTSCH!
 
-            VERFÜGBARE FAMILIEN:
-            ${familyGroups.map((group, i) =>
+Hub: ${this.airlineConfig.airlineInfo.hub}
+Budget: ${budget.toLocaleString()} AS$
+
+VERFÜGBARE FAMILIEN:
+${familyGroups.map((group, i) =>
             `${i + 1}. ${group.name}
-            Passagiere: ${group.minPassengers}-${group.maxPassengers}
-            Security Deposit: ${group.minSecurityDeposit.toLocaleString()}-${group.maxSecurityDeposit.toLocaleString()} AS$`
+   Passagiere: ${group.minPassengers}-${group.maxPassengers}
+   Security Deposit: ${group.minSecurityDeposit.toLocaleString()}-${group.maxSecurityDeposit.toLocaleString()} AS$`
         ).join('\n')}
 
-            REGEL: Security Deposit + Bestuhlung (50k-200k AS$) < 80% Budget
+SCHREIBE EXAKT DIESE 3 ZEILEN (auf Deutsch, mit exaktem Familiennamen):
 
-            Du MUSST zB exakt so antworten:
-            FAMILIE: A319 / A320 / A321 NEO
-            GRUND: Beste Profitabilität für mittelstrecken
-            PASSAGIER_ZIEL: 180
+FAMILIE: [Name aus Liste kopieren]
+GRUND: [Deutsche Begründung]
+PASSAGIER_ZIEL: [Zahl]
 
-            oder: 
+BEISPIEL:
+FAMILIE: A319 / A320 / A321 NEO
+GRUND: Beste Profitabilität für Mittelstrecken
+PASSAGIER_ZIEL: 180
 
-            FAMILIE: 787
-            GRUND: Ideal für Langstrecken
-            PASSAGIER_ZIEL: 240
+WICHTIG: 
+- NUR DEUTSCH antworten!
+- EXAKT den Namen aus der Liste kopieren!
+- Keine englischen Wörter!
 
-            WICHTIG: Verwende den EXAKTEN Namen aus der Liste oben! Zum Beispiel:
-            - "A319 / A320 / A321 NEO" (NICHT "A320 NEO")
-            - "737 MAX" (NICHT "Boeing 737 MAX")
-            - "ERJ 135/140/145" (NICHT "Embraer ERJ")`;
+Deine Antwort:`;
 
         const aiResponse = await aiService.generateText(prompt);
-        console.log('==================================================')
-        console.log('==================================================')
+        console.log('==================================================', true)
+        console.log('==================================================', true)
 
-        console.log('AI Familie-Wahl Prompt:', prompt);
-        console.log('==================================================')
-        console.log('==================================================')
+        console.log('AI Familie-Wahl Prompt:', prompt); // Nur in Log-Datei
+        console.log('==================================================', true)
+        console.log('==================================================', true)
 
-        console.log('AI Familie-Wahl:', aiResponse);
-        console.log('==================================================')
-        console.log('==================================================')
+        console.log('AI Familie-Wahl:', aiResponse, true); // Zeigt in Konsole
+        console.log('==================================================', true)
+        console.log('==================================================', true)
 
         const familienMatch = aiResponse.match(/FAMILIE:\s*(.+)/i);
         const grundMatch = aiResponse.match(/GRUND:\s*(.+?)(?=PASSAGIER_ZIEL:|$)/is);
@@ -79,9 +82,9 @@ class AircraftAIAnalyzer {
                     const currentRatio = current.maxPassengers / current.minSecurityDeposit;
                     return currentRatio > bestRatio ? current : best;
                 });
-                console.warn(`⚠️ Familie "${gewählteFamilie}" nicht gefunden, verwende budgetfreundlichste mit gutem Preis-Leistungs-Verhältnis: ${selectedFamily.name}`);
+                console.warn(`⚠️ Familie "${gewählteFamilie}" nicht gefunden, verwende budgetfreundlichste mit gutem Preis-Leistungs-Verhältnis: ${selectedFamily.name}`, true);
             } else {
-                console.warn(`⚠️ Familie "${gewählteFamilie}" nicht gefunden und kein Geld`);
+                console.warn(`⚠️ Familie "${gewählteFamilie}" nicht gefunden und kein Geld`, true);
             }
         }
 
@@ -94,35 +97,44 @@ class AircraftAIAnalyzer {
     }
 
     async chooseBestModel(familyAircraft, familyChoice, budget) {
-        console.log('AI Schritt 2: Wähle bestes Modell aus Familie...');
+        console.log('AI Schritt 2: Wähle bestes Modell aus Familie...', true);
 
-        const topAircraft = familyAircraft;
+        const prompt = `Du bist ein deutscher AirlineSim-Experte. Antworte NUR auf DEUTSCH!
 
-        const prompt = `Wähle das beste Modell aus Familie "${familyChoice.selectedFamily.name}" für Hub ${this.airlineConfig.airlineInfo.hub} mit Budget ${budget.toLocaleString()} AS$.
+Familie: ${familyChoice.selectedFamily.name}
+Hub: ${this.airlineConfig.airlineInfo.hub} 
+Budget: ${budget.toLocaleString()} AS$
 
 VERFÜGBARE MODELLE:
-${topAircraft.map((aircraft, i) =>
+${familyAircraft.map((aircraft, i) =>
             `${i + 1}. ${aircraft.model}
-   Passagiere: ${aircraft.passengers} | Reichweite: ${aircraft.range}
-   Security Deposit: ${aircraft.securityDeposit.toLocaleString()} AS$ | Wochenrate: ${aircraft.weeklyRate.toLocaleString()} AS$`
+   Passagiere: ${aircraft.passengers} | Security Deposit: ${aircraft.securityDeposit.toLocaleString()} AS$`
         ).join('\n')}
 
-REGEL: Security Deposits + Bestuhlung < 80% Budget
+SCHREIBE EXAKT DIESE 5 ZEILEN (auf Deutsch, mit exaktem Modellnamen):
 
-Du MUSST exakt so antworten:
+EMPFEHLUNG: [Modellname aus Liste kopieren]
+ANZAHL: [Zahl]
+GRUND: [Deutsche Begründung]
+SECURITY_DEPOSITS: [Gesamtsumme ohne Punkte]
+WOCHENKOSTEN: [Gesamtsumme ohne Punkte]
 
+BEISPIEL:
 EMPFEHLUNG: A320-251N
-ANZAHL: 3
-GRUND: Optimale Größe für profitabilität
-SECURITY_DEPOSITS: 5000000
-WOCHENKOSTEN: 250000
+ANZAHL: 2
+GRUND: Optimale Größe für profitable Routen
+SECURITY_DEPOSITS: 4000000
+WOCHENKOSTEN: 200000
 
-WICHTIG: Verwende den EXAKTEN Modellnamen aus der Liste oben!
+WICHTIG:
+- NUR DEUTSCH antworten!
+- EXAKT den Modellnamen aus der Liste kopieren!
+- Zahlen ohne Punkte oder Kommas!
 
 Deine Antwort:`;
 
         const aiResponse = await aiService.generateText(prompt);
-        console.log('🤖 AI Modell-Wahl:', aiResponse);
+        console.log('🤖 AI Modell-Wahl:', aiResponse, true); // Zeigt in Konsole
 
         // Parse AI response
         const empfehlungMatch = aiResponse.match(/EMPFEHLUNG:\s*(.+)/i);
@@ -136,23 +148,23 @@ Deine Antwort:`;
         const grund = grundMatch ? grundMatch[1].trim() : 'AI-Empfehlung basierend auf Modell-Analyse';
 
         // Finde das Flugzeug in der Familie (exact match zuerst)
-        let recommendedAircraft = topAircraft.find(aircraft =>
+        let recommendedAircraft = familyAircraft.find(aircraft =>
             aircraft.model.toLowerCase() === empfohlenerName.toLowerCase()
         );
 
         // Fallback: Partial match
         if (!recommendedAircraft) {
-            recommendedAircraft = topAircraft.find(aircraft =>
+            recommendedAircraft = familyAircraft.find(aircraft =>
                 aircraft.model.toLowerCase().includes(empfohlenerName.toLowerCase()) ||
                 empfohlenerName.toLowerCase().includes(aircraft.model.toLowerCase())
             );
         }
 
         // Weiterer Fallback: Budgetfreundliches Flugzeug mit bestem Preis-Leistungs-Verhältnis
-        if (!recommendedAircraft && topAircraft.length > 0) {
+        if (!recommendedAircraft && familyAircraft.length > 0) {
             // Filtere Flugzeuge die ins Budget passen (Security Deposit + geschätzte Bestuhlung < 70% Budget)
             const maxAffordableDeposit = budget * 0.5; // 50% für Security Deposit, 20% für Bestuhlung
-            const affordableAircraft = topAircraft.filter(aircraft =>
+            const affordableAircraft = familyAircraft.filter(aircraft =>
                 aircraft.securityDeposit <= maxAffordableDeposit
             );
 
@@ -166,7 +178,7 @@ Deine Antwort:`;
                 console.warn(`⚠️ Flugzeug "${empfohlenerName}" nicht gefunden, verwende budgetfreundliches mit bestem Preis-Leistungs-Verhältnis: ${recommendedAircraft.model}`);
             } else {
                 // Notfall: Günstigstes Flugzeug
-                recommendedAircraft = topAircraft[0]; // Bereits nach Security Deposit sortiert
+                recommendedAircraft = familyAircraft[0]; // Bereits nach Security Deposit sortiert
                 console.warn(`⚠️ Flugzeug "${empfohlenerName}" nicht gefunden und keine budgetfreundliche Option verfügbar, verwende günstigstes: ${recommendedAircraft.model}`);
             }
         }
@@ -205,37 +217,28 @@ Deine Antwort:`;
             aiSecurityEstimate: aiSecurityEstimate,
             aiWeeklyEstimate: aiWeeklyEstimate,
             // Zusätzliche Infos
-            analyzedAircraftCount: topAircraft.length,
             totalAircraftInFamily: familyAircraft.length
         };
     }
 
-    /**
-     * Kombinierte zweistufige AI-Analyse
-     */
     async analyzeAircraftChoice(allAircraft, aircraftDataService, budget = null) {
-        console.log('🧠 Starte zweistufige AI-Analyse für Flugzeug-Leasing...');
+        console.log('🧠 Starte zweistufige AI-Analyse für Flugzeug-Leasing...', true);
 
-        // Use current balance as budget if not provided - mehr konservativ für zusätzliche Kosten
         if (!budget) {
-            budget = Math.floor(this.currentBalance.amount * 0.6); // Use nur 60% für Security Deposits (Rest für Bestuhlung, Personal etc.)
-            console.log(`💰 Using 60% of current balance as budget: ${budget.toLocaleString()} AS$ (Reserve für Bestuhlung & Personal)`);
+            budget = Math.floor(this.currentBalance.amount * 0.8);
         }
 
-        // Schritt 1: Gruppiere Flugzeuge nach Familien
         const familyGroups = aircraftDataService.groupAircraftByFamily(allAircraft);
-        console.log(`📊 Gefunden: ${familyGroups.length} Flugzeugfamilien mit insgesamt ${allAircraft.length} Modellen`);
+        console.log(`📊 Gefunden: ${familyGroups.length} Flugzeugfamilien mit insgesamt ${allAircraft.length} Modellen`, true);
 
-        // Schritt 2: AI wählt beste Familie
         const familyChoice = await this.chooseBestFamily(familyGroups, budget);
 
         if (!familyChoice.selectedFamily) {
             throw new Error('AI konnte keine geeignete Flugzeugfamilie finden');
         }
 
-        console.log(`✅ Familie gewählt: ${familyChoice.selectedFamily.name} (${familyChoice.selectedFamily.totalModels} Modelle)`);
+        console.log(`✅ Familie gewählt: ${familyChoice.selectedFamily.name} (${familyChoice.selectedFamily.totalModels} Modelle)`, true);
 
-        // Schritt 3: AI wählt bestes Modell aus der Familie
         const modelChoice = await this.chooseBestModel(
             familyChoice.selectedFamily.aircraft,
             familyChoice,
@@ -246,8 +249,7 @@ Deine Antwort:`;
             throw new Error(`AI konnte kein geeignetes Modell in Familie ${familyChoice.selectedFamily.name} finden`);
         }
 
-        console.log(`✅ Modell gewählt: ${modelChoice.model} (${modelChoice.quantity}x)`);
-        console.log(`📊 AI analysierte ${modelChoice.analyzedAircraftCount} von ${modelChoice.totalAircraftInFamily} Modellen in der Familie`);
+        console.log(`✅ Modell gewählt: ${modelChoice.model} (${modelChoice.quantity}x)`, true);
 
         return modelChoice;
     }

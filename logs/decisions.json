@@ -8456,5 +8456,221 @@
     },
     "outcome": null,
     "profitability": null
+  },
+  {
+    "id": "mdvv3303u4by5k3zygl",
+    "timestamp": "2025-08-03T15:54:03.891Z",
+    "category": "aircraft_leasing",
+    "decision": "AI empfiehlt Leasing: LET 410UVP (1x) für QuestAir",
+    "reasoning": "AI-Empfehlung basierend auf Modell-Analyse",
+    "data": {
+      "airline": {
+        "name": "QuestAir",
+        "code": "QXX",
+        "hub": "SFO"
+      },
+      "availableOptions": 181,
+      "budget": 8000000,
+      "totalSecurityDeposit": 236850,
+      "weeklyRateCost": 23685,
+      "currentBalance": 10000000,
+      "canAfford": true,
+      "affordabilityRatio": 42.22081486172683,
+      "leasingType": "two_stage_analysis",
+      "familyChosen": "410",
+      "totalAircraftInFamily": 2
+    },
+    "outcome": "simulated_success",
+    "profitability": 8.5,
+    "updatedAt": "2025-08-03T15:54:05.898Z"
+  },
+  {
+    "id": "mdvv8f0w1bu2wkifutn",
+    "timestamp": "2025-08-03T15:58:12.752Z",
+    "category": "aircraft_leasing",
+    "decision": "AI empfiehlt Leasing: LET 410 NG (3x) für QuestAir",
+    "reasoning": "AI-Empfehlung basierend auf Modell-Analyse",
+    "data": {
+      "airline": {
+        "name": "QuestAir",
+        "code": "QXX",
+        "hub": "SFO"
+      },
+      "availableOptions": 181,
+      "budget": 8000000,
+      "totalSecurityDeposit": 790950,
+      "weeklyRateCost": 79095,
+      "currentBalance": 10000000,
+      "canAfford": true,
+      "affordabilityRatio": 12.643024211391365,
+      "leasingType": "two_stage_analysis",
+      "familyChosen": "410",
+      "totalAircraftInFamily": 2
+    },
+    "outcome": "simulated_success",
+    "profitability": 8.5,
+    "updatedAt": "2025-08-03T15:58:14.762Z"
+  },
+  {
+    "id": "mdvvbzacxqy9odhk5a",
+    "timestamp": "2025-08-03T16:00:58.980Z",
+    "category": "aircraft_leasing",
+    "decision": "AI empfiehlt Leasing: Tupolev TU-204-120 (3x) für QuestAir",
+    "reasoning": "Die empfohlene Maschine ist die Tupolev TU-204-120, da sie eine gute Kombination aus Platzangebot und Reichweite bietet. Das Budget von 8,000,000 AS$ ermöglicht es, drei solche Flugzeuge zu mieten, was ideal für Profitabilität ist.",
+    "data": {
+      "airline": {
+        "name": "QuestAir",
+        "code": "QXX",
+        "hub": "SFO"
+      },
+      "availableOptions": 181,
+      "budget": 8000000,
+      "totalSecurityDeposit": 7767450,
+      "weeklyRateCost": 776745,
+      "currentBalance": 10000000,
+      "canAfford": true,
+      "affordabilityRatio": 1.2874238006038017,
+      "leasingType": "two_stage_analysis",
+      "familyChosen": "TU-204/214",
+      "totalAircraftInFamily": 5
+    },
+    "outcome": "simulated_success",
+    "profitability": 8.5,
+    "updatedAt": "2025-08-03T16:01:00.994Z"
+  },
+  {
+    "id": "mdvvhdyevnqik8jnrth",
+    "timestamp": "2025-08-03T16:05:11.270Z",
+    "category": "aircraft_leasing",
+    "decision": "AI empfiehlt Leasing: LET 410UVP (1x) für QuestAir",
+    "reasoning": "AI-Empfehlung basierend auf Modell-Analyse",
+    "data": {
+      "airline": {
+        "name": "QuestAir",
+        "code": "QXX",
+        "hub": "SFO"
+      },
+      "availableOptions": 181,
+      "budget": 8000000,
+      "totalSecurityDeposit": 236850,
+      "weeklyRateCost": 23685,
+      "currentBalance": 10000000,
+      "canAfford": true,
+      "affordabilityRatio": 42.22081486172683,
+      "leasingType": "two_stage_analysis",
+      "familyChosen": "410",
+      "totalAircraftInFamily": 2
+    },
+    "outcome": "simulated_success",
+    "profitability": 8.5,
+    "updatedAt": "2025-08-03T16:05:13.278Z"
+  },
+  {
+    "id": "mdvvltty62hdo4w3vyp",
+    "timestamp": "2025-08-03T16:08:38.470Z",
+    "category": "aircraft_leasing",
+    "decision": "AI empfiehlt Leasing: Airbus A319neo light (1x) für QuestAir",
+    "reasoning": "AI-Empfehlung basierend auf Modell-Analyse",
+    "data": {
+      "airline": {
+        "name": "QuestAir",
+        "code": "QXX",
+        "hub": "SFO"
+      },
+      "availableOptions": 181,
+      "budget": 8000000,
+      "totalSecurityDeposit": 1786700,
+      "weeklyRateCost": 178670,
+      "currentBalance": 10000000,
+      "canAfford": true,
+      "affordabilityRatio": 5.596910505401018,
+      "leasingType": "two_stage_analysis",
+      "familyChosen": "A319 / A320 / A321 NEO",
+      "totalAircraftInFamily": 11
+    },
+    "outcome": "simulated_success",
+    "profitability": 8.5,
+    "updatedAt": "2025-08-03T16:08:40.475Z"
+  },
+  {
+    "id": "mdvvr0q95uazuyw118l",
+    "timestamp": "2025-08-03T16:12:40.689Z",
+    "category": "aircraft_leasing",
+    "decision": "AI empfiehlt Leasing: Airbus A319neo light (1x) für QuestAir",
+    "reasoning": "AI-Empfehlung basierend auf Modell-Analyse",
+    "data": {
+      "airline": {
+        "name": "QuestAir",
+        "code": "QXX",
+        "hub": "SFO"
+      },
+      "availableOptions": 181,
+      "budget": 8000000,
+      "totalSecurityDeposit": 1786700,
+      "weeklyRateCost": 178670,
+      "currentBalance": 10000000,
+      "canAfford": true,
+      "affordabilityRatio": 5.596910505401018,
+      "leasingType": "two_stage_analysis",
+      "familyChosen": "A319 / A320 / A321 NEO",
+      "totalAircraftInFamily": 11
+    },
+    "outcome": "simulated_success",
+    "profitability": 8.5,
+    "updatedAt": "2025-08-03T16:12:42.697Z"
+  },
+  {
+    "id": "mdvw00bwy2eqexyii4f",
+    "timestamp": "2025-08-03T16:19:40.076Z",
+    "category": "aircraft_leasing",
+    "decision": "AI empfiehlt Leasing: Embraer ERJ-145LR (2x) für QuestAir",
+    "reasoning": "Die empfohlene Anzahl von Flugzeugen ist niedriger, um die Kosten zu senken und das Risiko geringer Flotte zu halten. Zudem bietet das Modell gute Kapazität für den gewünschten Hub in SFO.",
+    "data": {
+      "airline": {
+        "name": "QuestAir",
+        "code": "QXX",
+        "hub": "SFO"
+      },
+      "availableOptions": 181,
+      "budget": 8000000,
+      "totalSecurityDeposit": 1462400,
+      "weeklyRateCost": 146240,
+      "currentBalance": 10000000,
+      "canAfford": true,
+      "affordabilityRatio": 6.838074398249453,
+      "leasingType": "two_stage_analysis",
+      "familyChosen": "ERJ 135/140/145",
+      "totalAircraftInFamily": 7
+    },
+    "outcome": "simulated_success",
+    "profitability": 8.5,
+    "updatedAt": "2025-08-03T16:19:42.084Z"
+  },
+  {
+    "id": "mdvw5wp55onmgx2n1mb",
+    "timestamp": "2025-08-03T16:24:15.305Z",
+    "category": "aircraft_leasing",
+    "decision": "AI empfiehlt Leasing: Embraer ERJ-145LR (2x) für QuestAir",
+    "reasoning": "AI-Empfehlung basierend auf Modell-Analyse",
+    "data": {
+      "airline": {
+        "name": "QuestAir",
+        "code": "QXX",
+        "hub": "SFO"
+      },
+      "availableOptions": 181,
+      "budget": 8000000,
+      "totalSecurityDeposit": 1462400,
+      "weeklyRateCost": 146240,
+      "currentBalance": 10000000,
+      "canAfford": true,
+      "affordabilityRatio": 6.838074398249453,
+      "leasingType": "two_stage_analysis",
+      "familyChosen": "ERJ 135/140/145",
+      "totalAircraftInFamily": 7
+    },
+    "outcome": "simulated_success",
+    "profitability": 8.5,
+    "updatedAt": "2025-08-03T16:24:17.311Z"
   }
 ]

@@ -1,0 +1,240 @@
+[2025-08-03T16:23:40.268Z] Starting Integrated AirlineSim Bot
+[2025-08-03T16:23:40.269Z] ====================================================
+[2025-08-03T16:23:40.888Z] Cookies loaded into the browser.
+[2025-08-03T16:23:40.889Z] 🔐 Überprüfe Login-Status...
+[2025-08-03T16:23:44.071Z] 📊 Status für https://free2.airlinesim.aero/app/enterprise/dashboard: {"isLoggedIn":true,"hasLoginElements":false,"hasDashboardElements":true,"currentUrl":"https://free2.airlinesim.aero/app/enterprise/dashboard?0","title":"Dashboard: QuestAir | Free2 | AirlineSim"}
+[2025-08-03T16:23:44.071Z] ✅ Erfolgreich eingeloggt
+[2025-08-03T16:23:44.073Z] ✈️ Eingeloggt als: QuestAir
+[2025-08-03T16:23:44.073Z] ⚖️ Loading current account balance...
+[2025-08-03T16:23:46.820Z] 💰 Current balance: AS$ 10,000,000 (positive)
+[2025-08-03T16:23:46.822Z] 📈 Balance history saved (182 entries total)
+[2025-08-03T16:23:46.822Z] 🔍 Überprüfe aktuellen Fleet-Status...
+[2025-08-03T16:23:49.076Z] 📊 Fleet Status: {"hasDefaultFleet":true,"hasNoAircraft":true,"isEmpty":true}
+[2025-08-03T16:23:49.077Z] ⚠️ Keine Flugzeuge gefunden - AI wird Leasing-Empfehlung geben
+[2025-08-03T16:23:49.078Z] 🔍 Lade verfügbare Flugzeuge...
+[2025-08-03T16:23:49.080Z] 📋 Aircraft-Cache ist gültig (42.7h alt, max 72h)
+[2025-08-03T16:23:49.080Z] ✅ Verwende cached Aircraft-Daten (181 Flugzeuge)
+[2025-08-03T16:23:49.099Z] 💰 Security Deposit Spanne: 122,450 - 12,421,500 AS$
+[2025-08-03T16:23:49.099Z] 🧠 AI analysiert beste Flugzeug-Leasing-Option (2-stufig)...
+[2025-08-03T16:23:49.100Z] ⚖️ Loading current account balance...
+[2025-08-03T16:23:51.731Z] 💰 Current balance: AS$ 10,000,000 (positive)
+[2025-08-03T16:23:51.733Z] 📈 Balance history saved (183 entries total)
+[2025-08-03T16:23:51.733Z] 💰 Using 80% of current balance as budget: 8,000,000 AS$
+[2025-08-03T16:23:51.733Z] 🧠 Starte zweistufige AI-Analyse für Flugzeug-Leasing...
+[2025-08-03T16:23:51.734Z] 📊 Gefunden: 37 Flugzeugfamilien mit insgesamt 181 Modellen
+[2025-08-03T16:23:51.734Z] Wähle beste Flugzeugfamilie...
+[2025-08-03T16:24:05.502Z] ==================================================
+[2025-08-03T16:24:05.502Z] ==================================================
+[2025-08-03T16:24:05.503Z] AI Familie-Wahl Prompt: Du bist ein deutscher AirlineSim-Experte. Antworte NUR auf DEUTSCH!
+
+Hub: SFO
+Budget: 8,000,000 AS$
+
+VERFÜGBARE FAMILIEN:
+1. 410
+   Passagiere: 19-19
+   Security Deposit: 236,850-263,650 AS$
+2. 787
+   Passagiere: 381-440
+   Security Deposit: 6,004,700-6,454,850 AS$
+3. Islander / Trislander
+   Passagiere: 9-9
+   Security Deposit: 122,450-138,700 AS$
+4. 208 Caravan
+   Passagiere: 0-14
+   Security Deposit: 178,650-188,550 AS$
+5. DHC-6
+   Passagiere: 19-19
+   Security Deposit: 183,350-183,350 AS$
+6. AN-28
+   Passagiere: 18-18
+   Security Deposit: 234,350-234,350 AS$
+7. 408 SkyCourier
+   Passagiere: 0-19
+   Security Deposit: 272,150-285,150 AS$
+8. DO228NG
+   Passagiere: 19-19
+   Security Deposit: 272,600-272,600 AS$
+9. PC-12
+   Passagiere: 0-9
+   Security Deposit: 279,950-302,050 AS$
+10. PC-24
+   Passagiere: 10-10
+   Security Deposit: 435,050-435,050 AS$
+11. Xian Y-7
+   Passagiere: 0-60
+   Security Deposit: 590,800-643,300 AS$
+12. ERJ 135/140/145
+   Passagiere: 37-50
+   Security Deposit: 620,800-863,900 AS$
+13. ATR 42
+   Passagiere: 0-60
+   Security Deposit: 628,950-636,450 AS$
+14. AN140
+   Passagiere: 52-52
+   Security Deposit: 671,700-671,700 AS$
+15. ATR 72
+   Passagiere: 0-74
+   Security Deposit: 725,900-756,100 AS$
+16. Dash 8
+   Passagiere: 0-90
+   Security Deposit: 798,000-909,650 AS$
+17. CRJ Series
+   Passagiere: 78-104
+   Security Deposit: 956,850-1,255,550 AS$
+18. EMB 170/175/190/195
+   Passagiere: 80-124
+   Security Deposit: 1,038,550-1,475,150 AS$
+19. ARJ21
+   Passagiere: 90-90
+   Security Deposit: 1,129,600-1,234,700 AS$
+20. AN148
+   Passagiere: 85-99
+   Security Deposit: 1,179,300-1,382,100 AS$
+21. Superjet
+   Passagiere: 108-108
+   Security Deposit: 1,339,900-1,458,850 AS$
+22. EMB 175/190/195 E2
+   Passagiere: 114-146
+   Security Deposit: 1,682,100-1,772,150 AS$
+23. 737-600/700/800/900
+   Passagiere: 0-220
+   Security Deposit: 1,749,500-2,470,600 AS$
+24. A319 / A320 / A321 NEO
+   Passagiere: 156-240
+   Security Deposit: 1,786,700-2,678,050 AS$
+25. A318 / A319
+   Passagiere: 145-160
+   Security Deposit: 1,788,100-2,271,000 AS$
+26. A220
+   Passagiere: 133-160
+   Security Deposit: 1,825,500-1,975,050 AS$
+27. 737 MAX
+   Passagiere: 189-220
+   Security Deposit: 1,946,400-2,542,250 AS$
+28. A320 / A321
+   Passagiere: 0-220
+   Security Deposit: 2,028,850-2,507,550 AS$
+29. C919
+   Passagiere: 174-174
+   Security Deposit: 2,039,600-2,160,650 AS$
+30. TU-204/214
+   Passagiere: 0-214
+   Security Deposit: 2,589,150-2,771,650 AS$
+31. 767-200/300/400
+   Passagiere: 0-351
+   Security Deposit: 4,883,400-5,042,400 AS$
+32. A330
+   Passagiere: 0-440
+   Security Deposit: 5,287,650-6,157,300 AS$
+33. A330 NEO
+   Passagiere: 406-460
+   Security Deposit: 5,749,750-6,330,800 AS$
+34. A350
+   Passagiere: 440-480
+   Security Deposit: 6,827,150-7,951,850 AS$
+35. 777-200/300
+   Passagiere: 0-550
+   Security Deposit: 7,153,100-8,765,400 AS$
+36. 747-8
+   Passagiere: 0-605
+   Security Deposit: 10,011,550-10,844,200 AS$
+37. A380
+   Passagiere: 853-853
+   Security Deposit: 12,421,500-12,421,500 AS$
+
+SCHREIBE EXAKT DIESE 3 ZEILEN (auf Deutsch, mit exaktem Familiennamen):
+
+FAMILIE: [Name aus Liste kopieren]
+GRUND: [Deutsche Begründung]
+PASSAGIER_ZIEL: [Zahl]
+
+BEISPIEL:
+FAMILIE: A319 / A320 / A321 NEO
+GRUND: Beste Profitabilität für Mittelstrecken
+PASSAGIER_ZIEL: 180
+
+WICHTIG: 
+- NUR DEUTSCH antworten!
+- EXAKT den Namen aus der Liste kopieren!
+- Keine englischen Wörter!
+
+Deine Antwort:
+[2025-08-03T16:24:05.503Z] ==================================================
+[2025-08-03T16:24:05.503Z] ==================================================
+[2025-08-03T16:24:05.503Z] AI Familie-Wahl:  FAMILIE: ERJ 135/140/145
+GRUND: Beste Kompromisslösung zwischen Kapazität und Wirtschaftlichkeit für Kurzstrecken
+PASSAGIER_ZIEL: 70
+[2025-08-03T16:24:05.504Z] ==================================================
+[2025-08-03T16:24:05.504Z] ==================================================
+[2025-08-03T16:24:05.504Z] ✅ Familie gewählt: ERJ 135/140/145 (7 Modelle)
+[2025-08-03T16:24:05.505Z] AI Schritt 2: Wähle bestes Modell aus Familie...
+[2025-08-03T16:24:12.500Z] 🤖 AI Modell-Wahl:  Empfehlung: Embraer ERJ-145LR
+Anzahl: 2
+Gründe: Die Maschinen sind gut für den Hub in SFO geeignet und haben eine günstige Betriebskostenstruktur.
+SECURITY_DEPOSITS: 1,400,000 AS$
+WOCHENKOSTEN: 800,000 AS$
+[2025-08-03T16:24:12.502Z] ✅ Modell gewählt: Embraer ERJ-145LR (2x)
+[2025-08-03T16:24:12.502Z] ⚖️ Loading current account balance...
+[2025-08-03T16:24:15.304Z] 💰 Current balance: AS$ 10,000,000 (positive)
+[2025-08-03T16:24:15.305Z] 📈 Balance history saved (184 entries total)
+[2025-08-03T16:24:15.305Z] ✅ Balance check: AS$ 10,000,000 >= 1,462,400
+[2025-08-03T16:24:15.308Z] [DECISION LOGGED] aircraft_leasing: AI empfiehlt Leasing: Embraer ERJ-145LR (2x) für QuestAir
+[2025-08-03T16:24:15.308Z] [REASONING] AI-Empfehlung basierend auf Modell-Analyse
+[2025-08-03T16:24:15.308Z] 
+🎯 LEASING-EMPFEHLUNG (2-stufige AI-Analyse):
+[2025-08-03T16:24:15.308Z]    Familie gewählt: ERJ 135/140/145 (aus 7 Modellen)
+[2025-08-03T16:24:15.308Z]    Familie-Begründung: Beste Kompromisslösung zwischen Kapazität und Wirtschaftlichkeit für Kurzstrecken
+[2025-08-03T16:24:15.308Z]    Ziel-Passagiere: 70
+[2025-08-03T16:24:15.308Z] 
+[2025-08-03T16:24:15.308Z]    Flugzeug: Embraer ERJ-145LR (ERJ 135/140/145)
+[2025-08-03T16:24:15.308Z]    Kaufpreis: 14,624,000 AS$
+[2025-08-03T16:24:15.308Z]    Anzahl: 2
+[2025-08-03T16:24:15.308Z]    Analysiert: 0 von 7 Modellen in der Familie
+[2025-08-03T16:24:15.308Z] 
+[2025-08-03T16:24:15.308Z]    💰 LEASING-KOSTEN:
+[2025-08-03T16:24:15.308Z]      Security Deposit (einmalig): 1,462,400 AS$
+[2025-08-03T16:24:15.308Z]      Wochenrate (ab Woche 2): 146,240 AS$/Woche
+[2025-08-03T16:24:15.308Z]      Begründung: AI-Empfehlung basierend auf Modell-Analyse
+[2025-08-03T16:24:15.308Z]    ✅ FINANZIERBAR (Security Deposit = 683.8% des Guthabens)
+[2025-08-03T16:24:15.308Z]    📊 Wöchentliche Belastung: 1.5% des aktuellen Guthabens
+[2025-08-03T16:24:16.035Z] Cookies loaded into the browser.
+[2025-08-03T16:24:16.035Z] 🔐 Überprüfe Login-Status...
+[2025-08-03T16:24:17.315Z] [OUTCOME UPDATED] Decision mdvw5wp55onmgx2n1mb: simulated_success
+[2025-08-03T16:24:17.618Z] 📊 Status für https://free2.airlinesim.aero/app/enterprise/dashboard: {"isLoggedIn":true,"hasLoginElements":false,"hasDashboardElements":true,"currentUrl":"https://free2.airlinesim.aero/app/enterprise/dashboard?0","title":"Dashboard: QuestAir | Free2 | AirlineSim"}
+[2025-08-03T16:24:17.618Z] ✅ Erfolgreich eingeloggt
+[2025-08-03T16:24:17.619Z] ✈️ Eingeloggt als: QuestAir
+[2025-08-03T16:24:17.619Z] ⚖️ Loading current account balance...
+[2025-08-03T16:24:20.420Z] 💰 Current balance: AS$ 10,000,000 (positive)
+[2025-08-03T16:24:20.422Z] 📈 Balance history saved (185 entries total)
+[2025-08-03T16:24:20.422Z] 🏢 Starte Station-Management basierend auf Flugzeug-Empfehlung...
+[2025-08-03T16:24:20.422Z] 🧠 Analysiere beste Stationen für Flugzeug-Empfehlung...
+[2025-08-03T16:24:20.422Z] 🏢 Lade existierende Stationen...
+[2025-08-03T16:24:23.370Z] 📊 Gefunden: 1 existierende Stationen
+[2025-08-03T16:24:23.370Z] ✈️ Aktive Stationen (mit Flügen): 0
+[2025-08-03T16:24:23.371Z] 🏢 AI analysiert beste Stationen für Flugzeug-Empfehlung...
+[2025-08-03T16:25:52.398Z] Starting Integrated AirlineSim Bot
+[2025-08-03T16:25:52.398Z] ====================================================
+[2025-08-03T16:25:53.030Z] Cookies loaded into the browser.
+[2025-08-03T16:25:53.031Z] 🔐 Überprüfe Login-Status...
+[2025-08-03T16:25:55.021Z] 📊 Status für https://free2.airlinesim.aero/app/enterprise/dashboard: {"isLoggedIn":true,"hasLoginElements":false,"hasDashboardElements":true,"currentUrl":"https://free2.airlinesim.aero/app/enterprise/dashboard?0","title":"Dashboard: QuestAir | Free2 | AirlineSim"}
+[2025-08-03T16:25:55.021Z] ✅ Erfolgreich eingeloggt
+[2025-08-03T16:25:55.022Z] ✈️ Eingeloggt als: QuestAir
+[2025-08-03T16:25:55.022Z] ⚖️ Loading current account balance...
+[2025-08-03T16:25:57.710Z] 💰 Current balance: AS$ 10,000,000 (positive)
+[2025-08-03T16:25:57.712Z] 📈 Balance history saved (186 entries total)
+[2025-08-03T16:25:57.712Z] 🔍 Überprüfe aktuellen Fleet-Status...
+[2025-08-03T16:25:59.957Z] 📊 Fleet Status: {"hasDefaultFleet":true,"hasNoAircraft":true,"isEmpty":true}
+[2025-08-03T16:25:59.957Z] ⚠️ Keine Flugzeuge gefunden - AI wird Leasing-Empfehlung geben
+[2025-08-03T16:25:59.957Z] 🔍 Lade verfügbare Flugzeuge...
+[2025-08-03T16:25:59.958Z] 📋 Aircraft-Cache ist gültig (42.7h alt, max 72h)
+[2025-08-03T16:25:59.958Z] ✅ Verwende cached Aircraft-Daten (181 Flugzeuge)
+[2025-08-03T16:25:59.970Z] 💰 Security Deposit Spanne: 122,450 - 12,421,500 AS$
+[2025-08-03T16:25:59.971Z] 🧠 AI analysiert beste Flugzeug-Leasing-Option (2-stufig)...
+[2025-08-03T16:25:59.971Z] ⚖️ Loading current account balance...
+[2025-08-03T16:26:02.663Z] 💰 Current balance: AS$ 10,000,000 (positive)
+[2025-08-03T16:26:02.665Z] 📈 Balance history saved (187 entries total)
+[2025-08-03T16:26:02.665Z] 💰 Using 80% of current balance as budget: 8,000,000 AS$
+[2025-08-03T16:26:02.665Z] 🧠 Starte zweistufige AI-Analyse für Flugzeug-Leasing...
+[2025-08-03T16:26:02.666Z] 📊 Gefunden: 37 Flugzeugfamilien mit insgesamt 181 Modellen
+[2025-08-03T16:26:02.666Z] Wähle beste Flugzeugfamilie...

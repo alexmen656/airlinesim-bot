@@ -1,9 +1,11 @@
 const IntegratedAirlineManager = require('./modules/integratedAirlineManager');
 const decisionLogger = require('./services/decisionLogger');
+// Logger wird automatisch initialisiert beim Require
+require('./services/logger');
 
 async function runIntegratedAirlineBot() {
-    console.log('Starting Integrated AirlineSim Bot');
-    console.log('====================================================');
+    console.log('Starting Integrated AirlineSim Bot', true); // Zeigt in Konsole
+    console.log('====================================================', true); // Zeigt in Konsole
     
     try {
         const manager = new IntegratedAirlineManager();
