@@ -74,7 +74,7 @@ class StationAIAnalyzer {
         `;
 
         const aiResponse = await aiService.generateText(prompt);
-        console.log('🤖 AI Station-Empfehlung:', aiResponse);
+        console.log('🤖 AI Station-Empfehlung:', aiResponse, true);
 
         const recommendations = this.parseStationRecommendations(aiResponse);
 
@@ -144,7 +144,7 @@ class StationAIAnalyzer {
 
         const selectedStation = recommendations.stations[0];
 
-        console.log(`✅ Station ausgewählt: ${selectedStation.name} (${selectedStation.code})`);
+        console.log(`✅ Station ausgewählt: ${selectedStation.name} (${selectedStation.code})`, true);
         console.log(`🆓 Station-Eröffnung: KOMPLETT KOSTENLOS!`);
         console.log(`📊 Begründung: ${selectedStation.reasoning}`);
 

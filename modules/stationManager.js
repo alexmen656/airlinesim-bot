@@ -115,12 +115,14 @@ class StationManager {
             
             await new Promise(resolve => setTimeout(resolve, 2000));
 
-            const airportInput = await this.page.$('#id5');
+            const airportInput = await this.page.$('#id19');
             if (!airportInput) {
                 throw new Error('Airport input field nicht gefunden');
             }
 
-            await airportInput.clear();
+            // Feld leeren und neuen Wert eingeben
+            await airportInput.click({ clickCount: 3 }); // Alles markieren
+            await airportInput.press('Backspace'); // Löschen
             await airportInput.type(stationCode);
             await new Promise(resolve => setTimeout(resolve, 1000));
             

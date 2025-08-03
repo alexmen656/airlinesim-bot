@@ -238,3 +238,1778 @@ WOCHENKOSTEN: 800,000 AS$
 [2025-08-03T16:26:02.665Z] 🧠 Starte zweistufige AI-Analyse für Flugzeug-Leasing...
 [2025-08-03T16:26:02.666Z] 📊 Gefunden: 37 Flugzeugfamilien mit insgesamt 181 Modellen
 [2025-08-03T16:26:02.666Z] Wähle beste Flugzeugfamilie...
+[2025-08-03T16:28:51.354Z] Starting Integrated AirlineSim Bot
+[2025-08-03T16:28:51.354Z] ====================================================
+[2025-08-03T16:28:51.951Z] Cookies loaded into the browser.
+[2025-08-03T16:28:51.952Z] 🔐 Überprüfe Login-Status...
+[2025-08-03T16:28:53.840Z] 📊 Status für https://free2.airlinesim.aero/app/enterprise/dashboard: {"isLoggedIn":true,"hasLoginElements":false,"hasDashboardElements":true,"currentUrl":"https://free2.airlinesim.aero/app/enterprise/dashboard?0","title":"Dashboard: QuestAir | Free2 | AirlineSim"}
+[2025-08-03T16:28:53.840Z] ✅ Erfolgreich eingeloggt
+[2025-08-03T16:28:53.841Z] ✈️ Eingeloggt als: QuestAir
+[2025-08-03T16:28:53.842Z] ⚖️ Loading current account balance...
+[2025-08-03T16:28:56.633Z] 💰 Current balance: AS$ 10,000,000 (positive)
+[2025-08-03T16:28:56.634Z] 📈 Balance history saved (188 entries total)
+[2025-08-03T16:28:56.634Z] 🔍 Überprüfe aktuellen Fleet-Status...
+[2025-08-03T16:28:58.877Z] 📊 Fleet Status: {"hasDefaultFleet":true,"hasNoAircraft":true,"isEmpty":true}
+[2025-08-03T16:28:58.878Z] ⚠️ Keine Flugzeuge gefunden - AI wird Leasing-Empfehlung geben
+[2025-08-03T16:28:58.879Z] 🔍 Lade verfügbare Flugzeuge...
+[2025-08-03T16:28:58.880Z] 📋 Aircraft-Cache ist gültig (42.8h alt, max 72h)
+[2025-08-03T16:28:58.881Z] ✅ Verwende cached Aircraft-Daten (181 Flugzeuge)
+[2025-08-03T16:28:58.899Z] 💰 Security Deposit Spanne: 122,450 - 12,421,500 AS$
+[2025-08-03T16:28:58.900Z] 🧠 AI analysiert beste Flugzeug-Leasing-Option (2-stufig)...
+[2025-08-03T16:28:58.900Z] ⚖️ Loading current account balance...
+[2025-08-03T16:29:01.662Z] 💰 Current balance: AS$ 10,000,000 (positive)
+[2025-08-03T16:29:01.663Z] 📈 Balance history saved (189 entries total)
+[2025-08-03T16:29:01.664Z] 💰 Using 80% of current balance as budget: 8,000,000 AS$
+[2025-08-03T16:29:01.664Z] 🧠 Starte zweistufige AI-Analyse für Flugzeug-Leasing...
+[2025-08-03T16:29:01.664Z] 📊 Gefunden: 37 Flugzeugfamilien mit insgesamt 181 Modellen
+[2025-08-03T16:29:01.665Z] Wähle beste Flugzeugfamilie...
+[2025-08-03T16:29:15.524Z] ==================================================
+[2025-08-03T16:29:15.526Z] ==================================================
+[2025-08-03T16:29:15.526Z] AI Familie-Wahl Prompt: Du bist ein deutscher AirlineSim-Experte. Antworte NUR auf DEUTSCH!
+
+            Hub: SFO
+            Budget: 8,000,000 AS$
+
+            VERFÜGBARE FAMILIEN:
+            1. 410
+            Passagiere: 19-19
+            Security Deposit: 236,850-263,650 AS$
+2. 787
+            Passagiere: 381-440
+            Security Deposit: 6,004,700-6,454,850 AS$
+3. Islander / Trislander
+            Passagiere: 9-9
+            Security Deposit: 122,450-138,700 AS$
+4. 208 Caravan
+            Passagiere: 0-14
+            Security Deposit: 178,650-188,550 AS$
+5. DHC-6
+            Passagiere: 19-19
+            Security Deposit: 183,350-183,350 AS$
+6. AN-28
+            Passagiere: 18-18
+            Security Deposit: 234,350-234,350 AS$
+7. 408 SkyCourier
+            Passagiere: 0-19
+            Security Deposit: 272,150-285,150 AS$
+8. DO228NG
+            Passagiere: 19-19
+            Security Deposit: 272,600-272,600 AS$
+9. PC-12
+            Passagiere: 0-9
+            Security Deposit: 279,950-302,050 AS$
+10. PC-24
+            Passagiere: 10-10
+            Security Deposit: 435,050-435,050 AS$
+11. Xian Y-7
+            Passagiere: 0-60
+            Security Deposit: 590,800-643,300 AS$
+12. ERJ 135/140/145
+            Passagiere: 37-50
+            Security Deposit: 620,800-863,900 AS$
+13. ATR 42
+            Passagiere: 0-60
+            Security Deposit: 628,950-636,450 AS$
+14. AN140
+            Passagiere: 52-52
+            Security Deposit: 671,700-671,700 AS$
+15. ATR 72
+            Passagiere: 0-74
+            Security Deposit: 725,900-756,100 AS$
+16. Dash 8
+            Passagiere: 0-90
+            Security Deposit: 798,000-909,650 AS$
+17. CRJ Series
+            Passagiere: 78-104
+            Security Deposit: 956,850-1,255,550 AS$
+18. EMB 170/175/190/195
+            Passagiere: 80-124
+            Security Deposit: 1,038,550-1,475,150 AS$
+19. ARJ21
+            Passagiere: 90-90
+            Security Deposit: 1,129,600-1,234,700 AS$
+20. AN148
+            Passagiere: 85-99
+            Security Deposit: 1,179,300-1,382,100 AS$
+21. Superjet
+            Passagiere: 108-108
+            Security Deposit: 1,339,900-1,458,850 AS$
+22. EMB 175/190/195 E2
+            Passagiere: 114-146
+            Security Deposit: 1,682,100-1,772,150 AS$
+23. 737-600/700/800/900
+            Passagiere: 0-220
+            Security Deposit: 1,749,500-2,470,600 AS$
+24. A319 / A320 / A321 NEO
+            Passagiere: 156-240
+            Security Deposit: 1,786,700-2,678,050 AS$
+25. A318 / A319
+            Passagiere: 145-160
+            Security Deposit: 1,788,100-2,271,000 AS$
+26. A220
+            Passagiere: 133-160
+            Security Deposit: 1,825,500-1,975,050 AS$
+27. 737 MAX
+            Passagiere: 189-220
+            Security Deposit: 1,946,400-2,542,250 AS$
+28. A320 / A321
+            Passagiere: 0-220
+            Security Deposit: 2,028,850-2,507,550 AS$
+29. C919
+            Passagiere: 174-174
+            Security Deposit: 2,039,600-2,160,650 AS$
+30. TU-204/214
+            Passagiere: 0-214
+            Security Deposit: 2,589,150-2,771,650 AS$
+31. 767-200/300/400
+            Passagiere: 0-351
+            Security Deposit: 4,883,400-5,042,400 AS$
+32. A330
+            Passagiere: 0-440
+            Security Deposit: 5,287,650-6,157,300 AS$
+33. A330 NEO
+            Passagiere: 406-460
+            Security Deposit: 5,749,750-6,330,800 AS$
+34. A350
+            Passagiere: 440-480
+            Security Deposit: 6,827,150-7,951,850 AS$
+35. 777-200/300
+            Passagiere: 0-550
+            Security Deposit: 7,153,100-8,765,400 AS$
+36. 747-8
+            Passagiere: 0-605
+            Security Deposit: 10,011,550-10,844,200 AS$
+37. A380
+            Passagiere: 853-853
+            Security Deposit: 12,421,500-12,421,500 AS$
+
+            SCHREIBE EXAKT DIESE 3 ZEILEN (auf Deutsch, mit exaktem Familiennamen):
+
+            FAMILIE: [Name aus Liste kopieren]
+            GRUND: [Deutsche Begründung]
+            PASSAGIER_ZIEL: [Zahl]
+
+            BEISPIEL:
+            FAMILIE: A319 / A320 / A321 NEO
+            GRUND: Beste Profitabilität für Mittelstrecken
+            PASSAGIER_ZIEL: 180
+
+            WICHTIG: 
+            - NUR DEUTSCH antworten!
+            - EXAKT den Namen aus der Liste kopieren!
+            - Keine englischen Wörter!
+
+            Deine Antwort:
+[2025-08-03T16:29:15.526Z] ==================================================
+[2025-08-03T16:29:15.526Z] ==================================================
+[2025-08-03T16:29:15.526Z] AI Familie-Wahl:  FAMILIE: ATR 72
+GRUND: Günstigstes Flugzeug für Inlandsflüge mit hoher Kapazität und guter Reichweite
+PASSAGIER_ZIEL: 100
+[2025-08-03T16:29:15.527Z] ==================================================
+[2025-08-03T16:29:15.527Z] ==================================================
+[2025-08-03T16:29:15.528Z] ✅ Familie gewählt: ATR 72 (4 Modelle)
+[2025-08-03T16:29:15.528Z] AI Schritt 2: Wähle bestes Modell aus Familie...
+[2025-08-03T16:29:24.005Z] 🤖 AI Modell-Wahl:  EMPFEHLUNG: ATR 72-600
+ANZAHL: 1
+GRUND: Für den Hub in SFO ist eine kleinere Maschine wie der ATR 72 geeignet, um schneller und kostengünstiger Start- und Landeverträge zu erhalten. Der ATR 72-600 bietet zudem die höchste Passagierkapazität unter den verfügbaren Modellen.
+SECURITY_DEPOSITS: 749950
+WOCHENKOSTEN: 150000
+[2025-08-03T16:29:24.006Z] ✅ Modell gewählt: ATR 72-600 (1x)
+[2025-08-03T16:29:24.007Z] ⚖️ Loading current account balance...
+[2025-08-03T16:29:26.638Z] 💰 Current balance: AS$ 10,000,000 (positive)
+[2025-08-03T16:29:26.639Z] 📈 Balance history saved (190 entries total)
+[2025-08-03T16:29:26.639Z] ✅ Balance check: AS$ 10,000,000 >= 749,950
+[2025-08-03T16:29:26.641Z] [DECISION LOGGED] aircraft_leasing: AI empfiehlt Leasing: ATR 72-600 (1x) für QuestAir
+[2025-08-03T16:29:26.641Z] [REASONING] Für den Hub in SFO ist eine kleinere Maschine wie der ATR 72 geeignet, um schneller und kostengünstiger Start- und Landeverträge zu erhalten. Der ATR 72-600 bietet zudem die höchste Passagierkapazität unter den verfügbaren Modellen.
+[2025-08-03T16:29:26.641Z] 
+🎯 LEASING-EMPFEHLUNG (2-stufige AI-Analyse):
+[2025-08-03T16:29:26.641Z]    Familie gewählt: ATR 72 (aus 4 Modellen)
+[2025-08-03T16:29:26.642Z]    Familie-Begründung: Günstigstes Flugzeug für Inlandsflüge mit hoher Kapazität und guter Reichweite
+[2025-08-03T16:29:26.642Z]    Ziel-Passagiere: 100
+[2025-08-03T16:29:26.642Z] 
+[2025-08-03T16:29:26.642Z]    Flugzeug: ATR 72-600 (ATR 72)
+[2025-08-03T16:29:26.642Z]    Kaufpreis: 14,999,000 AS$
+[2025-08-03T16:29:26.642Z]    Anzahl: 1
+[2025-08-03T16:29:26.642Z]    Analysiert: 0 von 4 Modellen in der Familie
+[2025-08-03T16:29:26.642Z] 
+[2025-08-03T16:29:26.642Z]    💰 LEASING-KOSTEN:
+[2025-08-03T16:29:26.642Z]      Security Deposit (einmalig): 749,950 AS$
+[2025-08-03T16:29:26.642Z]      Wochenrate (ab Woche 2): 74,995 AS$/Woche
+[2025-08-03T16:29:26.642Z]      Begründung: Für den Hub in SFO ist eine kleinere Maschine wie der ATR 72 geeignet, um schneller und kostengünstiger Start- und Landeverträge zu erhalten. Der ATR 72-600 bietet zudem die höchste Passagierkapazität unter den verfügbaren Modellen.
+[2025-08-03T16:29:26.642Z]    ✅ FINANZIERBAR (Security Deposit = 1333.4% des Guthabens)
+[2025-08-03T16:29:26.642Z]    📊 Wöchentliche Belastung: 0.7% des aktuellen Guthabens
+[2025-08-03T16:29:27.303Z] Cookies loaded into the browser.
+[2025-08-03T16:29:27.303Z] 🔐 Überprüfe Login-Status...
+[2025-08-03T16:29:28.649Z] [OUTCOME UPDATED] Decision mdvwckxbgyda7eenzsv: simulated_success
+[2025-08-03T16:29:31.500Z] 📊 Status für https://free2.airlinesim.aero/app/enterprise/dashboard: {"isLoggedIn":true,"hasLoginElements":false,"hasDashboardElements":true,"currentUrl":"https://free2.airlinesim.aero/app/enterprise/dashboard?0","title":"Dashboard: QuestAir | Free2 | AirlineSim"}
+[2025-08-03T16:29:31.500Z] ✅ Erfolgreich eingeloggt
+[2025-08-03T16:29:31.503Z] ✈️ Eingeloggt als: QuestAir
+[2025-08-03T16:29:31.503Z] ⚖️ Loading current account balance...
+[2025-08-03T16:29:34.291Z] 💰 Current balance: AS$ 10,000,000 (positive)
+[2025-08-03T16:29:34.293Z] 📈 Balance history saved (191 entries total)
+[2025-08-03T16:29:34.293Z] 🏢 Starte Station-Management basierend auf Flugzeug-Empfehlung...
+[2025-08-03T16:29:34.293Z] 🧠 Analysiere beste Stationen für Flugzeug-Empfehlung...
+[2025-08-03T16:29:34.293Z] 🏢 Lade existierende Stationen...
+[2025-08-03T16:29:37.250Z] 📊 Gefunden: 1 existierende Stationen
+[2025-08-03T16:29:37.250Z] ✈️ Aktive Stationen (mit Flügen): 0
+[2025-08-03T16:29:37.251Z] 🏢 AI analysiert beste Stationen für Flugzeug-Empfehlung...
+[2025-08-03T16:30:19.523Z] 🤖 AI Station-Empfehlung:  STATION_1: Los Angeles (LAX) - USA
+GRUND_1: Los Angeles ist ein wichtiger Luftverkehrsknotenpunkt in Kalifornien und verfügt über eine hohe Nachfrage nach Inlands- und Auslandsflügen. Es gibt auch eine geringe Konkurrenz, was die Gewinnmaximierung erleichtert. Die Strecke von SFO zum LAX ist mit einer Reichweite von 540 km für das ATR 72-600-Modell in Frage kommend und bietet sich als erste Route an.
+ROUTE_1: SFO ↔ LAX - geschätzte tägliche Passagiere: 3000
+
+STATION_2: San Diego (SAN) - USA
+GRUND_2: San Diego ist ein wachsendes Tourismuszentrum und verfügt über eine hohe Nachfrage nach Inlands- und Auslandsflügen. Die Strecke von SFO zum SAN beträgt 1390 km und liegt innerhalb der Reichweite des ATR 72-600, was zur Eröffnung einer zweiten Route führt.
+ROUTE_2: SFO ↔ SAN - geschätzte tägliche Passagiere: 1500
+
+STATION_3: Seattle (SEA) - USA
+GRUND_3: Seattle ist ein bedeutender Luftverkehrsknotenpunkt im Nordwesten der Vereinigten Staaten und verfügt über eine hohe Nachfrage nach Inlands- und Auslandsflügen. Die Strecke von SFO zum SEA beträgt 1205 km und liegt innerhalb der Reichweite des ATR 72-600, was zur Eröffnung einer dritten Route führt.
+ROUTE_3: SFO ↔ SEA - geschätzte tägliche Passagiere: 1000
+
+STATION_4: Phoenix (PHX) - USA
+GRUND_4: Phoenix ist ein wichtiger Luftverkehrsknotenpunkt im Südwesten der Vereinigten Staaten und verfügt über eine hohe Nachfrage nach Inlands- und Auslandsflügen. Die Strecke von SFO zum PHX beträgt 1560 km und liegt innerhalb der Reichweite des ATR 72-600, was zur Eröffnung einer vierten Route führt.
+ROUTE_4: SFO ↔ PHX - geschätzte tägliche Passagiere: 800
+
+STATION_5: Honolulu (HNL) - USA
+GRUND_5: Honolulu ist ein beliebtes Urlaubsziel und verfügt über eine hohe Nachfrage nach Inlands- und Auslandsflügen. Die Strecke von SFO zum HNL beträgt 4300 km und liegt innerhalb der Reichweite des ATR 72-600 mit einem zusätzlichen Treibstofftank, was zur Eröffnung einer fünften Route führt.
+ROUTE_5: SFO ↔ HNL - geschätzte tägliche Passagiere: 500
+
+PRIORITÄT: [1] STATION_1: Los Angeles (LAX)
+[2] STATION_2: San Diego (SAN)
+[3] STATION_3: Seattle (SEA)
+[4] STATION_4: Phoenix (PHX)
+[5] STATION_5: Honolulu (HNL)
+[2025-08-03T16:30:19.527Z] 
+🎯 STATION-EMPFEHLUNGEN:
+[2025-08-03T16:30:19.527Z]    Basierend auf: ATR 72-600 (1x)
+[2025-08-03T16:30:19.527Z]    Passagiere pro Flug: 74
+[2025-08-03T16:30:19.527Z]    Reichweite: 1,540-3,610 km
+[2025-08-03T16:30:19.527Z] 
+[2025-08-03T16:30:19.527Z]    📊 Gefunden: 1 existierende Stationen
+[2025-08-03T16:30:19.528Z]    🆓 Stationen sind KOMPLETT kostenlos!
+[2025-08-03T16:30:19.528Z]    🎯 Top 5 empfohlene neue Stationen:
+[2025-08-03T16:30:19.528Z]      1. Los Angeles (LAX) - USA
+[2025-08-03T16:30:19.528Z]         🆓 KOMPLETT KOSTENLOS! (Station + Personal)
+[2025-08-03T16:30:19.528Z]         ✈️ Route: SFO ↔ LAX
+[2025-08-03T16:30:19.528Z]         👥 Erwartete Passagiere: 100/Tag
+[2025-08-03T16:30:19.528Z]         📝 Grund: Los Angeles ist ein wichtiger Luftverkehrsknotenpunkt in Kalifornien und verfügt über eine hohe Nachfrage nach Inlands- und Auslandsflügen. Es gibt auch eine geringe Konkurrenz, was die Gewinnmaximierung erleichtert. Die Strecke von SFO zum LAX ist mit einer Reichweite von 540 km für das ATR 72-600-Modell in Frage kommend und bietet sich als erste Route an.
+[2025-08-03T16:30:19.528Z] 
+[2025-08-03T16:30:19.528Z]      2. San Diego (SAN) - USA
+[2025-08-03T16:30:19.528Z]         🆓 KOMPLETT KOSTENLOS! (Station + Personal)
+[2025-08-03T16:30:19.528Z]         ✈️ Route: SFO ↔ SAN
+[2025-08-03T16:30:19.528Z]         👥 Erwartete Passagiere: 100/Tag
+[2025-08-03T16:30:19.528Z]         📝 Grund: San Diego ist ein wachsendes Tourismuszentrum und verfügt über eine hohe Nachfrage nach Inlands- und Auslandsflügen. Die Strecke von SFO zum SAN beträgt 1390 km und liegt innerhalb der Reichweite des ATR 72-600, was zur Eröffnung einer zweiten Route führt.
+[2025-08-03T16:30:19.528Z] 
+[2025-08-03T16:30:19.529Z]      3. Seattle (SEA) - USA
+[2025-08-03T16:30:19.529Z]         🆓 KOMPLETT KOSTENLOS! (Station + Personal)
+[2025-08-03T16:30:19.529Z]         ✈️ Route: SFO ↔ SEA
+[2025-08-03T16:30:19.529Z]         👥 Erwartete Passagiere: 100/Tag
+[2025-08-03T16:30:19.529Z]         📝 Grund: Seattle ist ein bedeutender Luftverkehrsknotenpunkt im Nordwesten der Vereinigten Staaten und verfügt über eine hohe Nachfrage nach Inlands- und Auslandsflügen. Die Strecke von SFO zum SEA beträgt 1205 km und liegt innerhalb der Reichweite des ATR 72-600, was zur Eröffnung einer dritten Route führt.
+[2025-08-03T16:30:19.529Z] 
+[2025-08-03T16:30:19.529Z]      4. Phoenix (PHX) - USA
+[2025-08-03T16:30:19.529Z]         🆓 KOMPLETT KOSTENLOS! (Station + Personal)
+[2025-08-03T16:30:19.529Z]         ✈️ Route: SFO ↔ PHX
+[2025-08-03T16:30:19.529Z]         👥 Erwartete Passagiere: 100/Tag
+[2025-08-03T16:30:19.529Z]         📝 Grund: Phoenix ist ein wichtiger Luftverkehrsknotenpunkt im Südwesten der Vereinigten Staaten und verfügt über eine hohe Nachfrage nach Inlands- und Auslandsflügen. Die Strecke von SFO zum PHX beträgt 1560 km und liegt innerhalb der Reichweite des ATR 72-600, was zur Eröffnung einer vierten Route führt.
+[2025-08-03T16:30:19.529Z] 
+[2025-08-03T16:30:19.529Z]      5. Honolulu (HNL) - USA
+[2025-08-03T16:30:19.529Z]         🆓 KOMPLETT KOSTENLOS! (Station + Personal)
+[2025-08-03T16:30:19.529Z]         ✈️ Route: SFO ↔ HNL
+[2025-08-03T16:30:19.529Z]         👥 Erwartete Passagiere: 100/Tag
+[2025-08-03T16:30:19.529Z]         📝 Grund: Honolulu ist ein beliebtes Urlaubsziel und verfügt über eine hohe Nachfrage nach Inlands- und Auslandsflügen. Die Strecke von SFO zum HNL beträgt 4300 km und liegt innerhalb der Reichweite des ATR 72-600 mit einem zusätzlichen Treibstofftank, was zur Eröffnung einer fünften Route führt.
+[2025-08-03T16:30:19.529Z] 
+[2025-08-03T16:30:19.529Z] ✅ Station ausgewählt: Los Angeles (LAX)
+[2025-08-03T16:30:19.530Z] 🆓 Station-Eröffnung: KOMPLETT KOSTENLOS!
+[2025-08-03T16:30:19.530Z] 📊 Begründung: Los Angeles ist ein wichtiger Luftverkehrsknotenpunkt in Kalifornien und verfügt über eine hohe Nachfrage nach Inlands- und Auslandsflügen. Es gibt auch eine geringe Konkurrenz, was die Gewinnmaximierung erleichtert. Die Strecke von SFO zum LAX ist mit einer Reichweite von 540 km für das ATR 72-600-Modell in Frage kommend und bietet sich als erste Route an.
+[2025-08-03T16:30:19.530Z] 🏗️ Öffne neue Station: LAX
+[2025-08-03T16:30:22.709Z] [DECISION LOGGED] station_management: AI empfiehlt Station: Los Angeles (LAX) für ATR 72-600
+[2025-08-03T16:30:22.709Z] [REASONING] Los Angeles ist ein wichtiger Luftverkehrsknotenpunkt in Kalifornien und verfügt über eine hohe Nachfrage nach Inlands- und Auslandsflügen. Es gibt auch eine geringe Konkurrenz, was die Gewinnmaximierung erleichtert. Die Strecke von SFO zum LAX ist mit einer Reichweite von 540 km für das ATR 72-600-Modell in Frage kommend und bietet sich als erste Route an.
+[2025-08-03T16:30:22.788Z] 
+✈️ ATR 72-600 x1
+[2025-08-03T16:30:22.788Z] 🏢 Los Angeles
+[2025-08-03T16:30:22.788Z] 💰 749,950 AS$ initial
+[2025-08-03T16:30:22.790Z] [DECISION LOGGED] integrated_airline_management: ATR 72-600 + Los Angeles
+[2025-08-03T16:30:22.790Z] [REASONING] Airline Setup abgeschlossen
+[2025-08-03T16:30:22.790Z] 📊 INTEGRATED AIRLINE MANAGEMENT SUMMARY:
+[2025-08-03T16:30:22.790Z]    Action taken: completed
+[2025-08-03T16:30:22.790Z] 
+✈️ AIRCRAFT RECOMMENDATION:
+[2025-08-03T16:30:22.790Z]    Aircraft: ATR 72-600
+[2025-08-03T16:30:22.790Z]    Quantity: 1
+[2025-08-03T16:30:22.790Z]    Total Cost: 749,950 AS$
+[2025-08-03T16:30:22.790Z]    Reasoning: Für den Hub in SFO ist eine kleinere Maschine wie der ATR 72 geeignet, um schneller und kostengünstiger Start- und Landeverträge zu erhalten. Der ATR 72-600 bietet zudem die höchste Passagierkapazität unter den verfügbaren Modellen.
+[2025-08-03T16:30:22.790Z] 
+🏢 STATION RECOMMENDATION:
+[2025-08-03T16:30:22.790Z]    Station: Los Angeles (LAX), USA
+[2025-08-03T16:30:22.790Z]    Route: SFO ↔ LAX
+[2025-08-03T16:30:22.791Z]    Expected Passengers: 100/day
+[2025-08-03T16:30:22.791Z]    Reasoning: Los Angeles ist ein wichtiger Luftverkehrsknotenpunkt in Kalifornien und verfügt über eine hohe Nachfrage nach Inlands- und Auslandsflügen. Es gibt auch eine geringe Konkurrenz, was die Gewinnmaximierung erleichtert. Die Strecke von SFO zum LAX ist mit einer Reichweite von 540 km für das ATR 72-600-Modell in Frage kommend und bietet sich als erste Route an.
+[2025-08-03T16:30:22.791Z] 
+💰 TOTAL INVESTMENT:
+[2025-08-03T16:30:22.791Z]    Initial costs: 749,950 AS$
+[2025-08-03T16:30:22.791Z]    Weekly costs: 74,995 AS$/week
+[2025-08-03T16:30:22.792Z] 📈 ANALYTICS:
+[2025-08-03T16:30:22.792Z]    Total decisions made: 82
+[2025-08-03T16:30:22.792Z]    Success rate: 0.0%
+[2025-08-03T16:30:22.792Z]    Categories: system, aircraft, aircraft_leasing, station_management, integrated_airline_management
+[2025-08-03T16:30:22.792Z] 
+✅ Integrated AI Bot completed successfully!
+[2025-08-03T16:30:22.792Z] 
+🎉 Integrated bot execution completed!
+[2025-08-03T16:31:10.649Z] Starting Integrated AirlineSim Bot
+[2025-08-03T16:31:10.649Z] ====================================================
+[2025-08-03T16:31:11.256Z] Cookies loaded into the browser.
+[2025-08-03T16:31:11.256Z] 🔐 Überprüfe Login-Status...
+[2025-08-03T16:31:13.159Z] 📊 Status für https://free2.airlinesim.aero/app/enterprise/dashboard: {"isLoggedIn":true,"hasLoginElements":false,"hasDashboardElements":true,"currentUrl":"https://free2.airlinesim.aero/app/enterprise/dashboard?0","title":"Dashboard: QuestAir | Free2 | AirlineSim"}
+[2025-08-03T16:31:13.160Z] ✅ Erfolgreich eingeloggt
+[2025-08-03T16:31:13.161Z] ✈️ Eingeloggt als: QuestAir
+[2025-08-03T16:31:13.161Z] ⚖️ Loading current account balance...
+[2025-08-03T16:31:15.866Z] 💰 Current balance: AS$ 10,000,000 (positive)
+[2025-08-03T16:31:15.867Z] 📈 Balance history saved (192 entries total)
+[2025-08-03T16:31:15.868Z] 🔍 Überprüfe aktuellen Fleet-Status...
+[2025-08-03T16:31:18.109Z] 📊 Fleet Status: {"hasDefaultFleet":true,"hasNoAircraft":true,"isEmpty":true}
+[2025-08-03T16:31:18.109Z] ⚠️ Keine Flugzeuge gefunden - AI wird Leasing-Empfehlung geben
+[2025-08-03T16:31:18.110Z] 🔍 Lade verfügbare Flugzeuge...
+[2025-08-03T16:31:18.112Z] 📋 Aircraft-Cache ist gültig (42.8h alt, max 72h)
+[2025-08-03T16:31:18.113Z] ✅ Verwende cached Aircraft-Daten (181 Flugzeuge)
+[2025-08-03T16:31:18.131Z] 💰 Security Deposit Spanne: 122,450 - 12,421,500 AS$
+[2025-08-03T16:31:18.131Z] 🧠 AI analysiert beste Flugzeug-Leasing-Option (2-stufig)...
+[2025-08-03T16:31:18.132Z] ⚖️ Loading current account balance...
+[2025-08-03T16:31:20.914Z] 💰 Current balance: AS$ 10,000,000 (positive)
+[2025-08-03T16:31:20.915Z] 📈 Balance history saved (193 entries total)
+[2025-08-03T16:31:20.916Z] 💰 Using 80% of current balance as budget: 8,000,000 AS$
+[2025-08-03T16:31:20.916Z] 🧠 Starte zweistufige AI-Analyse für Flugzeug-Leasing...
+[2025-08-03T16:31:20.916Z] 📊 Gefunden: 37 Flugzeugfamilien mit insgesamt 181 Modellen
+[2025-08-03T16:31:20.917Z] Wähle beste Flugzeugfamilie...
+[2025-08-03T16:31:42.032Z] ==================================================
+[2025-08-03T16:31:42.033Z] ==================================================
+[2025-08-03T16:31:42.033Z] AI Familie-Wahl Prompt: Du bist ein deutscher AirlineSim-Experte. Antworte NUR auf DEUTSCH!
+
+            Hub: SFO
+            Budget: 8,000,000 AS$
+
+            VERFÜGBARE FAMILIEN:
+            1. 410
+            Passagiere: 19-19
+            Security Deposit: 236,850-263,650 AS$
+2. 787
+            Passagiere: 381-440
+            Security Deposit: 6,004,700-6,454,850 AS$
+3. Islander / Trislander
+            Passagiere: 9-9
+            Security Deposit: 122,450-138,700 AS$
+4. 208 Caravan
+            Passagiere: 0-14
+            Security Deposit: 178,650-188,550 AS$
+5. DHC-6
+            Passagiere: 19-19
+            Security Deposit: 183,350-183,350 AS$
+6. AN-28
+            Passagiere: 18-18
+            Security Deposit: 234,350-234,350 AS$
+7. 408 SkyCourier
+            Passagiere: 0-19
+            Security Deposit: 272,150-285,150 AS$
+8. DO228NG
+            Passagiere: 19-19
+            Security Deposit: 272,600-272,600 AS$
+9. PC-12
+            Passagiere: 0-9
+            Security Deposit: 279,950-302,050 AS$
+10. PC-24
+            Passagiere: 10-10
+            Security Deposit: 435,050-435,050 AS$
+11. Xian Y-7
+            Passagiere: 0-60
+            Security Deposit: 590,800-643,300 AS$
+12. ERJ 135/140/145
+            Passagiere: 37-50
+            Security Deposit: 620,800-863,900 AS$
+13. ATR 42
+            Passagiere: 0-60
+            Security Deposit: 628,950-636,450 AS$
+14. AN140
+            Passagiere: 52-52
+            Security Deposit: 671,700-671,700 AS$
+15. ATR 72
+            Passagiere: 0-74
+            Security Deposit: 725,900-756,100 AS$
+16. Dash 8
+            Passagiere: 0-90
+            Security Deposit: 798,000-909,650 AS$
+17. CRJ Series
+            Passagiere: 78-104
+            Security Deposit: 956,850-1,255,550 AS$
+18. EMB 170/175/190/195
+            Passagiere: 80-124
+            Security Deposit: 1,038,550-1,475,150 AS$
+19. ARJ21
+            Passagiere: 90-90
+            Security Deposit: 1,129,600-1,234,700 AS$
+20. AN148
+            Passagiere: 85-99
+            Security Deposit: 1,179,300-1,382,100 AS$
+21. Superjet
+            Passagiere: 108-108
+            Security Deposit: 1,339,900-1,458,850 AS$
+22. EMB 175/190/195 E2
+            Passagiere: 114-146
+            Security Deposit: 1,682,100-1,772,150 AS$
+23. 737-600/700/800/900
+            Passagiere: 0-220
+            Security Deposit: 1,749,500-2,470,600 AS$
+24. A319 / A320 / A321 NEO
+            Passagiere: 156-240
+            Security Deposit: 1,786,700-2,678,050 AS$
+25. A318 / A319
+            Passagiere: 145-160
+            Security Deposit: 1,788,100-2,271,000 AS$
+26. A220
+            Passagiere: 133-160
+            Security Deposit: 1,825,500-1,975,050 AS$
+27. 737 MAX
+            Passagiere: 189-220
+            Security Deposit: 1,946,400-2,542,250 AS$
+28. A320 / A321
+            Passagiere: 0-220
+            Security Deposit: 2,028,850-2,507,550 AS$
+29. C919
+            Passagiere: 174-174
+            Security Deposit: 2,039,600-2,160,650 AS$
+30. TU-204/214
+            Passagiere: 0-214
+            Security Deposit: 2,589,150-2,771,650 AS$
+31. 767-200/300/400
+            Passagiere: 0-351
+            Security Deposit: 4,883,400-5,042,400 AS$
+32. A330
+            Passagiere: 0-440
+            Security Deposit: 5,287,650-6,157,300 AS$
+33. A330 NEO
+            Passagiere: 406-460
+            Security Deposit: 5,749,750-6,330,800 AS$
+34. A350
+            Passagiere: 440-480
+            Security Deposit: 6,827,150-7,951,850 AS$
+35. 777-200/300
+            Passagiere: 0-550
+            Security Deposit: 7,153,100-8,765,400 AS$
+36. 747-8
+            Passagiere: 0-605
+            Security Deposit: 10,011,550-10,844,200 AS$
+37. A380
+            Passagiere: 853-853
+            Security Deposit: 12,421,500-12,421,500 AS$
+
+            SCHREIBE EXAKT DIESE 3 ZEILEN (auf Deutsch, mit exaktem Familiennamen):
+
+            FAMILIE: [Name aus Liste kopieren]
+            GRUND: [Deutsche Begründung]
+            PASSAGIER_ZIEL: [Zahl]
+
+            BEISPIEL:
+            FAMILIE: A319 / A320 / A321 NEO
+            GRUND: Beste Profitabilität für Mittelstrecken
+            PASSAGIER_ZIEL: 180
+
+            WICHTIG: 
+            - NUR DEUTSCH antworten!
+            - EXAKT den Namen aus der Liste kopieren!
+            - Keine englischen Wörter!
+
+            Deine Antwort:
+[2025-08-03T16:31:42.033Z] ==================================================
+[2025-08-03T16:31:42.033Z] ==================================================
+[2025-08-03T16:31:42.033Z] AI Familie-Wahl:  Die Deutsche Airline soll mit einem Hub in SFO eine neue Flugverbindung nach Tokio einrichten. Für diese Strecke empfiehlt sich das Flugzeugmodell A350, da es die höchste Reichweite und die größte Kapazität auf dieser Strecke bietet. Dadurch kann die Deutsche Airline auch mehr Passagiere anlocken und einen höheren Umsatz erzielen. Der maximale Sitzplatz-Inhalt liegt bei 480 Personen, was für diese Verbindung als angemessen angesehen werden kann. Die Gesamtkosten für diesen Flugzeugtyp belaufen sich auf 6.827.150 € bis 7.951.850 € (Versicherungspflicht: 7.951.850 €).
+[2025-08-03T16:31:42.033Z] ==================================================
+[2025-08-03T16:31:42.033Z] ==================================================
+[2025-08-03T16:31:42.034Z] ✅ Familie gewählt: 410 (2 Modelle)
+[2025-08-03T16:31:42.034Z] AI Schritt 2: Wähle bestes Modell aus Familie...
+[2025-08-03T16:31:50.185Z] 🤖 AI Modell-Wahl:  EMPFEHLUNG: LET 410 NG
+ANZAHL: 2
+GRUND: Die LET 410 NG bietet einen angemessenen Passagierkapazität für den Hub in SFO und ist mit einem Budget von 8.000.000 AS$ erschwinglich.
+SECURITY_DEPOSITS: 467,300 AS$ (2 * 236,850)
+WOCHENKOSTEN: 163,650 AS$ (2 * 81,850)
+[2025-08-03T16:31:50.187Z] ✅ Modell gewählt: LET 410 NG (2x)
+[2025-08-03T16:31:50.187Z] ⚖️ Loading current account balance...
+[2025-08-03T16:31:52.972Z] 💰 Current balance: AS$ 10,000,000 (positive)
+[2025-08-03T16:31:52.974Z] 📈 Balance history saved (194 entries total)
+[2025-08-03T16:31:52.974Z] ✅ Balance check: AS$ 10,000,000 >= 527,300
+[2025-08-03T16:31:52.979Z] [DECISION LOGGED] aircraft_leasing: AI empfiehlt Leasing: LET 410 NG (2x) für QuestAir
+[2025-08-03T16:31:52.979Z] [REASONING] Die LET 410 NG bietet einen angemessenen Passagierkapazität für den Hub in SFO und ist mit einem Budget von 8.000.000 AS$ erschwinglich.
+[2025-08-03T16:31:52.979Z] 
+🎯 LEASING-EMPFEHLUNG (2-stufige AI-Analyse):
+[2025-08-03T16:31:52.979Z]    Familie gewählt: 410 (aus 2 Modellen)
+[2025-08-03T16:31:52.979Z]    Familie-Begründung: AI-Empfehlung basierend auf Familie-Analyse
+[2025-08-03T16:31:52.979Z]    Ziel-Passagiere: 150
+[2025-08-03T16:31:52.979Z] 
+[2025-08-03T16:31:52.979Z]    Flugzeug: LET 410 NG (410)
+[2025-08-03T16:31:52.979Z]    Kaufpreis: 5,273,000 AS$
+[2025-08-03T16:31:52.979Z]    Anzahl: 2
+[2025-08-03T16:31:52.979Z]    Analysiert: 0 von 2 Modellen in der Familie
+[2025-08-03T16:31:52.979Z] 
+[2025-08-03T16:31:52.979Z]    💰 LEASING-KOSTEN:
+[2025-08-03T16:31:52.979Z]      Security Deposit (einmalig): 527,300 AS$
+[2025-08-03T16:31:52.979Z]      Wochenrate (ab Woche 2): 52,730 AS$/Woche
+[2025-08-03T16:31:52.979Z]      Begründung: Die LET 410 NG bietet einen angemessenen Passagierkapazität für den Hub in SFO und ist mit einem Budget von 8.000.000 AS$ erschwinglich.
+[2025-08-03T16:31:52.980Z]    ✅ FINANZIERBAR (Security Deposit = 1896.5% des Guthabens)
+[2025-08-03T16:31:52.980Z]    📊 Wöchentliche Belastung: 0.5% des aktuellen Guthabens
+[2025-08-03T16:31:54.983Z] [OUTCOME UPDATED] Decision mdvwfpu62dytt8r0r7v: simulated_success
+[2025-08-03T16:34:53.748Z] [DECISION LOGGED] station_management: Station-Management Fehler
+[2025-08-03T16:34:53.748Z] [REASONING] Fehler aufgetreten: Network.deleteCookies timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.
+[2025-08-03T16:34:53.750Z] [DECISION LOGGED] system: Integrated bot execution failed
+[2025-08-03T16:34:53.750Z] [REASONING] Error occurred: Network.deleteCookies timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.
+[2025-08-03T16:35:24.678Z] Starting Integrated AirlineSim Bot
+[2025-08-03T16:35:24.679Z] ====================================================
+[2025-08-03T16:35:25.302Z] Cookies loaded into the browser.
+[2025-08-03T16:35:25.302Z] 🔐 Überprüfe Login-Status...
+[2025-08-03T16:35:28.205Z] 📊 Status für https://free2.airlinesim.aero/app/enterprise/dashboard: {"isLoggedIn":true,"hasLoginElements":false,"hasDashboardElements":true,"currentUrl":"https://free2.airlinesim.aero/app/enterprise/dashboard?0","title":"Dashboard: QuestAir | Free2 | AirlineSim"}
+[2025-08-03T16:35:28.206Z] ✅ Erfolgreich eingeloggt
+[2025-08-03T16:35:28.208Z] ✈️ Eingeloggt als: QuestAir
+[2025-08-03T16:35:28.208Z] ⚖️ Loading current account balance...
+[2025-08-03T16:35:31.013Z] 💰 Current balance: AS$ 10,000,000 (positive)
+[2025-08-03T16:35:31.015Z] 📈 Balance history saved (195 entries total)
+[2025-08-03T16:35:31.015Z] 🔍 Überprüfe aktuellen Fleet-Status...
+[2025-08-03T16:35:33.335Z] 📊 Fleet Status: {"hasDefaultFleet":true,"hasNoAircraft":true,"isEmpty":true}
+[2025-08-03T16:35:33.335Z] ⚠️ Keine Flugzeuge gefunden - AI wird Leasing-Empfehlung geben
+[2025-08-03T16:35:33.336Z] 🔍 Lade verfügbare Flugzeuge...
+[2025-08-03T16:35:33.338Z] 📋 Aircraft-Cache ist gültig (42.9h alt, max 72h)
+[2025-08-03T16:35:33.338Z] ✅ Verwende cached Aircraft-Daten (181 Flugzeuge)
+[2025-08-03T16:35:33.355Z] 💰 Security Deposit Spanne: 122,450 - 12,421,500 AS$
+[2025-08-03T16:35:33.355Z] 🧠 AI analysiert beste Flugzeug-Leasing-Option (2-stufig)...
+[2025-08-03T16:35:33.355Z] ⚖️ Loading current account balance...
+[2025-08-03T16:35:35.954Z] 💰 Current balance: AS$ 10,000,000 (positive)
+[2025-08-03T16:35:35.956Z] 📈 Balance history saved (196 entries total)
+[2025-08-03T16:35:35.956Z] 💰 Using 80% of current balance as budget: 8,000,000 AS$
+[2025-08-03T16:35:35.956Z] 🧠 Starte zweistufige AI-Analyse für Flugzeug-Leasing...
+[2025-08-03T16:35:35.957Z] 📊 Gefunden: 37 Flugzeugfamilien mit insgesamt 181 Modellen
+[2025-08-03T16:35:35.957Z] Wähle beste Flugzeugfamilie...
+[2025-08-03T16:35:50.341Z] ==================================================
+[2025-08-03T16:35:50.341Z] ==================================================
+[2025-08-03T16:35:50.342Z] AI Familie-Wahl Prompt: Du bist ein deutscher AirlineSim-Experte. Antworte NUR auf DEUTSCH!
+
+            Hub: SFO
+            Budget: 8,000,000 AS$
+
+            VERFÜGBARE FAMILIEN:
+            1. 410
+            Passagiere: 19-19
+            Security Deposit: 236,850-263,650 AS$
+2. 787
+            Passagiere: 381-440
+            Security Deposit: 6,004,700-6,454,850 AS$
+3. Islander / Trislander
+            Passagiere: 9-9
+            Security Deposit: 122,450-138,700 AS$
+4. 208 Caravan
+            Passagiere: 0-14
+            Security Deposit: 178,650-188,550 AS$
+5. DHC-6
+            Passagiere: 19-19
+            Security Deposit: 183,350-183,350 AS$
+6. AN-28
+            Passagiere: 18-18
+            Security Deposit: 234,350-234,350 AS$
+7. 408 SkyCourier
+            Passagiere: 0-19
+            Security Deposit: 272,150-285,150 AS$
+8. DO228NG
+            Passagiere: 19-19
+            Security Deposit: 272,600-272,600 AS$
+9. PC-12
+            Passagiere: 0-9
+            Security Deposit: 279,950-302,050 AS$
+10. PC-24
+            Passagiere: 10-10
+            Security Deposit: 435,050-435,050 AS$
+11. Xian Y-7
+            Passagiere: 0-60
+            Security Deposit: 590,800-643,300 AS$
+12. ERJ 135/140/145
+            Passagiere: 37-50
+            Security Deposit: 620,800-863,900 AS$
+13. ATR 42
+            Passagiere: 0-60
+            Security Deposit: 628,950-636,450 AS$
+14. AN140
+            Passagiere: 52-52
+            Security Deposit: 671,700-671,700 AS$
+15. ATR 72
+            Passagiere: 0-74
+            Security Deposit: 725,900-756,100 AS$
+16. Dash 8
+            Passagiere: 0-90
+            Security Deposit: 798,000-909,650 AS$
+17. CRJ Series
+            Passagiere: 78-104
+            Security Deposit: 956,850-1,255,550 AS$
+18. EMB 170/175/190/195
+            Passagiere: 80-124
+            Security Deposit: 1,038,550-1,475,150 AS$
+19. ARJ21
+            Passagiere: 90-90
+            Security Deposit: 1,129,600-1,234,700 AS$
+20. AN148
+            Passagiere: 85-99
+            Security Deposit: 1,179,300-1,382,100 AS$
+21. Superjet
+            Passagiere: 108-108
+            Security Deposit: 1,339,900-1,458,850 AS$
+22. EMB 175/190/195 E2
+            Passagiere: 114-146
+            Security Deposit: 1,682,100-1,772,150 AS$
+23. 737-600/700/800/900
+            Passagiere: 0-220
+            Security Deposit: 1,749,500-2,470,600 AS$
+24. A319 / A320 / A321 NEO
+            Passagiere: 156-240
+            Security Deposit: 1,786,700-2,678,050 AS$
+25. A318 / A319
+            Passagiere: 145-160
+            Security Deposit: 1,788,100-2,271,000 AS$
+26. A220
+            Passagiere: 133-160
+            Security Deposit: 1,825,500-1,975,050 AS$
+27. 737 MAX
+            Passagiere: 189-220
+            Security Deposit: 1,946,400-2,542,250 AS$
+28. A320 / A321
+            Passagiere: 0-220
+            Security Deposit: 2,028,850-2,507,550 AS$
+29. C919
+            Passagiere: 174-174
+            Security Deposit: 2,039,600-2,160,650 AS$
+30. TU-204/214
+            Passagiere: 0-214
+            Security Deposit: 2,589,150-2,771,650 AS$
+31. 767-200/300/400
+            Passagiere: 0-351
+            Security Deposit: 4,883,400-5,042,400 AS$
+32. A330
+            Passagiere: 0-440
+            Security Deposit: 5,287,650-6,157,300 AS$
+33. A330 NEO
+            Passagiere: 406-460
+            Security Deposit: 5,749,750-6,330,800 AS$
+34. A350
+            Passagiere: 440-480
+            Security Deposit: 6,827,150-7,951,850 AS$
+35. 777-200/300
+            Passagiere: 0-550
+            Security Deposit: 7,153,100-8,765,400 AS$
+36. 747-8
+            Passagiere: 0-605
+            Security Deposit: 10,011,550-10,844,200 AS$
+37. A380
+            Passagiere: 853-853
+            Security Deposit: 12,421,500-12,421,500 AS$
+
+            SCHREIBE EXAKT DIESE 3 ZEILEN (auf Deutsch, mit exaktem Familiennamen):
+
+            FAMILIE: [Name aus Liste kopieren]
+            GRUND: [Deutsche Begründung]
+            PASSAGIER_ZIEL: [Zahl]
+
+            BEISPIEL:
+            FAMILIE: A319 / A320 / A321 NEO
+            GRUND: Beste Profitabilität für Mittelstrecken
+            PASSAGIER_ZIEL: 180
+
+            WICHTIG: 
+            - NUR DEUTSCH antworten!
+            - EXAKT den Namen aus der Liste kopieren!
+            - Keine englischen Wörter!
+
+            Deine Antwort:
+[2025-08-03T16:35:50.342Z] ==================================================
+[2025-08-03T16:35:50.342Z] ==================================================
+[2025-08-03T16:35:50.342Z] AI Familie-Wahl:  FAMILIE: 737-600/700/800/900
+GRUND: Hohe Passagierkapazität und gute Reichweite für Mittelstreckenflüge
+PASSAGIER_ZIEL: 210
+[2025-08-03T16:35:50.343Z] ==================================================
+[2025-08-03T16:35:50.343Z] ==================================================
+[2025-08-03T16:35:50.344Z] ✅ Familie gewählt: 737-600/700/800/900 (24 Modelle)
+[2025-08-03T16:35:50.345Z] AI Schritt 2: Wähle bestes Modell aus Familie...
+[2025-08-03T16:36:04.712Z] 🤖 AI Modell-Wahl:  EMPFEHLUNG: Boeing 737-800 BGW
+ANZAHL: 1
+GRUND: Die Boeing 737-800 ist die größte Maschine aus dem Sortiment und passt daher für den Hub in SFO am besten. Sie ermöglicht es, hohe Passagierkapazitäten zu transportieren und bietet gute Wirtschaftlichkeit durch ihre Leistungsfähigkeit und Effizienz an.
+SECURITY_DEPOSITS: 1863900
+WOCHENKOSTEN: 93200
+[2025-08-03T16:36:04.714Z] ✅ Modell gewählt: Boeing 737-800 BGW (1x)
+[2025-08-03T16:36:04.714Z] ⚖️ Loading current account balance...
+[2025-08-03T16:36:07.663Z] 💰 Current balance: AS$ 10,000,000 (positive)
+[2025-08-03T16:36:07.666Z] 📈 Balance history saved (197 entries total)
+[2025-08-03T16:36:07.666Z] ✅ Balance check: AS$ 10,000,000 >= 1,863,900
+[2025-08-03T16:36:07.671Z] [DECISION LOGGED] aircraft_leasing: AI empfiehlt Leasing: Boeing 737-800 BGW (1x) für QuestAir
+[2025-08-03T16:36:07.671Z] [REASONING] Die Boeing 737-800 ist die größte Maschine aus dem Sortiment und passt daher für den Hub in SFO am besten. Sie ermöglicht es, hohe Passagierkapazitäten zu transportieren und bietet gute Wirtschaftlichkeit durch ihre Leistungsfähigkeit und Effizienz an.
+[2025-08-03T16:36:07.671Z] 
+🎯 LEASING-EMPFEHLUNG (2-stufige AI-Analyse):
+[2025-08-03T16:36:07.671Z]    Familie gewählt: 737-600/700/800/900 (aus 24 Modellen)
+[2025-08-03T16:36:07.671Z]    Familie-Begründung: Hohe Passagierkapazität und gute Reichweite für Mittelstreckenflüge
+[2025-08-03T16:36:07.671Z]    Ziel-Passagiere: 210
+[2025-08-03T16:36:07.671Z] 
+[2025-08-03T16:36:07.671Z]    Flugzeug: Boeing 737-800 BGW (737-600/700/800/900)
+[2025-08-03T16:36:07.671Z]    Kaufpreis: 37,278,000 AS$
+[2025-08-03T16:36:07.671Z]    Anzahl: 1
+[2025-08-03T16:36:07.671Z]    Analysiert: 0 von 24 Modellen in der Familie
+[2025-08-03T16:36:07.671Z] 
+[2025-08-03T16:36:07.671Z]    💰 LEASING-KOSTEN:
+[2025-08-03T16:36:07.671Z]      Security Deposit (einmalig): 1,863,900 AS$
+[2025-08-03T16:36:07.671Z]      Wochenrate (ab Woche 2): 186,390 AS$/Woche
+[2025-08-03T16:36:07.671Z]      Begründung: Die Boeing 737-800 ist die größte Maschine aus dem Sortiment und passt daher für den Hub in SFO am besten. Sie ermöglicht es, hohe Passagierkapazitäten zu transportieren und bietet gute Wirtschaftlichkeit durch ihre Leistungsfähigkeit und Effizienz an.
+[2025-08-03T16:36:07.671Z]    ✅ FINANZIERBAR (Security Deposit = 536.5% des Guthabens)
+[2025-08-03T16:36:07.671Z]    📊 Wöchentliche Belastung: 1.9% des aktuellen Guthabens
+[2025-08-03T16:36:08.449Z] Cookies loaded into the browser.
+[2025-08-03T16:36:08.450Z] 🔐 Überprüfe Login-Status...
+[2025-08-03T16:36:09.683Z] [OUTCOME UPDATED] Decision mdvwl6cynyeuo9mugm: simulated_success
+[2025-08-03T16:36:10.259Z] 📊 Status für https://free2.airlinesim.aero/app/enterprise/dashboard: {"isLoggedIn":true,"hasLoginElements":false,"hasDashboardElements":true,"currentUrl":"https://free2.airlinesim.aero/app/enterprise/dashboard?0","title":"Dashboard: QuestAir | Free2 | AirlineSim"}
+[2025-08-03T16:36:10.260Z] ✅ Erfolgreich eingeloggt
+[2025-08-03T16:36:10.261Z] ✈️ Eingeloggt als: QuestAir
+[2025-08-03T16:36:10.262Z] ⚖️ Loading current account balance...
+[2025-08-03T16:36:13.305Z] 💰 Current balance: AS$ 10,000,000 (positive)
+[2025-08-03T16:36:13.306Z] 📈 Balance history saved (198 entries total)
+[2025-08-03T16:36:13.307Z] 🏢 Starte Station-Management basierend auf Flugzeug-Empfehlung...
+[2025-08-03T16:36:13.307Z] 🧠 Analysiere beste Stationen für Flugzeug-Empfehlung...
+[2025-08-03T16:36:13.307Z] 🏢 Lade existierende Stationen...
+[2025-08-03T16:36:16.234Z] 📊 Gefunden: 1 existierende Stationen
+[2025-08-03T16:36:16.235Z] ✈️ Aktive Stationen (mit Flügen): 0
+[2025-08-03T16:36:16.236Z] 🏢 AI analysiert beste Stationen für Flugzeug-Empfehlung...
+[2025-08-03T16:36:49.336Z] 🤖 AI Station-Empfehlung:  STATION_1: London Heathrow Airport (LHR) - United Kingdom
+GRUND_1: As the busiest airport in Europe and a major international hub, London Heathrow offers high passenger demand and minimal competition from other airlines. The Boeing 737-800's range covers flights between SFO and LHR, making it an ideal destination for QXX's expansion plans.
+ROUTE_1: SFO ↔ LHR - Estimated daily passengers: 4,500
+
+STATION_2: Tokyo Narita International Airport (NRT) - Japan
+GRUND_2: As the primary international airport serving the Greater Tokyo Area, NRT offers high passenger demand and minimal competition from other airlines. The Boeing 737-800's range covers flights between SFO and NRT, making it a strategic addition to QXX's network.
+ROUTE_2: SFO ↔ NRT - Estimated daily passengers: 1,500
+
+STATION_3: Sydney Airport (SYD) - Australia
+GRUND_3: As the busiest airport in Australia and a major international hub, SYD offers high passenger demand and minimal competition from other airlines. The Boeing 737-800's range covers flights between SFO and SYD, making it an attractive option for QXX's expansion plans.
+ROUTE_3: SFO ↔ SYD - Estimated daily passengers: 1,200
+
+STATION_4: Beijing Capital International Airport (PEK) - China
+GRUND_4: As the second busiest airport in the world and a major international hub, PEK offers high passenger demand and minimal competition from other airlines. The Boeing 737-800's range covers flights between SFO and PEK, making it an important addition to QXX's network.
+ROUTE_4: SFO ↔ PEK - Estimated daily passengers: 1,000
+
+STATION_5: Mexico City International Airport (MEX) - Mexico
+GRUND_5: As the busiest airport in Mexico and a major international hub, MEX offers high passenger demand and minimal competition from other airlines. The Boeing 737-800's range covers flights between SFO and MEX, making it an ideal location for QXX's expansion plans.
+ROUTE_5: SFO ↔ MEX - Estimated daily passengers: 600
+
+PRIORITÄT: 1, 2, 3, 4, 5
+[2025-08-03T16:36:49.341Z] 
+🎯 STATION-EMPFEHLUNGEN:
+[2025-08-03T16:36:49.341Z]    Basierend auf: Boeing 737-800 BGW (1x)
+[2025-08-03T16:36:49.341Z]    Passagiere pro Flug: 189
+[2025-08-03T16:36:49.341Z]    Reichweite: 1,985-4,400 km
+[2025-08-03T16:36:49.341Z] 
+[2025-08-03T16:36:49.341Z]    📊 Gefunden: 1 existierende Stationen
+[2025-08-03T16:36:49.341Z]    🆓 Stationen sind KOMPLETT kostenlos!
+[2025-08-03T16:36:49.341Z]    🎯 Top 5 empfohlene neue Stationen:
+[2025-08-03T16:36:49.341Z]      1. London Heathrow Airport (LHR) - United Kingdom
+[2025-08-03T16:36:49.342Z]         🆓 KOMPLETT KOSTENLOS! (Station + Personal)
+[2025-08-03T16:36:49.342Z]         ✈️ Route: SFO ↔ LHR
+[2025-08-03T16:36:49.342Z]         👥 Erwartete Passagiere: 100/Tag
+[2025-08-03T16:36:49.342Z]         📝 Grund: As the busiest airport in Europe and a major international hub, London Heathrow offers high passenger demand and minimal competition from other airlines. The Boeing 737-800's range covers flights between SFO and LHR, making it an ideal destination for QXX's expansion plans.
+[2025-08-03T16:36:49.342Z] 
+[2025-08-03T16:36:49.342Z]      2. Tokyo Narita International Airport (NRT) - Japan
+[2025-08-03T16:36:49.342Z]         🆓 KOMPLETT KOSTENLOS! (Station + Personal)
+[2025-08-03T16:36:49.342Z]         ✈️ Route: SFO ↔ NRT
+[2025-08-03T16:36:49.342Z]         👥 Erwartete Passagiere: 100/Tag
+[2025-08-03T16:36:49.342Z]         📝 Grund: As the primary international airport serving the Greater Tokyo Area, NRT offers high passenger demand and minimal competition from other airlines. The Boeing 737-800's range covers flights between SFO and NRT, making it a strategic addition to QXX's network.
+[2025-08-03T16:36:49.342Z] 
+[2025-08-03T16:36:49.342Z]      3. Sydney Airport (SYD) - Australia
+[2025-08-03T16:36:49.342Z]         🆓 KOMPLETT KOSTENLOS! (Station + Personal)
+[2025-08-03T16:36:49.342Z]         ✈️ Route: SFO ↔ SYD
+[2025-08-03T16:36:49.342Z]         👥 Erwartete Passagiere: 100/Tag
+[2025-08-03T16:36:49.342Z]         📝 Grund: As the busiest airport in Australia and a major international hub, SYD offers high passenger demand and minimal competition from other airlines. The Boeing 737-800's range covers flights between SFO and SYD, making it an attractive option for QXX's expansion plans.
+[2025-08-03T16:36:49.342Z] 
+[2025-08-03T16:36:49.342Z]      4. Beijing Capital International Airport (PEK) - China
+[2025-08-03T16:36:49.342Z]         🆓 KOMPLETT KOSTENLOS! (Station + Personal)
+[2025-08-03T16:36:49.343Z]         ✈️ Route: SFO ↔ PEK
+[2025-08-03T16:36:49.343Z]         👥 Erwartete Passagiere: 100/Tag
+[2025-08-03T16:36:49.343Z]         📝 Grund: As the second busiest airport in the world and a major international hub, PEK offers high passenger demand and minimal competition from other airlines. The Boeing 737-800's range covers flights between SFO and PEK, making it an important addition to QXX's network.
+[2025-08-03T16:36:49.343Z] 
+[2025-08-03T16:36:49.343Z]      5. Mexico City International Airport (MEX) - Mexico
+[2025-08-03T16:36:49.343Z]         🆓 KOMPLETT KOSTENLOS! (Station + Personal)
+[2025-08-03T16:36:49.343Z]         ✈️ Route: SFO ↔ MEX
+[2025-08-03T16:36:49.343Z]         👥 Erwartete Passagiere: 100/Tag
+[2025-08-03T16:36:49.344Z]         📝 Grund: As the busiest airport in Mexico and a major international hub, MEX offers high passenger demand and minimal competition from other airlines. The Boeing 737-800's range covers flights between SFO and MEX, making it an ideal location for QXX's expansion plans.
+[2025-08-03T16:36:49.344Z] 
+[2025-08-03T16:36:49.344Z] ✅ Station ausgewählt: London Heathrow Airport (LHR)
+[2025-08-03T16:36:49.344Z] 🆓 Station-Eröffnung: KOMPLETT KOSTENLOS!
+[2025-08-03T16:36:49.344Z] 📊 Begründung: As the busiest airport in Europe and a major international hub, London Heathrow offers high passenger demand and minimal competition from other airlines. The Boeing 737-800's range covers flights between SFO and LHR, making it an ideal destination for QXX's expansion plans.
+[2025-08-03T16:36:49.344Z] 🏗️ Öffne neue Station: LHR
+[2025-08-03T16:36:52.519Z] [DECISION LOGGED] station_management: AI empfiehlt Station: London Heathrow Airport (LHR) für Boeing 737-800 BGW
+[2025-08-03T16:36:52.519Z] [REASONING] As the busiest airport in Europe and a major international hub, London Heathrow offers high passenger demand and minimal competition from other airlines. The Boeing 737-800's range covers flights between SFO and LHR, making it an ideal destination for QXX's expansion plans.
+[2025-08-03T16:36:52.596Z] 
+✈️ Boeing 737-800 BGW x1
+[2025-08-03T16:36:52.596Z] 🏢 London Heathrow Airport
+[2025-08-03T16:36:52.596Z] 💰 1,863,900 AS$ initial
+[2025-08-03T16:36:52.599Z] [DECISION LOGGED] integrated_airline_management: Boeing 737-800 BGW + London Heathrow Airport
+[2025-08-03T16:36:52.599Z] [REASONING] Airline Setup abgeschlossen
+[2025-08-03T16:36:52.599Z] 📊 INTEGRATED AIRLINE MANAGEMENT SUMMARY:
+[2025-08-03T16:36:52.599Z]    Action taken: completed
+[2025-08-03T16:36:52.599Z] 
+✈️ AIRCRAFT RECOMMENDATION:
+[2025-08-03T16:36:52.599Z]    Aircraft: Boeing 737-800 BGW
+[2025-08-03T16:36:52.599Z]    Quantity: 1
+[2025-08-03T16:36:52.599Z]    Total Cost: 1,863,900 AS$
+[2025-08-03T16:36:52.599Z]    Reasoning: Die Boeing 737-800 ist die größte Maschine aus dem Sortiment und passt daher für den Hub in SFO am besten. Sie ermöglicht es, hohe Passagierkapazitäten zu transportieren und bietet gute Wirtschaftlichkeit durch ihre Leistungsfähigkeit und Effizienz an.
+[2025-08-03T16:36:52.599Z] 
+🏢 STATION RECOMMENDATION:
+[2025-08-03T16:36:52.599Z]    Station: London Heathrow Airport (LHR), United Kingdom
+[2025-08-03T16:36:52.599Z]    Route: SFO ↔ LHR
+[2025-08-03T16:36:52.599Z]    Expected Passengers: 100/day
+[2025-08-03T16:36:52.599Z]    Reasoning: As the busiest airport in Europe and a major international hub, London Heathrow offers high passenger demand and minimal competition from other airlines. The Boeing 737-800's range covers flights between SFO and LHR, making it an ideal destination for QXX's expansion plans.
+[2025-08-03T16:36:52.599Z] 
+💰 TOTAL INVESTMENT:
+[2025-08-03T16:36:52.599Z]    Initial costs: 1,863,900 AS$
+[2025-08-03T16:36:52.599Z]    Weekly costs: 186,390 AS$/week
+[2025-08-03T16:36:52.601Z] 📈 ANALYTICS:
+[2025-08-03T16:36:52.601Z]    Total decisions made: 88
+[2025-08-03T16:36:52.601Z]    Success rate: 0.0%
+[2025-08-03T16:36:52.601Z]    Categories: system, aircraft, aircraft_leasing, station_management, integrated_airline_management
+[2025-08-03T16:36:52.601Z] 
+✅ Integrated AI Bot completed successfully!
+[2025-08-03T16:36:52.601Z] 
+🎉 Integrated bot execution completed!
+[2025-08-03T16:38:31.266Z] Starting Integrated AirlineSim Bot
+[2025-08-03T16:38:31.267Z] ====================================================
+[2025-08-03T16:38:31.862Z] Cookies loaded into the browser.
+[2025-08-03T16:38:31.862Z] 🔐 Überprüfe Login-Status...
+[2025-08-03T16:38:33.902Z] 📊 Status für https://free2.airlinesim.aero/app/enterprise/dashboard: {"isLoggedIn":true,"hasLoginElements":false,"hasDashboardElements":true,"currentUrl":"https://free2.airlinesim.aero/app/enterprise/dashboard?0","title":"Dashboard: QuestAir | Free2 | AirlineSim"}
+[2025-08-03T16:38:33.903Z] ✅ Erfolgreich eingeloggt
+[2025-08-03T16:38:33.905Z] ✈️ Eingeloggt als: QuestAir
+[2025-08-03T16:38:33.905Z] ⚖️ Loading current account balance...
+[2025-08-03T16:38:36.594Z] 💰 Current balance: AS$ 10,000,000 (positive)
+[2025-08-03T16:38:36.596Z] 📈 Balance history saved (199 entries total)
+[2025-08-03T16:38:36.596Z] 🔍 Überprüfe aktuellen Fleet-Status...
+[2025-08-03T16:38:38.840Z] 📊 Fleet Status: {"hasDefaultFleet":true,"hasNoAircraft":true,"isEmpty":true}
+[2025-08-03T16:38:38.841Z] ⚠️ Keine Flugzeuge gefunden - AI wird Leasing-Empfehlung geben
+[2025-08-03T16:38:38.842Z] 🔍 Lade verfügbare Flugzeuge...
+[2025-08-03T16:38:38.844Z] 📋 Aircraft-Cache ist gültig (42.9h alt, max 72h)
+[2025-08-03T16:38:38.845Z] ✅ Verwende cached Aircraft-Daten (181 Flugzeuge)
+[2025-08-03T16:38:38.863Z] 💰 Security Deposit Spanne: 122,450 - 12,421,500 AS$
+[2025-08-03T16:38:38.863Z] 🧠 AI analysiert beste Flugzeug-Leasing-Option (2-stufig)...
+[2025-08-03T16:38:38.863Z] ⚖️ Loading current account balance...
+[2025-08-03T16:38:41.850Z] 💰 Current balance: AS$ 10,000,000 (positive)
+[2025-08-03T16:38:41.852Z] 📈 Balance history saved (200 entries total)
+[2025-08-03T16:38:41.852Z] 💰 Using 80% of current balance as budget: 8,000,000 AS$
+[2025-08-03T16:38:41.852Z] 🧠 Starte zweistufige AI-Analyse für Flugzeug-Leasing...
+[2025-08-03T16:38:41.853Z] 📊 Gefunden: 37 Flugzeugfamilien mit insgesamt 181 Modellen
+[2025-08-03T16:38:41.853Z] Wähle beste Flugzeugfamilie...
+[2025-08-03T16:38:54.828Z] ==================================================
+[2025-08-03T16:38:54.829Z] ==================================================
+[2025-08-03T16:38:54.829Z] AI Familie-Wahl Prompt: Du bist ein deutscher AirlineSim-Experte. Antworte NUR auf DEUTSCH!
+
+            Hub: SFO
+            Budget: 8,000,000 AS$
+
+            VERFÜGBARE FAMILIEN:
+            1. 410
+            Passagiere: 19-19
+            Security Deposit: 236,850-263,650 AS$
+2. 787
+            Passagiere: 381-440
+            Security Deposit: 6,004,700-6,454,850 AS$
+3. Islander / Trislander
+            Passagiere: 9-9
+            Security Deposit: 122,450-138,700 AS$
+4. 208 Caravan
+            Passagiere: 0-14
+            Security Deposit: 178,650-188,550 AS$
+5. DHC-6
+            Passagiere: 19-19
+            Security Deposit: 183,350-183,350 AS$
+6. AN-28
+            Passagiere: 18-18
+            Security Deposit: 234,350-234,350 AS$
+7. 408 SkyCourier
+            Passagiere: 0-19
+            Security Deposit: 272,150-285,150 AS$
+8. DO228NG
+            Passagiere: 19-19
+            Security Deposit: 272,600-272,600 AS$
+9. PC-12
+            Passagiere: 0-9
+            Security Deposit: 279,950-302,050 AS$
+10. PC-24
+            Passagiere: 10-10
+            Security Deposit: 435,050-435,050 AS$
+11. Xian Y-7
+            Passagiere: 0-60
+            Security Deposit: 590,800-643,300 AS$
+12. ERJ 135/140/145
+            Passagiere: 37-50
+            Security Deposit: 620,800-863,900 AS$
+13. ATR 42
+            Passagiere: 0-60
+            Security Deposit: 628,950-636,450 AS$
+14. AN140
+            Passagiere: 52-52
+            Security Deposit: 671,700-671,700 AS$
+15. ATR 72
+            Passagiere: 0-74
+            Security Deposit: 725,900-756,100 AS$
+16. Dash 8
+            Passagiere: 0-90
+            Security Deposit: 798,000-909,650 AS$
+17. CRJ Series
+            Passagiere: 78-104
+            Security Deposit: 956,850-1,255,550 AS$
+18. EMB 170/175/190/195
+            Passagiere: 80-124
+            Security Deposit: 1,038,550-1,475,150 AS$
+19. ARJ21
+            Passagiere: 90-90
+            Security Deposit: 1,129,600-1,234,700 AS$
+20. AN148
+            Passagiere: 85-99
+            Security Deposit: 1,179,300-1,382,100 AS$
+21. Superjet
+            Passagiere: 108-108
+            Security Deposit: 1,339,900-1,458,850 AS$
+22. EMB 175/190/195 E2
+            Passagiere: 114-146
+            Security Deposit: 1,682,100-1,772,150 AS$
+23. 737-600/700/800/900
+            Passagiere: 0-220
+            Security Deposit: 1,749,500-2,470,600 AS$
+24. A319 / A320 / A321 NEO
+            Passagiere: 156-240
+            Security Deposit: 1,786,700-2,678,050 AS$
+25. A318 / A319
+            Passagiere: 145-160
+            Security Deposit: 1,788,100-2,271,000 AS$
+26. A220
+            Passagiere: 133-160
+            Security Deposit: 1,825,500-1,975,050 AS$
+27. 737 MAX
+            Passagiere: 189-220
+            Security Deposit: 1,946,400-2,542,250 AS$
+28. A320 / A321
+            Passagiere: 0-220
+            Security Deposit: 2,028,850-2,507,550 AS$
+29. C919
+            Passagiere: 174-174
+            Security Deposit: 2,039,600-2,160,650 AS$
+30. TU-204/214
+            Passagiere: 0-214
+            Security Deposit: 2,589,150-2,771,650 AS$
+31. 767-200/300/400
+            Passagiere: 0-351
+            Security Deposit: 4,883,400-5,042,400 AS$
+32. A330
+            Passagiere: 0-440
+            Security Deposit: 5,287,650-6,157,300 AS$
+33. A330 NEO
+            Passagiere: 406-460
+            Security Deposit: 5,749,750-6,330,800 AS$
+34. A350
+            Passagiere: 440-480
+            Security Deposit: 6,827,150-7,951,850 AS$
+35. 777-200/300
+            Passagiere: 0-550
+            Security Deposit: 7,153,100-8,765,400 AS$
+36. 747-8
+            Passagiere: 0-605
+            Security Deposit: 10,011,550-10,844,200 AS$
+37. A380
+            Passagiere: 853-853
+            Security Deposit: 12,421,500-12,421,500 AS$
+
+            SCHREIBE EXAKT DIESE 3 ZEILEN (auf Deutsch, mit exaktem Familiennamen):
+
+            FAMILIE: [Name aus Liste kopieren]
+            GRUND: [Deutsche Begründung]
+            PASSAGIER_ZIEL: [Zahl]
+
+            BEISPIEL:
+            FAMILIE: A319 / A320 / A321 NEO
+            GRUND: Beste Profitabilität für Mittelstrecken
+            PASSAGIER_ZIEL: 180
+
+            WICHTIG: 
+            - NUR DEUTSCH antworten!
+            - EXAKT den Namen aus der Liste kopieren!
+            - Keine englischen Wörter!
+
+            Deine Antwort:
+[2025-08-03T16:38:54.829Z] ==================================================
+[2025-08-03T16:38:54.830Z] ==================================================
+[2025-08-03T16:38:54.830Z] AI Familie-Wahl:  FAMILIE: DHC-6
+GRUND: Beste für Kurzstrecken und schmale Pisten
+PASSAGIER_ZIEL: 19
+[2025-08-03T16:38:54.830Z] ==================================================
+[2025-08-03T16:38:54.830Z] ==================================================
+[2025-08-03T16:38:54.831Z] ✅ Familie gewählt: DHC-6 (1 Modelle)
+[2025-08-03T16:38:54.832Z] AI Schritt 2: Wähle bestes Modell aus Familie...
+[2025-08-03T16:39:00.415Z] 🤖 AI Modell-Wahl:  EMPFEHLUNG: DHC-6-400
+ANZAHL: 1
+GRUND: Geeignet für Flüge zu kleineren Flugplätzen und touristischen Zielen.
+SECURITY_DEPOSITS: 183,350 AS$
+WOCHENKOSTEN: [Gesamtsumme ohne Punkte]
+[2025-08-03T16:39:00.417Z] ✅ Modell gewählt: De Havilland DHC-6-400 (1x)
+[2025-08-03T16:39:00.417Z] ⚖️ Loading current account balance...
+[2025-08-03T16:39:02.862Z] 💰 Current balance: AS$ 10,000,000 (positive)
+[2025-08-03T16:39:02.864Z] 📈 Balance history saved (201 entries total)
+[2025-08-03T16:39:02.864Z] ✅ Balance check: AS$ 10,000,000 >= 183,350
+[2025-08-03T16:39:02.871Z] [DECISION LOGGED] aircraft_leasing: AI empfiehlt Leasing: De Havilland DHC-6-400 (1x) für QuestAir
+[2025-08-03T16:39:02.871Z] [REASONING] Geeignet für Flüge zu kleineren Flugplätzen und touristischen Zielen.
+[2025-08-03T16:39:02.871Z] 
+🎯 LEASING-EMPFEHLUNG (2-stufige AI-Analyse):
+[2025-08-03T16:39:02.871Z]    Familie gewählt: DHC-6 (aus 1 Modellen)
+[2025-08-03T16:39:02.871Z]    Familie-Begründung: Beste für Kurzstrecken und schmale Pisten
+[2025-08-03T16:39:02.871Z]    Ziel-Passagiere: 19
+[2025-08-03T16:39:02.871Z] 
+[2025-08-03T16:39:02.871Z]    Flugzeug: De Havilland DHC-6-400 (DHC-6)
+[2025-08-03T16:39:02.871Z]    Kaufpreis: 3,667,000 AS$
+[2025-08-03T16:39:02.871Z]    Anzahl: 1
+[2025-08-03T16:39:02.871Z]    Analysiert: 0 von 1 Modellen in der Familie
+[2025-08-03T16:39:02.871Z] 
+[2025-08-03T16:39:02.871Z]    💰 LEASING-KOSTEN:
+[2025-08-03T16:39:02.871Z]      Security Deposit (einmalig): 183,350 AS$
+[2025-08-03T16:39:02.871Z]      Wochenrate (ab Woche 2): 18,335 AS$/Woche
+[2025-08-03T16:39:02.871Z]      Begründung: Geeignet für Flüge zu kleineren Flugplätzen und touristischen Zielen.
+[2025-08-03T16:39:02.871Z]    ✅ FINANZIERBAR (Security Deposit = 5454.0% des Guthabens)
+[2025-08-03T16:39:02.871Z]    📊 Wöchentliche Belastung: 0.2% des aktuellen Guthabens
+[2025-08-03T16:39:03.620Z] Cookies loaded into the browser.
+[2025-08-03T16:39:03.620Z] 🔐 Überprüfe Login-Status...
+[2025-08-03T16:39:04.881Z] [OUTCOME UPDATED] Decision mdvwoxjkvbhvooi0y5: simulated_success
+[2025-08-03T16:39:05.656Z] 📊 Status für https://free2.airlinesim.aero/app/enterprise/dashboard: {"isLoggedIn":true,"hasLoginElements":false,"hasDashboardElements":true,"currentUrl":"https://free2.airlinesim.aero/app/enterprise/dashboard?0","title":"Dashboard: QuestAir | Free2 | AirlineSim"}
+[2025-08-03T16:39:05.657Z] ✅ Erfolgreich eingeloggt
+[2025-08-03T16:39:05.659Z] ✈️ Eingeloggt als: QuestAir
+[2025-08-03T16:39:05.660Z] ⚖️ Loading current account balance...
+[2025-08-03T16:39:08.407Z] 💰 Current balance: AS$ 10,000,000 (positive)
+[2025-08-03T16:39:08.408Z] 📈 Balance history saved (202 entries total)
+[2025-08-03T16:39:08.408Z] 🏢 Starte Station-Management basierend auf Flugzeug-Empfehlung...
+[2025-08-03T16:39:08.408Z] 🧠 Analysiere beste Stationen für Flugzeug-Empfehlung...
+[2025-08-03T16:39:08.409Z] 🏢 Lade existierende Stationen...
+[2025-08-03T16:39:11.357Z] 📊 Gefunden: 1 existierende Stationen
+[2025-08-03T16:39:11.358Z] ✈️ Aktive Stationen (mit Flügen): 0
+[2025-08-03T16:39:11.358Z] 🏢 AI analysiert beste Stationen für Flugzeug-Empfehlung...
+[2025-08-03T16:39:51.107Z] 🤖 AI Station-Empfehlung: 
+ STATION_1: Juneau International Airport (JNU) - USA
+GRUND_1: Juneau has high demand for flights due to its status as the capital city of Alaska and popular tourist destination for cruise ships. The De Havilland DHC-6-400 has a range of 210-1,413 km which covers most of the destinations in Alaska. Juneau also has limited competition with only one major airline serving the city, making it an attractive option for QuestAir to establish its presence and expand its network.
+ROUTE_1: SFO ↔ JNU - Estimated daily passengers: 600
+
+STATION_2: Anchorage International Airport (ANC) - USA
+GRUND_2: Anchorage is the largest city in Alaska and a major transportation hub, making it an ideal location for QuestAir to establish its presence. It has high demand for flights due to its role as a gateway to the interior of the state and popular tourist destination. The De Havilland DHC-6-400's range makes it suitable for connecting Anchorage to smaller communities in the region.
+ROUTE_2: SFO ↔ ANC - Estimated daily passengers: 1,200
+
+STATION_3: Fairbanks International Airport (FAI) - USA
+GRUND_3: Fairbanks is another major city in Alaska and serves as a gateway to the Arctic Circle. It has high demand for flights due to its role in the state's mining, oil, and tourism industries. The De Havilland DHC-6-400 can reach many destinations within Alaska from Fairbanks, making it an attractive option for QuestAir to expand its network.
+ROUTE_3: SFO ↔ FAI - Estimated daily passengers: 500
+
+STATION_4: Homer Airport (HRI) - USA
+GRUND_4: Homer is a small city in Alaska known for its scenic beauty and outdoor recreational activities. It has high demand for flights due to its popularity as a tourist destination, especially among cruise ship passengers. The De Havilland DHC-6-400's short takeoff and landing capabilities make it suitable for serving smaller airports like Homer, providing an opportunity for QuestAir to tap into new markets.
+ROUTE_4: SFO ↔ HRI - Estimated daily passengers: 200
+
+STATION_5: Sitka Rocky Gutierrez Airport (SIT) - USA
+GRUND_5: Sitka is another small city in Alaska with high demand for flights due to its popularity as a tourist destination and access point to fishing, hunting, and outdoor recreation activities. The De Havilland DHC-6-400's range and short takeoff and landing capabilities make it suitable for serving smaller airports like Sitka, providing an opportunity for QuestAir to establish a presence in new markets.
+ROUTE_5: SFO ↔ SIT - Estimated daily passengers: 150
+
+PRIORITÄT: 2, 3, 4, 5
+[2025-08-03T16:39:51.111Z] 
+🎯 STATION-EMPFEHLUNGEN:
+[2025-08-03T16:39:51.111Z]    Basierend auf: De Havilland DHC-6-400 (1x)
+[2025-08-03T16:39:51.111Z]    Passagiere pro Flug: 19
+[2025-08-03T16:39:51.111Z]    Reichweite: 210-1,413 km
+[2025-08-03T16:39:51.111Z] 
+[2025-08-03T16:39:51.111Z]    📊 Gefunden: 1 existierende Stationen
+[2025-08-03T16:39:51.111Z]    🆓 Stationen sind KOMPLETT kostenlos!
+[2025-08-03T16:39:51.111Z]    🎯 Top 5 empfohlene neue Stationen:
+[2025-08-03T16:39:51.111Z]      1. Anchorage International Airport (ANC) - USA
+[2025-08-03T16:39:51.111Z]         🆓 KOMPLETT KOSTENLOS! (Station + Personal)
+[2025-08-03T16:39:51.112Z]         ✈️ Route: SFO ↔ ANC
+[2025-08-03T16:39:51.112Z]         👥 Erwartete Passagiere: 100/Tag
+[2025-08-03T16:39:51.112Z]         📝 Grund: Anchorage is the largest city in Alaska and a major transportation hub, making it an ideal location for QuestAir to establish its presence. It has high demand for flights due to its role as a gateway to the interior of the state and popular tourist destination. The De Havilland DHC-6-400's range makes it suitable for connecting Anchorage to smaller communities in the region.
+[2025-08-03T16:39:51.112Z] 
+[2025-08-03T16:39:51.112Z]      2. Juneau International Airport (JNU) - USA
+[2025-08-03T16:39:51.112Z]         🆓 KOMPLETT KOSTENLOS! (Station + Personal)
+[2025-08-03T16:39:51.112Z]         ✈️ Route: SFO ↔ JNU
+[2025-08-03T16:39:51.112Z]         👥 Erwartete Passagiere: 100/Tag
+[2025-08-03T16:39:51.112Z]         📝 Grund: Juneau has high demand for flights due to its status as the capital city of Alaska and popular tourist destination for cruise ships. The De Havilland DHC-6-400 has a range of 210-1,413 km which covers most of the destinations in Alaska. Juneau also has limited competition with only one major airline serving the city, making it an attractive option for QuestAir to establish its presence and expand its network.
+[2025-08-03T16:39:51.112Z] 
+[2025-08-03T16:39:51.112Z]      3. Fairbanks International Airport (FAI) - USA
+[2025-08-03T16:39:51.112Z]         🆓 KOMPLETT KOSTENLOS! (Station + Personal)
+[2025-08-03T16:39:51.112Z]         ✈️ Route: SFO ↔ FAI
+[2025-08-03T16:39:51.112Z]         👥 Erwartete Passagiere: 100/Tag
+[2025-08-03T16:39:51.112Z]         📝 Grund: Fairbanks is another major city in Alaska and serves as a gateway to the Arctic Circle. It has high demand for flights due to its role in the state's mining, oil, and tourism industries. The De Havilland DHC-6-400 can reach many destinations within Alaska from Fairbanks, making it an attractive option for QuestAir to expand its network.
+[2025-08-03T16:39:51.112Z] 
+[2025-08-03T16:39:51.112Z]      4. Homer Airport (HRI) - USA
+[2025-08-03T16:39:51.112Z]         🆓 KOMPLETT KOSTENLOS! (Station + Personal)
+[2025-08-03T16:39:51.112Z]         ✈️ Route: SFO ↔ HRI
+[2025-08-03T16:39:51.112Z]         👥 Erwartete Passagiere: 100/Tag
+[2025-08-03T16:39:51.112Z]         📝 Grund: Homer is a small city in Alaska known for its scenic beauty and outdoor recreational activities. It has high demand for flights due to its popularity as a tourist destination, especially among cruise ship passengers. The De Havilland DHC-6-400's short takeoff and landing capabilities make it suitable for serving smaller airports like Homer, providing an opportunity for QuestAir to tap into new markets.
+[2025-08-03T16:39:51.112Z] 
+[2025-08-03T16:39:51.112Z]      5. Sitka Rocky Gutierrez Airport (SIT) - USA
+[2025-08-03T16:39:51.112Z]         🆓 KOMPLETT KOSTENLOS! (Station + Personal)
+[2025-08-03T16:39:51.112Z]         ✈️ Route: SFO ↔ SIT
+[2025-08-03T16:39:51.112Z]         👥 Erwartete Passagiere: 100/Tag
+[2025-08-03T16:39:51.113Z]         📝 Grund: Sitka is another small city in Alaska with high demand for flights due to its popularity as a tourist destination and access point to fishing, hunting, and outdoor recreation activities. The De Havilland DHC-6-400's range and short takeoff and landing capabilities make it suitable for serving smaller airports like Sitka, providing an opportunity for QuestAir to establish a presence in new markets.
+[2025-08-03T16:39:51.113Z] 
+[2025-08-03T16:39:51.113Z] ✅ Station ausgewählt: Anchorage International Airport (ANC)
+[2025-08-03T16:39:51.113Z] 🆓 Station-Eröffnung: KOMPLETT KOSTENLOS!
+[2025-08-03T16:39:51.113Z] 📊 Begründung: Anchorage is the largest city in Alaska and a major transportation hub, making it an ideal location for QuestAir to establish its presence. It has high demand for flights due to its role as a gateway to the interior of the state and popular tourist destination. The De Havilland DHC-6-400's range makes it suitable for connecting Anchorage to smaller communities in the region.
+[2025-08-03T16:39:51.114Z] 🏗️ Öffne neue Station: ANC
+[2025-08-03T16:39:54.385Z] [DECISION LOGGED] station_management: AI empfiehlt Station: Anchorage International Airport (ANC) für De Havilland DHC-6-400
+[2025-08-03T16:39:54.385Z] [REASONING] Anchorage is the largest city in Alaska and a major transportation hub, making it an ideal location for QuestAir to establish its presence. It has high demand for flights due to its role as a gateway to the interior of the state and popular tourist destination. The De Havilland DHC-6-400's range makes it suitable for connecting Anchorage to smaller communities in the region.
+[2025-08-03T16:39:54.465Z] 
+✈️ De Havilland DHC-6-400 x1
+[2025-08-03T16:39:54.465Z] 🏢 Anchorage International Airport
+[2025-08-03T16:39:54.465Z] 💰 183,350 AS$ initial
+[2025-08-03T16:39:54.469Z] [DECISION LOGGED] integrated_airline_management: De Havilland DHC-6-400 + Anchorage International Airport
+[2025-08-03T16:39:54.469Z] [REASONING] Airline Setup abgeschlossen
+[2025-08-03T16:39:54.469Z] 📊 INTEGRATED AIRLINE MANAGEMENT SUMMARY:
+[2025-08-03T16:39:54.469Z]    Action taken: completed
+[2025-08-03T16:39:54.469Z] 
+✈️ AIRCRAFT RECOMMENDATION:
+[2025-08-03T16:39:54.469Z]    Aircraft: De Havilland DHC-6-400
+[2025-08-03T16:39:54.469Z]    Quantity: 1
+[2025-08-03T16:39:54.469Z]    Total Cost: 183,350 AS$
+[2025-08-03T16:39:54.469Z]    Reasoning: Geeignet für Flüge zu kleineren Flugplätzen und touristischen Zielen.
+[2025-08-03T16:39:54.469Z] 
+🏢 STATION RECOMMENDATION:
+[2025-08-03T16:39:54.469Z]    Station: Anchorage International Airport (ANC), USA
+[2025-08-03T16:39:54.469Z]    Route: SFO ↔ ANC
+[2025-08-03T16:39:54.469Z]    Expected Passengers: 100/day
+[2025-08-03T16:39:54.469Z]    Reasoning: Anchorage is the largest city in Alaska and a major transportation hub, making it an ideal location for QuestAir to establish its presence. It has high demand for flights due to its role as a gateway to the interior of the state and popular tourist destination. The De Havilland DHC-6-400's range makes it suitable for connecting Anchorage to smaller communities in the region.
+[2025-08-03T16:39:54.469Z] 
+💰 TOTAL INVESTMENT:
+[2025-08-03T16:39:54.469Z]    Initial costs: 183,350 AS$
+[2025-08-03T16:39:54.469Z]    Weekly costs: 18,335 AS$/week
+[2025-08-03T16:39:54.471Z] 📈 ANALYTICS:
+[2025-08-03T16:39:54.471Z]    Total decisions made: 91
+[2025-08-03T16:39:54.471Z]    Success rate: 0.0%
+[2025-08-03T16:39:54.471Z]    Categories: system, aircraft, aircraft_leasing, station_management, integrated_airline_management
+[2025-08-03T16:39:54.471Z] 
+✅ Integrated AI Bot completed successfully!
+[2025-08-03T16:39:54.471Z] 
+🎉 Integrated bot execution completed!
+[2025-08-03T16:40:42.667Z] Starting Integrated AirlineSim Bot
+[2025-08-03T16:40:42.668Z] ====================================================
+[2025-08-03T16:40:43.268Z] Cookies loaded into the browser.
+[2025-08-03T16:40:43.269Z] 🔐 Überprüfe Login-Status...
+[2025-08-03T16:40:46.282Z] 📊 Status für https://free2.airlinesim.aero/app/enterprise/dashboard: {"isLoggedIn":true,"hasLoginElements":false,"hasDashboardElements":true,"currentUrl":"https://free2.airlinesim.aero/app/enterprise/dashboard?0","title":"Dashboard: QuestAir | Free2 | AirlineSim"}
+[2025-08-03T16:40:46.282Z] ✅ Erfolgreich eingeloggt
+[2025-08-03T16:40:46.284Z] ✈️ Eingeloggt als: QuestAir
+[2025-08-03T16:40:46.284Z] ⚖️ Loading current account balance...
+[2025-08-03T16:40:49.401Z] 💰 Current balance: AS$ 10,000,000 (positive)
+[2025-08-03T16:40:49.403Z] 📈 Balance history saved (203 entries total)
+[2025-08-03T16:40:49.403Z] 🔍 Überprüfe aktuellen Fleet-Status...
+[2025-08-03T16:40:51.644Z] 📊 Fleet Status: {"hasDefaultFleet":true,"hasNoAircraft":true,"isEmpty":true}
+[2025-08-03T16:40:51.644Z] ⚠️ Keine Flugzeuge gefunden - AI wird Leasing-Empfehlung geben
+[2025-08-03T16:40:51.645Z] 🔍 Lade verfügbare Flugzeuge...
+[2025-08-03T16:40:51.646Z] 📋 Aircraft-Cache ist gültig (43.0h alt, max 72h)
+[2025-08-03T16:40:51.646Z] ✅ Verwende cached Aircraft-Daten (181 Flugzeuge)
+[2025-08-03T16:40:51.664Z] 💰 Security Deposit Spanne: 122,450 - 12,421,500 AS$
+[2025-08-03T16:40:51.664Z] 🧠 AI analysiert beste Flugzeug-Leasing-Option (2-stufig)...
+[2025-08-03T16:40:51.664Z] ⚖️ Loading current account balance...
+[2025-08-03T16:40:54.267Z] 💰 Current balance: AS$ 10,000,000 (positive)
+[2025-08-03T16:40:54.269Z] 📈 Balance history saved (204 entries total)
+[2025-08-03T16:40:54.269Z] 💰 Using 80% of current balance as budget: 8,000,000 AS$
+[2025-08-03T16:40:54.269Z] 🧠 Starte zweistufige AI-Analyse für Flugzeug-Leasing...
+[2025-08-03T16:40:54.269Z] 📊 Gefunden: 37 Flugzeugfamilien mit insgesamt 181 Modellen
+[2025-08-03T16:40:54.270Z] Wähle beste Flugzeugfamilie...
+[2025-08-03T16:41:07.950Z] ==================================================
+[2025-08-03T16:41:07.951Z] ==================================================
+[2025-08-03T16:41:07.953Z] AI Familie-Wahl Prompt: Du bist ein deutscher AirlineSim-Experte. Antworte NUR auf DEUTSCH!
+
+            Hub: SFO
+            Budget: 8,000,000 AS$
+
+            VERFÜGBARE FAMILIEN:
+            1. 410
+            Passagiere: 19-19
+            Security Deposit: 236,850-263,650 AS$
+2. 787
+            Passagiere: 381-440
+            Security Deposit: 6,004,700-6,454,850 AS$
+3. Islander / Trislander
+            Passagiere: 9-9
+            Security Deposit: 122,450-138,700 AS$
+4. 208 Caravan
+            Passagiere: 0-14
+            Security Deposit: 178,650-188,550 AS$
+5. DHC-6
+            Passagiere: 19-19
+            Security Deposit: 183,350-183,350 AS$
+6. AN-28
+            Passagiere: 18-18
+            Security Deposit: 234,350-234,350 AS$
+7. 408 SkyCourier
+            Passagiere: 0-19
+            Security Deposit: 272,150-285,150 AS$
+8. DO228NG
+            Passagiere: 19-19
+            Security Deposit: 272,600-272,600 AS$
+9. PC-12
+            Passagiere: 0-9
+            Security Deposit: 279,950-302,050 AS$
+10. PC-24
+            Passagiere: 10-10
+            Security Deposit: 435,050-435,050 AS$
+11. Xian Y-7
+            Passagiere: 0-60
+            Security Deposit: 590,800-643,300 AS$
+12. ERJ 135/140/145
+            Passagiere: 37-50
+            Security Deposit: 620,800-863,900 AS$
+13. ATR 42
+            Passagiere: 0-60
+            Security Deposit: 628,950-636,450 AS$
+14. AN140
+            Passagiere: 52-52
+            Security Deposit: 671,700-671,700 AS$
+15. ATR 72
+            Passagiere: 0-74
+            Security Deposit: 725,900-756,100 AS$
+16. Dash 8
+            Passagiere: 0-90
+            Security Deposit: 798,000-909,650 AS$
+17. CRJ Series
+            Passagiere: 78-104
+            Security Deposit: 956,850-1,255,550 AS$
+18. EMB 170/175/190/195
+            Passagiere: 80-124
+            Security Deposit: 1,038,550-1,475,150 AS$
+19. ARJ21
+            Passagiere: 90-90
+            Security Deposit: 1,129,600-1,234,700 AS$
+20. AN148
+            Passagiere: 85-99
+            Security Deposit: 1,179,300-1,382,100 AS$
+21. Superjet
+            Passagiere: 108-108
+            Security Deposit: 1,339,900-1,458,850 AS$
+22. EMB 175/190/195 E2
+            Passagiere: 114-146
+            Security Deposit: 1,682,100-1,772,150 AS$
+23. 737-600/700/800/900
+            Passagiere: 0-220
+            Security Deposit: 1,749,500-2,470,600 AS$
+24. A319 / A320 / A321 NEO
+            Passagiere: 156-240
+            Security Deposit: 1,786,700-2,678,050 AS$
+25. A318 / A319
+            Passagiere: 145-160
+            Security Deposit: 1,788,100-2,271,000 AS$
+26. A220
+            Passagiere: 133-160
+            Security Deposit: 1,825,500-1,975,050 AS$
+27. 737 MAX
+            Passagiere: 189-220
+            Security Deposit: 1,946,400-2,542,250 AS$
+28. A320 / A321
+            Passagiere: 0-220
+            Security Deposit: 2,028,850-2,507,550 AS$
+29. C919
+            Passagiere: 174-174
+            Security Deposit: 2,039,600-2,160,650 AS$
+30. TU-204/214
+            Passagiere: 0-214
+            Security Deposit: 2,589,150-2,771,650 AS$
+31. 767-200/300/400
+            Passagiere: 0-351
+            Security Deposit: 4,883,400-5,042,400 AS$
+32. A330
+            Passagiere: 0-440
+            Security Deposit: 5,287,650-6,157,300 AS$
+33. A330 NEO
+            Passagiere: 406-460
+            Security Deposit: 5,749,750-6,330,800 AS$
+34. A350
+            Passagiere: 440-480
+            Security Deposit: 6,827,150-7,951,850 AS$
+35. 777-200/300
+            Passagiere: 0-550
+            Security Deposit: 7,153,100-8,765,400 AS$
+36. 747-8
+            Passagiere: 0-605
+            Security Deposit: 10,011,550-10,844,200 AS$
+37. A380
+            Passagiere: 853-853
+            Security Deposit: 12,421,500-12,421,500 AS$
+
+            SCHREIBE EXAKT DIESE 3 ZEILEN (auf Deutsch, mit exaktem Familiennamen):
+
+            FAMILIE: [Name aus Liste kopieren]
+            GRUND: [Deutsche Begründung]
+            PASSAGIER_ZIEL: [Zahl]
+
+            BEISPIEL:
+            FAMILIE: A319 / A320 / A321 NEO
+            GRUND: Beste Profitabilität für Mittelstrecken
+            PASSAGIER_ZIEL: 180
+
+            WICHTIG: 
+            - NUR DEUTSCH antworten!
+            - EXAKT den Namen aus der Liste kopieren!
+            - Keine englischen Wörter!
+
+            Deine Antwort:
+[2025-08-03T16:41:07.953Z] ==================================================
+[2025-08-03T16:41:07.953Z] ==================================================
+[2025-08-03T16:41:07.953Z] AI Familie-Wahl:  FAMILIE: Islander / Trislander
+GRUND: Niedrige Betriebskosten für die kürzeren Strecken im Inlandempfang.
+PASSAGIER_ZIEL: 12
+[2025-08-03T16:41:07.954Z] ==================================================
+[2025-08-03T16:41:07.955Z] ==================================================
+[2025-08-03T16:41:07.956Z] ✅ Familie gewählt: Islander / Trislander (2 Modelle)
+[2025-08-03T16:41:07.956Z] AI Schritt 2: Wähle bestes Modell aus Familie...
+[2025-08-03T16:41:14.789Z] 🤖 AI Modell-Wahl:  EMPFEHLUNG: Britten-Norman BN-2B-26 Islander
+ANZAHL: 3
+GRUND: Die kleinen Inselmayr von Britten-Norman eignen sich gut für den Betrieb zwischen kleineren Flugplätzen und sind daher kosteneffizient.
+SECURITY_DEPOSITS: 186,450 AS$
+WOCHENKOSTEN: 780,000 AS$
+[2025-08-03T16:41:14.791Z] ✅ Modell gewählt: Britten-Norman BN-2B-26 Islander (3x)
+[2025-08-03T16:41:14.791Z] ⚖️ Loading current account balance...
+[2025-08-03T16:41:17.627Z] 💰 Current balance: AS$ 10,000,000 (positive)
+[2025-08-03T16:41:17.628Z] 📈 Balance history saved (205 entries total)
+[2025-08-03T16:41:17.628Z] ✅ Balance check: AS$ 10,000,000 >= 367,350
+[2025-08-03T16:41:17.634Z] [DECISION LOGGED] aircraft_leasing: AI empfiehlt Leasing: Britten-Norman BN-2B-26 Islander (3x) für QuestAir
+[2025-08-03T16:41:17.634Z] [REASONING] Die kleinen Inselmayr von Britten-Norman eignen sich gut für den Betrieb zwischen kleineren Flugplätzen und sind daher kosteneffizient.
+[2025-08-03T16:41:17.635Z] 
+🎯 LEASING-EMPFEHLUNG (2-stufige AI-Analyse):
+[2025-08-03T16:41:17.635Z]    Familie gewählt: Islander / Trislander (aus 2 Modellen)
+[2025-08-03T16:41:17.635Z]    Familie-Begründung: Niedrige Betriebskosten für die kürzeren Strecken im Inlandempfang.
+[2025-08-03T16:41:17.635Z]    Ziel-Passagiere: 12
+[2025-08-03T16:41:17.635Z] 
+[2025-08-03T16:41:17.635Z]    Flugzeug: Britten-Norman BN-2B-26 Islander (Islander / Trislander)
+[2025-08-03T16:41:17.635Z]    Kaufpreis: 2,449,000 AS$
+[2025-08-03T16:41:17.635Z]    Anzahl: 3
+[2025-08-03T16:41:17.635Z]    Analysiert: 0 von 2 Modellen in der Familie
+[2025-08-03T16:41:17.635Z] 
+[2025-08-03T16:41:17.635Z]    💰 LEASING-KOSTEN:
+[2025-08-03T16:41:17.635Z]      Security Deposit (einmalig): 367,350 AS$
+[2025-08-03T16:41:17.635Z]      Wochenrate (ab Woche 2): 36,735 AS$/Woche
+[2025-08-03T16:41:17.635Z]      Begründung: Die kleinen Inselmayr von Britten-Norman eignen sich gut für den Betrieb zwischen kleineren Flugplätzen und sind daher kosteneffizient.
+[2025-08-03T16:41:17.635Z]    ✅ FINANZIERBAR (Security Deposit = 2722.2% des Guthabens)
+[2025-08-03T16:41:17.635Z]    📊 Wöchentliche Belastung: 0.4% des aktuellen Guthabens
+[2025-08-03T16:41:18.385Z] Cookies loaded into the browser.
+[2025-08-03T16:41:18.386Z] 🔐 Überprüfe Login-Status...
+[2025-08-03T16:41:19.652Z] [OUTCOME UPDATED] Decision mdvwrtj1j2y63ujz2ua: simulated_success
+[2025-08-03T16:41:20.215Z] 📊 Status für https://free2.airlinesim.aero/app/enterprise/dashboard: {"isLoggedIn":true,"hasLoginElements":false,"hasDashboardElements":true,"currentUrl":"https://free2.airlinesim.aero/app/enterprise/dashboard?0","title":"Dashboard: QuestAir | Free2 | AirlineSim"}
+[2025-08-03T16:41:20.215Z] ✅ Erfolgreich eingeloggt
+[2025-08-03T16:41:20.216Z] ✈️ Eingeloggt als: QuestAir
+[2025-08-03T16:41:20.216Z] ⚖️ Loading current account balance...
+[2025-08-03T16:41:23.017Z] 💰 Current balance: AS$ 10,000,000 (positive)
+[2025-08-03T16:41:23.019Z] 📈 Balance history saved (206 entries total)
+[2025-08-03T16:41:23.019Z] 🏢 Starte Station-Management basierend auf Flugzeug-Empfehlung...
+[2025-08-03T16:41:23.019Z] 🧠 Analysiere beste Stationen für Flugzeug-Empfehlung...
+[2025-08-03T16:41:23.019Z] 🏢 Lade existierende Stationen...
+[2025-08-03T16:41:25.967Z] 📊 Gefunden: 1 existierende Stationen
+[2025-08-03T16:41:25.968Z] ✈️ Aktive Stationen (mit Flügen): 0
+[2025-08-03T16:41:25.968Z] 🏢 AI analysiert beste Stationen für Flugzeug-Empfehlung...
+[2025-08-03T16:42:03.377Z] 🤖 AI Station-Empfehlung:  STATION_1: Santa Barbara (SBA) - USA
+GRUND_1: Santa Barbara ist ein populärer Urlaubsort mit hoher Nachfrage nach Pauschalreisen und Flügen innerhalb der Vereinigten Staaten. Der Flughafen verfügt über eine gute Infrastruktur und wird von wenigen Fluggesellschaften angeflogen, was die Konkurrenz gering hält und den Start einer neuen Route profitabel macht.
+ROUTE_1: SFO ↔ SBA - Geschätzte tägliche Passagiere: 200
+
+STATION_2: Reno (RNO) - USA
+GRUND_2: Reno ist ein wichtiger Flugplatz für Geschäftsreisende und Pauschalurlauber, die nach Las Vegas wollen. Da der Flughafen nur von wenigen Fluggesellschaften bedient wird, bietet sich hier eine gute Chance für QuestAir, einen neuen Markt zu erschließen. Zusätzlich gibt es saisonale Nachfrage aus dem touristischen Bereich.
+ROUTE_2: SFO ↔ RNO - Geschätzte tägliche Passagiere: 150
+
+STATION_3: Sacramento (SMF) - USA
+GRUND_3: Sacramento ist die Hauptstadt von Kalifornien und verfügt über hohe Nachfrage nach Geschäfts- und Pauschalreisen. Der Flughafen wird von wenigen Fluggesellschaften angeflogen, wodurch die Konkurrenz gering ist. Zusätzlich gibt es saisonale Nachfrage aus dem touristischen Bereich.
+ROUTE_3: SFO ↔ SMF - Geschätzte tägliche Passagiere: 100
+
+STATION_4: Portland (PWM) - USA
+GRUND_4: Portland ist ein wichtiger Verkehrsknotenpunkt mit hoher Nachfrage nach Geschäfts- und Pauschalreisen. Der Flughafen verfügt über gute Anbindungen an die Umgebung und wird von wenigen Fluggesellschaften angeflogen, wodurch die Konkurrenz gering ist. Zusätzlich gibt es saisonale Nachfrage aus dem touristischen Bereich.
+ROUTE_4: SFO ↔ PWM - Geschätzte tägliche Passagiere: 75
+
+STATION_5: Monterey (MRY) - USA
+GRUND_5: Monterey ist ein beliebtes Touristenziel mit hoher Nachfrage nach Flugzeugen aus dem Osten der USA. Der Flughafen verfügt über gute Infrastruktur und wird von wenigen Fluggesellschaften angeflogen, wodurch die Konkurrenz gering ist. Die Saison kann zusätzliche Passagiere generieren.
+ROUTE_5: SFO ↔ MRY - Geschätzte tägliche Passagiere: 50
+
+PRIORITÄT: 1, 2, 4, 3, 5
+[2025-08-03T16:42:03.383Z] 
+🎯 STATION-EMPFEHLUNGEN:
+[2025-08-03T16:42:03.383Z]    Basierend auf: Britten-Norman BN-2B-26 Islander (3x)
+[2025-08-03T16:42:03.383Z]    Passagiere pro Flug: 9
+[2025-08-03T16:42:03.383Z]    Reichweite: 260-1,350 km
+[2025-08-03T16:42:03.383Z] 
+[2025-08-03T16:42:03.383Z]    📊 Gefunden: 1 existierende Stationen
+[2025-08-03T16:42:03.384Z]    🆓 Stationen sind KOMPLETT kostenlos!
+[2025-08-03T16:42:03.384Z]    🎯 Top 5 empfohlene neue Stationen:
+[2025-08-03T16:42:03.384Z]      1. Santa Barbara (SBA) - USA
+[2025-08-03T16:42:03.384Z]         🆓 KOMPLETT KOSTENLOS! (Station + Personal)
+[2025-08-03T16:42:03.384Z]         ✈️ Route: SFO ↔ SBA
+[2025-08-03T16:42:03.384Z]         👥 Erwartete Passagiere: 100/Tag
+[2025-08-03T16:42:03.384Z]         📝 Grund: Santa Barbara ist ein populärer Urlaubsort mit hoher Nachfrage nach Pauschalreisen und Flügen innerhalb der Vereinigten Staaten. Der Flughafen verfügt über eine gute Infrastruktur und wird von wenigen Fluggesellschaften angeflogen, was die Konkurrenz gering hält und den Start einer neuen Route profitabel macht.
+[2025-08-03T16:42:03.384Z] 
+[2025-08-03T16:42:03.384Z]      2. Reno (RNO) - USA
+[2025-08-03T16:42:03.384Z]         🆓 KOMPLETT KOSTENLOS! (Station + Personal)
+[2025-08-03T16:42:03.384Z]         ✈️ Route: SFO ↔ RNO
+[2025-08-03T16:42:03.384Z]         👥 Erwartete Passagiere: 100/Tag
+[2025-08-03T16:42:03.384Z]         📝 Grund: Reno ist ein wichtiger Flugplatz für Geschäftsreisende und Pauschalurlauber, die nach Las Vegas wollen. Da der Flughafen nur von wenigen Fluggesellschaften bedient wird, bietet sich hier eine gute Chance für QuestAir, einen neuen Markt zu erschließen. Zusätzlich gibt es saisonale Nachfrage aus dem touristischen Bereich.
+[2025-08-03T16:42:03.384Z] 
+[2025-08-03T16:42:03.384Z]      3. Sacramento (SMF) - USA
+[2025-08-03T16:42:03.384Z]         🆓 KOMPLETT KOSTENLOS! (Station + Personal)
+[2025-08-03T16:42:03.384Z]         ✈️ Route: SFO ↔ SMF
+[2025-08-03T16:42:03.384Z]         👥 Erwartete Passagiere: 100/Tag
+[2025-08-03T16:42:03.384Z]         📝 Grund: Sacramento ist die Hauptstadt von Kalifornien und verfügt über hohe Nachfrage nach Geschäfts- und Pauschalreisen. Der Flughafen wird von wenigen Fluggesellschaften angeflogen, wodurch die Konkurrenz gering ist. Zusätzlich gibt es saisonale Nachfrage aus dem touristischen Bereich.
+[2025-08-03T16:42:03.384Z] 
+[2025-08-03T16:42:03.384Z]      4. Portland (PWM) - USA
+[2025-08-03T16:42:03.384Z]         🆓 KOMPLETT KOSTENLOS! (Station + Personal)
+[2025-08-03T16:42:03.385Z]         ✈️ Route: SFO ↔ PWM
+[2025-08-03T16:42:03.385Z]         👥 Erwartete Passagiere: 100/Tag
+[2025-08-03T16:42:03.385Z]         📝 Grund: Portland ist ein wichtiger Verkehrsknotenpunkt mit hoher Nachfrage nach Geschäfts- und Pauschalreisen. Der Flughafen verfügt über gute Anbindungen an die Umgebung und wird von wenigen Fluggesellschaften angeflogen, wodurch die Konkurrenz gering ist. Zusätzlich gibt es saisonale Nachfrage aus dem touristischen Bereich.
+[2025-08-03T16:42:03.385Z] 
+[2025-08-03T16:42:03.385Z]      5. Monterey (MRY) - USA
+[2025-08-03T16:42:03.385Z]         🆓 KOMPLETT KOSTENLOS! (Station + Personal)
+[2025-08-03T16:42:03.385Z]         ✈️ Route: SFO ↔ MRY
+[2025-08-03T16:42:03.385Z]         👥 Erwartete Passagiere: 100/Tag
+[2025-08-03T16:42:03.385Z]         📝 Grund: Monterey ist ein beliebtes Touristenziel mit hoher Nachfrage nach Flugzeugen aus dem Osten der USA. Der Flughafen verfügt über gute Infrastruktur und wird von wenigen Fluggesellschaften angeflogen, wodurch die Konkurrenz gering ist. Die Saison kann zusätzliche Passagiere generieren.
+[2025-08-03T16:42:03.385Z] 
+[2025-08-03T16:42:03.385Z] ✅ Station ausgewählt: Santa Barbara (SBA)
+[2025-08-03T16:42:03.385Z] 🆓 Station-Eröffnung: KOMPLETT KOSTENLOS!
+[2025-08-03T16:42:03.386Z] 📊 Begründung: Santa Barbara ist ein populärer Urlaubsort mit hoher Nachfrage nach Pauschalreisen und Flügen innerhalb der Vereinigten Staaten. Der Flughafen verfügt über eine gute Infrastruktur und wird von wenigen Fluggesellschaften angeflogen, was die Konkurrenz gering hält und den Start einer neuen Route profitabel macht.
+[2025-08-03T16:42:03.386Z] 🏗️ Öffne neue Station: SBA
+[2025-08-03T16:42:10.196Z] ❌ Fehler beim Eröffnen der Station SBA
+[2025-08-03T16:42:10.204Z] [DECISION LOGGED] station_management: AI empfiehlt Station: Santa Barbara (SBA) für Britten-Norman BN-2B-26 Islander
+[2025-08-03T16:42:10.204Z] [REASONING] Santa Barbara ist ein populärer Urlaubsort mit hoher Nachfrage nach Pauschalreisen und Flügen innerhalb der Vereinigten Staaten. Der Flughafen verfügt über eine gute Infrastruktur und wird von wenigen Fluggesellschaften angeflogen, was die Konkurrenz gering hält und den Start einer neuen Route profitabel macht.
+[2025-08-03T16:42:10.317Z] 
+✈️ Britten-Norman BN-2B-26 Islander x3
+[2025-08-03T16:42:10.317Z] 🏢 Santa Barbara
+[2025-08-03T16:42:10.317Z] 💰 367,350 AS$ initial
+[2025-08-03T16:42:10.321Z] [DECISION LOGGED] integrated_airline_management: Britten-Norman BN-2B-26 Islander + Santa Barbara
+[2025-08-03T16:42:10.321Z] [REASONING] Airline Setup abgeschlossen
+[2025-08-03T16:42:10.321Z] 📊 INTEGRATED AIRLINE MANAGEMENT SUMMARY:
+[2025-08-03T16:42:10.321Z]    Action taken: completed
+[2025-08-03T16:42:10.321Z] 
+✈️ AIRCRAFT RECOMMENDATION:
+[2025-08-03T16:42:10.321Z]    Aircraft: Britten-Norman BN-2B-26 Islander
+[2025-08-03T16:42:10.321Z]    Quantity: 3
+[2025-08-03T16:42:10.321Z]    Total Cost: 367,350 AS$
+[2025-08-03T16:42:10.321Z]    Reasoning: Die kleinen Inselmayr von Britten-Norman eignen sich gut für den Betrieb zwischen kleineren Flugplätzen und sind daher kosteneffizient.
+[2025-08-03T16:42:10.321Z] 
+🏢 STATION RECOMMENDATION:
+[2025-08-03T16:42:10.321Z]    Station: Santa Barbara (SBA), USA
+[2025-08-03T16:42:10.321Z]    Route: SFO ↔ SBA
+[2025-08-03T16:42:10.321Z]    Expected Passengers: 100/day
+[2025-08-03T16:42:10.321Z]    Reasoning: Santa Barbara ist ein populärer Urlaubsort mit hoher Nachfrage nach Pauschalreisen und Flügen innerhalb der Vereinigten Staaten. Der Flughafen verfügt über eine gute Infrastruktur und wird von wenigen Fluggesellschaften angeflogen, was die Konkurrenz gering hält und den Start einer neuen Route profitabel macht.
+[2025-08-03T16:42:10.321Z] 
+💰 TOTAL INVESTMENT:
+[2025-08-03T16:42:10.321Z]    Initial costs: 367,350 AS$
+[2025-08-03T16:42:10.321Z]    Weekly costs: 36,735 AS$/week
+[2025-08-03T16:42:10.323Z] 📈 ANALYTICS:
+[2025-08-03T16:42:10.324Z]    Total decisions made: 94
+[2025-08-03T16:42:10.324Z]    Success rate: 0.0%
+[2025-08-03T16:42:10.324Z]    Categories: system, aircraft, aircraft_leasing, station_management, integrated_airline_management
+[2025-08-03T16:42:10.324Z] 
+✅ Integrated AI Bot completed successfully!
+[2025-08-03T16:42:10.324Z] 
+🎉 Integrated bot execution completed!
+[2025-08-03T16:42:50.952Z] Starting Integrated AirlineSim Bot
+[2025-08-03T16:42:50.953Z] ====================================================
+[2025-08-03T16:42:51.549Z] Cookies loaded into the browser.
+[2025-08-03T16:42:51.550Z] 🔐 Überprüfe Login-Status...
+[2025-08-03T16:42:54.113Z] 📊 Status für https://free2.airlinesim.aero/app/enterprise/dashboard: {"isLoggedIn":true,"hasLoginElements":false,"hasDashboardElements":true,"currentUrl":"https://free2.airlinesim.aero/app/enterprise/dashboard?0","title":"Dashboard: QuestAir | Free2 | AirlineSim"}
+[2025-08-03T16:42:54.113Z] ✅ Erfolgreich eingeloggt
+[2025-08-03T16:42:54.114Z] ✈️ Eingeloggt als: QuestAir
+[2025-08-03T16:42:54.114Z] ⚖️ Loading current account balance...
+[2025-08-03T16:42:56.479Z] 💰 Current balance: AS$ 10,000,000 (positive)
+[2025-08-03T16:42:56.481Z] 📈 Balance history saved (207 entries total)
+[2025-08-03T16:42:56.481Z] 🔍 Überprüfe aktuellen Fleet-Status...
+[2025-08-03T16:42:58.726Z] 📊 Fleet Status: {"hasDefaultFleet":true,"hasNoAircraft":true,"isEmpty":true}
+[2025-08-03T16:42:58.727Z] ⚠️ Keine Flugzeuge gefunden - AI wird Leasing-Empfehlung geben
+[2025-08-03T16:42:58.727Z] 🔍 Lade verfügbare Flugzeuge...
+[2025-08-03T16:42:58.727Z] 📋 Aircraft-Cache ist gültig (43.0h alt, max 72h)
+[2025-08-03T16:42:58.727Z] ✅ Verwende cached Aircraft-Daten (181 Flugzeuge)
+[2025-08-03T16:42:58.740Z] 💰 Security Deposit Spanne: 122,450 - 12,421,500 AS$
+[2025-08-03T16:42:58.740Z] 🧠 AI analysiert beste Flugzeug-Leasing-Option (2-stufig)...
+[2025-08-03T16:42:58.740Z] ⚖️ Loading current account balance...
+[2025-08-03T16:43:01.432Z] 💰 Current balance: AS$ 10,000,000 (positive)
+[2025-08-03T16:43:01.434Z] 📈 Balance history saved (208 entries total)
+[2025-08-03T16:43:01.434Z] 💰 Using 80% of current balance as budget: 8,000,000 AS$
+[2025-08-03T16:43:01.434Z] 🧠 Starte zweistufige AI-Analyse für Flugzeug-Leasing...
+[2025-08-03T16:43:01.434Z] 📊 Gefunden: 37 Flugzeugfamilien mit insgesamt 181 Modellen
+[2025-08-03T16:43:01.434Z] Wähle beste Flugzeugfamilie...
+[2025-08-03T16:43:14.815Z] ==================================================
+[2025-08-03T16:43:14.816Z] ==================================================
+[2025-08-03T16:43:14.816Z] AI Familie-Wahl Prompt: Du bist ein deutscher AirlineSim-Experte. Antworte NUR auf DEUTSCH!
+
+            Hub: SFO
+            Budget: 8,000,000 AS$
+
+            VERFÜGBARE FAMILIEN:
+            1. 410
+            Passagiere: 19-19
+            Security Deposit: 236,850-263,650 AS$
+2. 787
+            Passagiere: 381-440
+            Security Deposit: 6,004,700-6,454,850 AS$
+3. Islander / Trislander
+            Passagiere: 9-9
+            Security Deposit: 122,450-138,700 AS$
+4. 208 Caravan
+            Passagiere: 0-14
+            Security Deposit: 178,650-188,550 AS$
+5. DHC-6
+            Passagiere: 19-19
+            Security Deposit: 183,350-183,350 AS$
+6. AN-28
+            Passagiere: 18-18
+            Security Deposit: 234,350-234,350 AS$
+7. 408 SkyCourier
+            Passagiere: 0-19
+            Security Deposit: 272,150-285,150 AS$
+8. DO228NG
+            Passagiere: 19-19
+            Security Deposit: 272,600-272,600 AS$
+9. PC-12
+            Passagiere: 0-9
+            Security Deposit: 279,950-302,050 AS$
+10. PC-24
+            Passagiere: 10-10
+            Security Deposit: 435,050-435,050 AS$
+11. Xian Y-7
+            Passagiere: 0-60
+            Security Deposit: 590,800-643,300 AS$
+12. ERJ 135/140/145
+            Passagiere: 37-50
+            Security Deposit: 620,800-863,900 AS$
+13. ATR 42
+            Passagiere: 0-60
+            Security Deposit: 628,950-636,450 AS$
+14. AN140
+            Passagiere: 52-52
+            Security Deposit: 671,700-671,700 AS$
+15. ATR 72
+            Passagiere: 0-74
+            Security Deposit: 725,900-756,100 AS$
+16. Dash 8
+            Passagiere: 0-90
+            Security Deposit: 798,000-909,650 AS$
+17. CRJ Series
+            Passagiere: 78-104
+            Security Deposit: 956,850-1,255,550 AS$
+18. EMB 170/175/190/195
+            Passagiere: 80-124
+            Security Deposit: 1,038,550-1,475,150 AS$
+19. ARJ21
+            Passagiere: 90-90
+            Security Deposit: 1,129,600-1,234,700 AS$
+20. AN148
+            Passagiere: 85-99
+            Security Deposit: 1,179,300-1,382,100 AS$
+21. Superjet
+            Passagiere: 108-108
+            Security Deposit: 1,339,900-1,458,850 AS$
+22. EMB 175/190/195 E2
+            Passagiere: 114-146
+            Security Deposit: 1,682,100-1,772,150 AS$
+23. 737-600/700/800/900
+            Passagiere: 0-220
+            Security Deposit: 1,749,500-2,470,600 AS$
+24. A319 / A320 / A321 NEO
+            Passagiere: 156-240
+            Security Deposit: 1,786,700-2,678,050 AS$
+25. A318 / A319
+            Passagiere: 145-160
+            Security Deposit: 1,788,100-2,271,000 AS$
+26. A220
+            Passagiere: 133-160
+            Security Deposit: 1,825,500-1,975,050 AS$
+27. 737 MAX
+            Passagiere: 189-220
+            Security Deposit: 1,946,400-2,542,250 AS$
+28. A320 / A321
+            Passagiere: 0-220
+            Security Deposit: 2,028,850-2,507,550 AS$
+29. C919
+            Passagiere: 174-174
+            Security Deposit: 2,039,600-2,160,650 AS$
+30. TU-204/214
+            Passagiere: 0-214
+            Security Deposit: 2,589,150-2,771,650 AS$
+31. 767-200/300/400
+            Passagiere: 0-351
+            Security Deposit: 4,883,400-5,042,400 AS$
+32. A330
+            Passagiere: 0-440
+            Security Deposit: 5,287,650-6,157,300 AS$
+33. A330 NEO
+            Passagiere: 406-460
+            Security Deposit: 5,749,750-6,330,800 AS$
+34. A350
+            Passagiere: 440-480
+            Security Deposit: 6,827,150-7,951,850 AS$
+35. 777-200/300
+            Passagiere: 0-550
+            Security Deposit: 7,153,100-8,765,400 AS$
+36. 747-8
+            Passagiere: 0-605
+            Security Deposit: 10,011,550-10,844,200 AS$
+37. A380
+            Passagiere: 853-853
+            Security Deposit: 12,421,500-12,421,500 AS$
+
+            SCHREIBE EXAKT DIESE 3 ZEILEN (auf Deutsch, mit exaktem Familiennamen):
+
+            FAMILIE: [Name aus Liste kopieren]
+            GRUND: [Deutsche Begründung]
+            PASSAGIER_ZIEL: [Zahl]
+
+            BEISPIEL:
+            FAMILIE: A319 / A320 / A321 NEO
+            GRUND: Beste Profitabilität für Mittelstrecken
+            PASSAGIER_ZIEL: 180
+
+            WICHTIG: 
+            - NUR DEUTSCH antworten!
+            - EXAKT den Namen aus der Liste kopieren!
+            - Keine englischen Wörter!
+
+            Deine Antwort:
+[2025-08-03T16:43:14.816Z] ==================================================
+[2025-08-03T16:43:14.816Z] ==================================================
+[2025-08-03T16:43:14.816Z] AI Familie-Wahl:  FAMILIE: 737 MAX
+GRUND: Beste Profitabilität für Kurzstrecken und Regionaldienste
+PASSAGIER_ZIEL: 189
+[2025-08-03T16:43:14.817Z] ==================================================
+[2025-08-03T16:43:14.817Z] ==================================================
+[2025-08-03T16:43:14.819Z] ✅ Familie gewählt: 737 MAX (6 Modelle)
+[2025-08-03T16:43:14.820Z] AI Schritt 2: Wähle bestes Modell aus Familie...
+[2025-08-03T16:43:22.253Z] 🤖 AI Modell-Wahl:  EMPFEHLUNG: Boeing 737-8
+ANZAHL: 2
+GRUND: Das Modell hat eine gute Reichweite für die gewünschten Routen und bietet Platz für bis zu 189 Passagiere.
+SECURITY_DEPOSITS: 3,946,400 AS$
+WOCHENKOSTEN: 700,000 AS$
+[2025-08-03T16:43:22.255Z] ✅ Modell gewählt: Boeing 737-8 (2x)
+[2025-08-03T16:43:22.255Z] ⚖️ Loading current account balance...
+[2025-08-03T16:43:25.073Z] 💰 Current balance: AS$ 10,000,000 (positive)
+[2025-08-03T16:43:25.074Z] 📈 Balance history saved (209 entries total)
+[2025-08-03T16:43:25.074Z] ✅ Balance check: AS$ 10,000,000 >= 3,892,800
+[2025-08-03T16:43:25.080Z] [DECISION LOGGED] aircraft_leasing: AI empfiehlt Leasing: Boeing 737-8 (2x) für QuestAir
+[2025-08-03T16:43:25.080Z] [REASONING] Das Modell hat eine gute Reichweite für die gewünschten Routen und bietet Platz für bis zu 189 Passagiere.
+[2025-08-03T16:43:25.080Z] 
+🎯 LEASING-EMPFEHLUNG (2-stufige AI-Analyse):
+[2025-08-03T16:43:25.080Z]    Familie gewählt: 737 MAX (aus 6 Modellen)
+[2025-08-03T16:43:25.080Z]    Familie-Begründung: Beste Profitabilität für Kurzstrecken und Regionaldienste
+[2025-08-03T16:43:25.080Z]    Ziel-Passagiere: 189
+[2025-08-03T16:43:25.080Z] 
+[2025-08-03T16:43:25.080Z]    Flugzeug: Boeing 737-8 (737 MAX)
+[2025-08-03T16:43:25.080Z]    Kaufpreis: 38,928,000 AS$
+[2025-08-03T16:43:25.080Z]    Anzahl: 2
+[2025-08-03T16:43:25.080Z]    Analysiert: 0 von 6 Modellen in der Familie
+[2025-08-03T16:43:25.080Z] 
+[2025-08-03T16:43:25.080Z]    💰 LEASING-KOSTEN:
+[2025-08-03T16:43:25.080Z]      Security Deposit (einmalig): 3,892,800 AS$
+[2025-08-03T16:43:25.080Z]      Wochenrate (ab Woche 2): 389,280 AS$/Woche
+[2025-08-03T16:43:25.080Z]      Begründung: Das Modell hat eine gute Reichweite für die gewünschten Routen und bietet Platz für bis zu 189 Passagiere.
+[2025-08-03T16:43:25.080Z]    ✅ FINANZIERBAR (Security Deposit = 256.9% des Guthabens)
+[2025-08-03T16:43:25.080Z]    📊 Wöchentliche Belastung: 3.9% des aktuellen Guthabens
+[2025-08-03T16:43:25.754Z] Cookies loaded into the browser.
+[2025-08-03T16:43:25.755Z] 🔐 Überprüfe Login-Status...
+[2025-08-03T16:43:27.094Z] [OUTCOME UPDATED] Decision mdvwujv61ru28cj0tzu: simulated_success
+[2025-08-03T16:43:27.677Z] 📊 Status für https://free2.airlinesim.aero/app/enterprise/dashboard: {"isLoggedIn":true,"hasLoginElements":false,"hasDashboardElements":true,"currentUrl":"https://free2.airlinesim.aero/app/enterprise/dashboard?0","title":"Dashboard: QuestAir | Free2 | AirlineSim"}
+[2025-08-03T16:43:27.677Z] ✅ Erfolgreich eingeloggt
+[2025-08-03T16:43:27.679Z] ✈️ Eingeloggt als: QuestAir
+[2025-08-03T16:43:27.680Z] ⚖️ Loading current account balance...
+[2025-08-03T16:43:30.447Z] 💰 Current balance: AS$ 10,000,000 (positive)
+[2025-08-03T16:43:30.448Z] 📈 Balance history saved (210 entries total)
+[2025-08-03T16:43:30.448Z] 🏢 Starte Station-Management basierend auf Flugzeug-Empfehlung...
+[2025-08-03T16:43:30.448Z] 🧠 Analysiere beste Stationen für Flugzeug-Empfehlung...
+[2025-08-03T16:43:30.448Z] 🏢 Lade existierende Stationen...
+[2025-08-03T16:43:33.405Z] 📊 Gefunden: 1 existierende Stationen
+[2025-08-03T16:43:33.406Z] ✈️ Aktive Stationen (mit Flügen): 0
+[2025-08-03T16:43:33.406Z] 🏢 AI analysiert beste Stationen für Flugzeug-Empfehlung...
+[2025-08-03T16:44:11.473Z] 🤖 AI Station-Empfehlung:  STATION_1: Narita International Airport (NRT) - Japan
+GRUND_1: Narita is a major international airport serving Tokyo, which has high demand for both business and leisure travel. It is within the 4,939 km range of the Boeing 737-8, making it an ideal destination to expand QXX's network. The route between SFO (QXX's hub) and NRT can accommodate high passenger traffic with estimated daily passengers around 10,000.
+ROUTE_1: SFO ↔ NRT - [Estimated tägliche Passagiere: 10,000]
+
+STATION_2: Denver International Airport (DEN) - USA
+GRUND_2: Denver is a major hub airport in the USA with high passenger traffic. It serves as a key connection point for both domestic and international travelers. The route between SFO and DEN has lower competition, which can lead to higher profitability. Additionally, the flight time of approximately 3 hours provides opportunities for additional revenue through food and beverage sales.
+ROUTE_2: SFO ↔ DEN - [Estimated tägliche Passagiere: 5,000]
+
+STATION_3: Shanghai Pudong International Airport (PVG) - China
+GRUND_3: Shanghai is a rapidly growing economic center in Asia and has significant demand for both business and leisure travel. The route between SFO and PVG offers seasonal benefits due to the time zone difference, allowing for later departure times and potentially increased passenger traffic during peak hours. The flight range of 4,939 km also makes it a suitable destination.
+ROUTE_3: SFO ↔ PVG - [Estimated tägliche Passagiere: 8,000]
+
+STATION_4: London Heathrow Airport (LHR) - UK
+GRUND_4: London is one of the world's largest aviation hubs and has high demand for both business and leisure travel. The route between SFO and LHR offers opportunities for connecting flights to other European destinations, which can lead to increased revenue and passenger traffic. Additionally, the flight range of 2,215 km allows for multiple daily departures with smaller aircraft.
+ROUTE_4: SFO ↔ LHR - [Estimated tägliche Passagiere: 7,000]
+
+STATION_5: Seoul Incheon International Airport (ICN) - South Korea
+GRUND_5: Seoul is another major economic center in Asia and has high demand for both business and leisure travel. The route between SFO and ICN offers seasonal benefits due to the time zone difference, similar to Shanghai. Additionally, the flight range of 4,939 km makes it a suitable destination.
+ROUTE_5: SFO ↔ ICN - [Estimated tägliche Passagiere: 10,000]
+
+PRIORITÄT: 2, 3, 1, 4, 5
+[2025-08-03T16:44:11.478Z] 
+🎯 STATION-EMPFEHLUNGEN:
+[2025-08-03T16:44:11.479Z]    Basierend auf: Boeing 737-8 (2x)
+[2025-08-03T16:44:11.479Z]    Passagiere pro Flug: 189
+[2025-08-03T16:44:11.479Z]    Reichweite: 2,215-4,939 km
+[2025-08-03T16:44:11.479Z] 
+[2025-08-03T16:44:11.479Z]    📊 Gefunden: 1 existierende Stationen
+[2025-08-03T16:44:11.479Z]    🆓 Stationen sind KOMPLETT kostenlos!
+[2025-08-03T16:44:11.479Z]    🎯 Top 5 empfohlene neue Stationen:
+[2025-08-03T16:44:11.479Z]      1. Denver International Airport (DEN) - USA
+[2025-08-03T16:44:11.479Z]         🆓 KOMPLETT KOSTENLOS! (Station + Personal)
+[2025-08-03T16:44:11.479Z]         ✈️ Route: SFO ↔ DEN
+[2025-08-03T16:44:11.479Z]         👥 Erwartete Passagiere: 100/Tag
+[2025-08-03T16:44:11.479Z]         📝 Grund: Denver is a major hub airport in the USA with high passenger traffic. It serves as a key connection point for both domestic and international travelers. The route between SFO and DEN has lower competition, which can lead to higher profitability. Additionally, the flight time of approximately 3 hours provides opportunities for additional revenue through food and beverage sales.
+[2025-08-03T16:44:11.479Z] 
+[2025-08-03T16:44:11.480Z]      2. Narita International Airport (NRT) - Japan
+[2025-08-03T16:44:11.480Z]         🆓 KOMPLETT KOSTENLOS! (Station + Personal)
+[2025-08-03T16:44:11.480Z]         ✈️ Route: SFO ↔ NRT
+[2025-08-03T16:44:11.480Z]         👥 Erwartete Passagiere: 100/Tag
+[2025-08-03T16:44:11.480Z]         📝 Grund: Narita is a major international airport serving Tokyo, which has high demand for both business and leisure travel. It is within the 4,939 km range of the Boeing 737-8, making it an ideal destination to expand QXX's network. The route between SFO (QXX's hub) and NRT can accommodate high passenger traffic with estimated daily passengers around 10,000.
+[2025-08-03T16:44:11.480Z] 
+[2025-08-03T16:44:11.480Z]      3. Shanghai Pudong International Airport (PVG) - China
+[2025-08-03T16:44:11.480Z]         🆓 KOMPLETT KOSTENLOS! (Station + Personal)
+[2025-08-03T16:44:11.480Z]         ✈️ Route: SFO ↔ PVG
+[2025-08-03T16:44:11.480Z]         👥 Erwartete Passagiere: 100/Tag
+[2025-08-03T16:44:11.481Z]         📝 Grund: Shanghai is a rapidly growing economic center in Asia and has significant demand for both business and leisure travel. The route between SFO and PVG offers seasonal benefits due to the time zone difference, allowing for later departure times and potentially increased passenger traffic during peak hours. The flight range of 4,939 km also makes it a suitable destination.
+[2025-08-03T16:44:11.481Z] 
+[2025-08-03T16:44:11.481Z]      4. London Heathrow Airport (LHR) - UK
+[2025-08-03T16:44:11.481Z]         🆓 KOMPLETT KOSTENLOS! (Station + Personal)
+[2025-08-03T16:44:11.481Z]         ✈️ Route: SFO ↔ LHR
+[2025-08-03T16:44:11.481Z]         👥 Erwartete Passagiere: 100/Tag
+[2025-08-03T16:44:11.481Z]         📝 Grund: London is one of the world's largest aviation hubs and has high demand for both business and leisure travel. The route between SFO and LHR offers opportunities for connecting flights to other European destinations, which can lead to increased revenue and passenger traffic. Additionally, the flight range of 2,215 km allows for multiple daily departures with smaller aircraft.
+[2025-08-03T16:44:11.481Z] 
+[2025-08-03T16:44:11.481Z]      5. Seoul Incheon International Airport (ICN) - South Korea
+[2025-08-03T16:44:11.481Z]         🆓 KOMPLETT KOSTENLOS! (Station + Personal)
+[2025-08-03T16:44:11.481Z]         ✈️ Route: SFO ↔ ICN
+[2025-08-03T16:44:11.481Z]         👥 Erwartete Passagiere: 100/Tag
+[2025-08-03T16:44:11.481Z]         📝 Grund: Seoul is another major economic center in Asia and has high demand for both business and leisure travel. The route between SFO and ICN offers seasonal benefits due to the time zone difference, similar to Shanghai. Additionally, the flight range of 4,939 km makes it a suitable destination.
+[2025-08-03T16:44:11.481Z] 
+[2025-08-03T16:44:11.481Z] ✅ Station ausgewählt: Denver International Airport (DEN)
+[2025-08-03T16:44:11.481Z] 🆓 Station-Eröffnung: KOMPLETT KOSTENLOS!
+[2025-08-03T16:44:11.481Z] 📊 Begründung: Denver is a major hub airport in the USA with high passenger traffic. It serves as a key connection point for both domestic and international travelers. The route between SFO and DEN has lower competition, which can lead to higher profitability. Additionally, the flight time of approximately 3 hours provides opportunities for additional revenue through food and beverage sales.
+[2025-08-03T16:44:11.481Z] 🏗️ Öffne neue Station: DEN
+[2025-08-03T16:44:18.710Z] ❌ Fehler beim Eröffnen der Station DEN
+[2025-08-03T16:44:18.721Z] [DECISION LOGGED] station_management: AI empfiehlt Station: Denver International Airport (DEN) für Boeing 737-8
+[2025-08-03T16:44:18.721Z] [REASONING] Denver is a major hub airport in the USA with high passenger traffic. It serves as a key connection point for both domestic and international travelers. The route between SFO and DEN has lower competition, which can lead to higher profitability. Additionally, the flight time of approximately 3 hours provides opportunities for additional revenue through food and beverage sales.
+[2025-08-03T16:44:18.830Z] 
+✈️ Boeing 737-8 x2
+[2025-08-03T16:44:18.831Z] 🏢 Denver International Airport
+[2025-08-03T16:44:18.831Z] 💰 3,892,800 AS$ initial
+[2025-08-03T16:44:18.836Z] [DECISION LOGGED] integrated_airline_management: Boeing 737-8 + Denver International Airport
+[2025-08-03T16:44:18.836Z] [REASONING] Airline Setup abgeschlossen
+[2025-08-03T16:44:18.836Z] 📊 INTEGRATED AIRLINE MANAGEMENT SUMMARY:
+[2025-08-03T16:44:18.836Z]    Action taken: completed
+[2025-08-03T16:44:18.836Z] 
+✈️ AIRCRAFT RECOMMENDATION:
+[2025-08-03T16:44:18.836Z]    Aircraft: Boeing 737-8
+[2025-08-03T16:44:18.836Z]    Quantity: 2
+[2025-08-03T16:44:18.836Z]    Total Cost: 3,892,800 AS$
+[2025-08-03T16:44:18.836Z]    Reasoning: Das Modell hat eine gute Reichweite für die gewünschten Routen und bietet Platz für bis zu 189 Passagiere.
+[2025-08-03T16:44:18.836Z] 
+🏢 STATION RECOMMENDATION:
+[2025-08-03T16:44:18.836Z]    Station: Denver International Airport (DEN), USA
+[2025-08-03T16:44:18.836Z]    Route: SFO ↔ DEN
+[2025-08-03T16:44:18.836Z]    Expected Passengers: 100/day
+[2025-08-03T16:44:18.836Z]    Reasoning: Denver is a major hub airport in the USA with high passenger traffic. It serves as a key connection point for both domestic and international travelers. The route between SFO and DEN has lower competition, which can lead to higher profitability. Additionally, the flight time of approximately 3 hours provides opportunities for additional revenue through food and beverage sales.
+[2025-08-03T16:44:18.836Z] 
+💰 TOTAL INVESTMENT:
+[2025-08-03T16:44:18.836Z]    Initial costs: 3,892,800 AS$
+[2025-08-03T16:44:18.836Z]    Weekly costs: 389,280 AS$/week
+[2025-08-03T16:44:18.839Z] 📈 ANALYTICS:
+[2025-08-03T16:44:18.839Z]    Total decisions made: 97
+[2025-08-03T16:44:18.839Z]    Success rate: 0.0%
+[2025-08-03T16:44:18.839Z]    Categories: system, aircraft, aircraft_leasing, station_management, integrated_airline_management
+[2025-08-03T16:44:18.839Z] 
+✅ Integrated AI Bot completed successfully!
+[2025-08-03T16:44:18.839Z] 
+🎉 Integrated bot execution completed!

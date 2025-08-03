@@ -11,41 +11,41 @@ class AircraftAIAnalyzer {
 
         const prompt = `Du bist ein deutscher AirlineSim-Experte. Antworte NUR auf DEUTSCH!
 
-Hub: ${this.airlineConfig.airlineInfo.hub}
-Budget: ${budget.toLocaleString()} AS$
+            Hub: ${this.airlineConfig.airlineInfo.hub}
+            Budget: ${budget.toLocaleString()} AS$
 
-VERFÜGBARE FAMILIEN:
-${familyGroups.map((group, i) =>
-            `${i + 1}. ${group.name}
-   Passagiere: ${group.minPassengers}-${group.maxPassengers}
-   Security Deposit: ${group.minSecurityDeposit.toLocaleString()}-${group.maxSecurityDeposit.toLocaleString()} AS$`
-        ).join('\n')}
+            VERFÜGBARE FAMILIEN:
+            ${familyGroups.map((group, i) =>
+                        `${i + 1}. ${group.name}
+            Passagiere: ${group.minPassengers}-${group.maxPassengers}
+            Security Deposit: ${group.minSecurityDeposit.toLocaleString()}-${group.maxSecurityDeposit.toLocaleString()} AS$`
+                    ).join('\n')}
 
-SCHREIBE EXAKT DIESE 3 ZEILEN (auf Deutsch, mit exaktem Familiennamen):
+            SCHREIBE EXAKT DIESE 3 ZEILEN (auf Deutsch, mit exaktem Familiennamen):
 
-FAMILIE: [Name aus Liste kopieren]
-GRUND: [Deutsche Begründung]
-PASSAGIER_ZIEL: [Zahl]
+            FAMILIE: [Name aus Liste kopieren]
+            GRUND: [Deutsche Begründung]
+            PASSAGIER_ZIEL: [Zahl]
 
-BEISPIEL:
-FAMILIE: A319 / A320 / A321 NEO
-GRUND: Beste Profitabilität für Mittelstrecken
-PASSAGIER_ZIEL: 180
+            BEISPIEL:
+            FAMILIE: A319 / A320 / A321 NEO
+            GRUND: Beste Profitabilität für Mittelstrecken
+            PASSAGIER_ZIEL: 180
 
-WICHTIG: 
-- NUR DEUTSCH antworten!
-- EXAKT den Namen aus der Liste kopieren!
-- Keine englischen Wörter!
+            WICHTIG: 
+            - NUR DEUTSCH antworten!
+            - EXAKT den Namen aus der Liste kopieren!
+            - Keine englischen Wörter!
 
-Deine Antwort:`;
+            Deine Antwort:`;
 
         const aiResponse = await aiService.generateText(prompt);
         console.log('==================================================', true)
         console.log('==================================================', true)
 
         console.log('AI Familie-Wahl Prompt:', prompt); // Nur in Log-Datei
-        console.log('==================================================', true)
-        console.log('==================================================', true)
+        console.log('==================================================')
+        console.log('==================================================')
 
         console.log('AI Familie-Wahl:', aiResponse, true); // Zeigt in Konsole
         console.log('==================================================', true)
@@ -101,37 +101,37 @@ Deine Antwort:`;
 
         const prompt = `Du bist ein deutscher AirlineSim-Experte. Antworte NUR auf DEUTSCH!
 
-Familie: ${familyChoice.selectedFamily.name}
-Hub: ${this.airlineConfig.airlineInfo.hub} 
-Budget: ${budget.toLocaleString()} AS$
+            Familie: ${familyChoice.selectedFamily.name}
+            Hub: ${this.airlineConfig.airlineInfo.hub} 
+            Budget: ${budget.toLocaleString()} AS$
 
-VERFÜGBARE MODELLE:
-${familyAircraft.map((aircraft, i) =>
-            `${i + 1}. ${aircraft.model}
-   Passagiere: ${aircraft.passengers} | Security Deposit: ${aircraft.securityDeposit.toLocaleString()} AS$`
-        ).join('\n')}
+            VERFÜGBARE MODELLE:
+            ${familyAircraft.map((aircraft, i) =>
+                        `${i + 1}. ${aircraft.model}
+            Passagiere: ${aircraft.passengers} | Security Deposit: ${aircraft.securityDeposit.toLocaleString()} AS$`
+                    ).join('\n')}
 
-SCHREIBE EXAKT DIESE 5 ZEILEN (auf Deutsch, mit exaktem Modellnamen):
+            SCHREIBE EXAKT DIESE 5 ZEILEN (auf Deutsch, mit exaktem Modellnamen):
 
-EMPFEHLUNG: [Modellname aus Liste kopieren]
-ANZAHL: [Zahl]
-GRUND: [Deutsche Begründung]
-SECURITY_DEPOSITS: [Gesamtsumme ohne Punkte]
-WOCHENKOSTEN: [Gesamtsumme ohne Punkte]
+            EMPFEHLUNG: [Modellname aus Liste kopieren]
+            ANZAHL: [Zahl]
+            GRUND: [Deutsche Begründung]
+            SECURITY_DEPOSITS: [Gesamtsumme ohne Punkte]
+            WOCHENKOSTEN: [Gesamtsumme ohne Punkte]
 
-BEISPIEL:
-EMPFEHLUNG: A320-251N
-ANZAHL: 2
-GRUND: Optimale Größe für profitable Routen
-SECURITY_DEPOSITS: 4000000
-WOCHENKOSTEN: 200000
+            BEISPIEL:
+            EMPFEHLUNG: A320-251N
+            ANZAHL: 2
+            GRUND: Optimale Größe für profitable Routen
+            SECURITY_DEPOSITS: 4000000
+            WOCHENKOSTEN: 200000
 
-WICHTIG:
-- NUR DEUTSCH antworten!
-- EXAKT den Modellnamen aus der Liste kopieren!
-- Zahlen ohne Punkte oder Kommas!
+            WICHTIG:
+            - NUR DEUTSCH antworten!
+            - EXAKT den Modellnamen aus der Liste kopieren!
+            - Zahlen ohne Punkte oder Kommas!
 
-Deine Antwort:`;
+            Deine Antwort:`;
 
         const aiResponse = await aiService.generateText(prompt);
         console.log('🤖 AI Modell-Wahl:', aiResponse, true); // Zeigt in Konsole
