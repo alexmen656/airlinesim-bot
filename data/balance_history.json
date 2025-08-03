@@ -790,5 +790,41 @@
     "timestamp": "2025-08-03T10:46:24.515Z",
     "url": "https://free2.airlinesim.aero/action/portal/index",
     "id": 1754217984515
+  },
+  {
+    "amount": 10000000,
+    "currency": "AS$",
+    "rawAmount": "10,000,000",
+    "isPositive": true,
+    "timestamp": "2025-08-03T14:48:47.762Z",
+    "url": "https://free2.airlinesim.aero/action/portal/index",
+    "id": 1754232527767
+  },
+  {
+    "amount": 10000000,
+    "currency": "AS$",
+    "rawAmount": "10,000,000",
+    "isPositive": true,
+    "timestamp": "2025-08-03T14:48:52.523Z",
+    "url": "https://free2.airlinesim.aero/action/portal/index",
+    "id": 1754232532524
+  },
+  {
+    "amount": 10000000,
+    "currency": "AS$",
+    "rawAmount": "10,000,000",
+    "isPositive": true,
+    "timestamp": "2025-08-03T14:49:50.000Z",
+    "url": "https://free2.airlinesim.aero/action/portal/index",
+    "id": 1754232590000
+  },
+  {
+    "amount": 10000000,
+    "currency": "AS$",
+    "rawAmount": "10,000,000",
+    "isPositive": true,
+    "timestamp": "2025-08-03T14:49:56.207Z",
+    "url": "https://free2.airlinesim.aero/action/portal/index",
+    "id": 1754232596208
   }
 ]

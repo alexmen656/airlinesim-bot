@@ -2,15 +2,13 @@ const IntegratedAirlineManager = require('./modules/integratedAirlineManager');
 const decisionLogger = require('./services/decisionLogger');
 
 async function runIntegratedAirlineBot() {
-    console.log('🚀 Starting Integrated AirlineSim Bot (Aircraft + Stations)...');
+    console.log('Starting Integrated AirlineSim Bot');
     console.log('====================================================');
     
-    const manager = new IntegratedAirlineManager();
-    
     try {
+        const manager = new IntegratedAirlineManager();
         const result = await manager.manageAirline();
         
-        console.log('\n====================================================');
         console.log('📊 INTEGRATED AIRLINE MANAGEMENT SUMMARY:');
         console.log(`   Action taken: ${result.action}`);
         
@@ -36,33 +34,12 @@ async function runIntegratedAirlineBot() {
             console.log(`   Weekly costs: ${result.totalCosts.weekly.toLocaleString()} AS$/week`);
         }
         
-        // Decision Log anzeigen
-        console.log('\n📋 DECISION LOG:');
-        const recentDecisions = decisionLogger.getRecentDecisions(5);
-        recentDecisions.forEach((decision, index) => {
-            const outcome = decision.outcome ? 
-                (decision.outcome.success ? '✅' : '❌') : '⏳';
-            console.log(`   ${index + 1}. [${decision.category.toUpperCase()}] ${decision.title}`);
-            console.log(`      Time: ${decision.timestamp}`);
-            console.log(`      Reasoning: ${decision.reasoning.substring(0, 100)}...`);
-            console.log(`      Status: ${outcome}`);
-            console.log('');
-        });
-        
-        // Analytics
         const analytics = decisionLogger.getAnalytics();
         console.log('📈 ANALYTICS:');
         console.log(`   Total decisions made: ${analytics.totalDecisions}`);
         console.log(`   Success rate: ${(analytics.successRate * 100).toFixed(1)}%`);
         console.log(`   Categories: ${analytics.categories.join(', ')}`);
-        
         console.log('\n✅ Integrated AI Bot completed successfully!');
-        
-        console.log('\n💡 NEXT STEPS:');
-        console.log('   • Check logs/decisions.json for detailed decision log');
-        console.log('   • Implement actual aircraft leasing and station opening');
-        console.log('   • Add route scheduling and pricing modules');
-        console.log('   • Monitor performance and adjust AI strategies');
         
         return result;
         
