@@ -11,7 +11,7 @@ class StationManager {
         this.page = null;
         this.balanceService = new BalanceService();
         this.airlineConfig = new AirlineConfigService();
-        this.stationAIAnalyzer = null; // Wird nach der Initialisierung erstellt
+        this.stationAIAnalyzer = null;
     }
 
     async initialize() {
@@ -19,18 +19,11 @@ class StationManager {
         this.browser = browser;
         this.page = page;
         
-        // Lade Airline-Konfiguration
         this.airlineInfo = await this.airlineConfig.loadAirlineConfig();
-        
-        // Validiere Login mit zentralem AuthService
         this.loginInfo = await authService.validateLogin(this.page);
-        
-        // Load current balance on initialization
-        console.log('💰 Loading current account balance...');
         this.currentBalance = await this.balanceService.getCurrentBalance(this.page);
         await this.balanceService.saveBalanceHistory(this.currentBalance);
 
-        // Erstelle AI Analyzer nach Balance-Load
         this.stationAIAnalyzer = new StationAIAnalyzer(this.airlineConfig, this.currentBalance);
     }
 
@@ -40,11 +33,12 @@ class StationManager {
         }
     }
 
-    /**
-     * Scrapt existierende Stationen von der Stations-Seite
-     */
+    cl(input){
+        console.log(input);
+    }
+
     async getExistingStations() {
-        console.log('🏢 Lade existierende Stationen...');
+        this.cl('🏢 Lade existierende Stationen...');
         
         await this.page.goto('https://free2.airlinesim.aero/app/ops/stations?1', {
             waitUntil: 'networkidle2',
@@ -104,20 +98,16 @@ class StationManager {
             return stationsList;
         });
 
-        console.log(`📊 Gefunden: ${stations.length} existierende Stationen`);
-        console.log(`✈️ Aktive Stationen (mit Flügen): ${stations.filter(s => s.isActive).length}`);
-        
+        this.cl(`📊 Gefunden: ${stations.length} existierende Stationen`);
+        this.cl(`✈️ Aktive Stationen (mit Flügen): ${stations.filter(s => s.isActive).length}`);
+
         return stations;
     }
 
-    /**
-     * Öffnet eine neue Station
-     */
     async openNewStation(stationCode) {
-        console.log(`🏗️ Öffne neue Station: ${stationCode}`);
+        this.cl(`🏗️ Öffne neue Station: ${stationCode}`);
         
         try {
-            // Zur Stations-Seite navigieren
             await this.page.goto('https://free2.airlinesim.aero/app/ops/stations?1', {
                 waitUntil: 'networkidle2',
                 timeout: 15000
@@ -125,19 +115,15 @@ class StationManager {
             
             await new Promise(resolve => setTimeout(resolve, 2000));
 
-            // Airport Code in das Eingabefeld eingeben
-            const airportInput = await this.page.$('#id5'); // "Open new Station" Input
+            const airportInput = await this.page.$('#id5');
             if (!airportInput) {
                 throw new Error('Airport input field nicht gefunden');
             }
 
             await airportInput.clear();
             await airportInput.type(stationCode);
-            
-            // Kurz warten für Autocomplete
             await new Promise(resolve => setTimeout(resolve, 1000));
             
-            // Submit Button klicken
             const submitButton = await this.page.$('button[type="submit"]:has(.fa-plus)');
             if (!submitButton) {
                 throw new Error('Submit Button nicht gefunden');
@@ -145,24 +131,21 @@ class StationManager {
 
             await submitButton.click();
             
-            // Warten auf Navigation oder Erfolgs-/Fehlermeldung
             await new Promise(resolve => setTimeout(resolve, 3000));
             
-            // Prüfen ob Station erfolgreich eröffnet wurde
             const currentUrl = this.page.url();
             const pageContent = await this.page.content();
             
-            // Erfolg prüfen (verschiedene mögliche Indikatoren)
             const success = currentUrl.includes('/ops/stations/') || 
                            pageContent.includes('Station opened') ||
                            pageContent.includes('successfully') ||
                            !pageContent.includes('error') && !pageContent.includes('Error');
             
             if (success) {
-                console.log(`✅ Station ${stationCode} erfolgreich eröffnet`);
+                this.cl(`✅ Station ${stationCode} erfolgreich eröffnet`);
                 return { success: true, stationCode, message: 'Station erfolgreich eröffnet' };
             } else {
-                console.log(`❌ Fehler beim Eröffnen der Station ${stationCode}`);
+                this.cl(`❌ Fehler beim Eröffnen der Station ${stationCode}`);
                 return { success: false, stationCode, message: 'Station konnte nicht eröffnet werden' };
             }
             
@@ -172,19 +155,11 @@ class StationManager {
         }
     }
 
-    /**
-     * Analysiert beste Stationen basierend auf Flugzeug-Empfehlung
-     */
     async analyzeStationsForAircraft(aircraftRecommendation) {
-        console.log('🧠 Analysiere beste Stationen für Flugzeug-Empfehlung...');
+        this.cl('🧠 Analysiere beste Stationen für Flugzeug-Empfehlung...');
         
-        // Lade existierende Stationen
         const existingStations = await this.getExistingStations();
         
-        // Update AI analyzer mit aktueller Balance
-        this.stationAIAnalyzer.currentBalance = this.currentBalance;
-        
-        // AI-Analyse für beste Stationen
         const stationRecommendations = await this.stationAIAnalyzer.analyzeBestStations(
             aircraftRecommendation, 
             existingStations
@@ -196,74 +171,58 @@ class StationManager {
         };
     }
 
-    /**
-     * Hauptfunktion: Analysiert und eröffnet neue Stationen basierend auf Flugzeug-Empfehlung
-     */
     async manageStations(aircraftRecommendation) {
         try {
             await this.initialize();
 
-            console.log('🏢 Starte Station-Management basierend auf Flugzeug-Empfehlung...');
+            this.cl('🏢 Starte Station-Management basierend auf Flugzeug-Empfehlung...');
             
             // 1. Analysiere beste Stationen für die Flugzeuge
             const stationAnalysis = await this.analyzeStationsForAircraft(aircraftRecommendation);
             
-            console.log('\n🎯 STATION-EMPFEHLUNGEN:');
-            console.log(`   Basierend auf: ${aircraftRecommendation.model} (${aircraftRecommendation.quantity}x)`);
-            console.log(`   Passagiere pro Flug: ${aircraftRecommendation.aircraft?.passengers || 'Unknown'}`);
-            console.log(`   Reichweite: ${aircraftRecommendation.aircraft?.range || 'Unknown'}`);
-            console.log('');
-            console.log(`   📊 Gefunden: ${stationAnalysis.existingStations.length} existierende Stationen`);
-            console.log(`   💰 Verfügbares Budget: ${stationAnalysis.budget.availableForOperations.toLocaleString()} AS$ (Stationen sind KOMPLETT kostenlos!)`);
-            console.log(`   🎯 Top ${stationAnalysis.stations.length} empfohlene neue Stationen:`);
+            this.cl('\n🎯 STATION-EMPFEHLUNGEN:');
+            this.cl(`   Basierend auf: ${aircraftRecommendation.model} (${aircraftRecommendation.quantity}x)`);
+            this.cl(`   Passagiere pro Flug: ${aircraftRecommendation.aircraft?.passengers || 'Unknown'}`);
+            this.cl(`   Reichweite: ${aircraftRecommendation.aircraft?.range || 'Unknown'}`);
+            this.cl('');
+            this.cl(`   📊 Gefunden: ${stationAnalysis.existingStations.length} existierende Stationen`);
+            this.cl(`   🆓 Stationen sind KOMPLETT kostenlos!`);
+            this.cl(`   🎯 Top ${stationAnalysis.stations.length} empfohlene neue Stationen:`);
             
             stationAnalysis.stations.forEach((station, index) => {
-                console.log(`     ${index + 1}. ${station.name} (${station.code}) - ${station.country}`);
-                console.log(`        💰 Station: KOMPLETT KOSTENLOS! 🆓 (inkl. Personal)`);
-                console.log(`        ✈️ Route: ${station.route}`);
-                console.log(`        👥 Erwartete Passagiere: ${station.expectedPassengers}/Tag`);
-                console.log(`        📝 Grund: ${station.reasoning}`);
-                console.log('');
+                this.cl(`     ${index + 1}. ${station.name} (${station.code}) - ${station.country}`);
+                this.cl(`        🆓 KOMPLETT KOSTENLOS! (Station + Personal)`);
+                this.cl(`        ✈️ Route: ${station.route}`);
+                this.cl(`        👥 Erwartete Passagiere: ${station.expectedPassengers}/Tag`);
+                this.cl(`        📝 Grund: ${station.reasoning}`);
+                this.cl('');
             });
             
             // 2. Wähle beste Station zum Eröffnen
             const selectedStation = this.stationAIAnalyzer.selectStationToOpen(stationAnalysis);
             
             if (!selectedStation) {
-                console.log('❌ Keine Station im Budget verfügbar');
+                this.cl('❌ Keine Station verfügbar');
                 
                 decisionLogger.logDecision(
                     'station_management',
-                    'Keine Station eröffnet - Andere Gründe',
-                    'Trotz kostenloser Stationen wurde keine Station eröffnet',
+                    'Keine Station eröffnet',
+                    'Keine Station-Empfehlung erhalten',
                     { 
                         aircraftRecommendation: aircraftRecommendation.model,
-                        budget: stationAnalysis.budget,
                         recommendations: stationAnalysis.stations.length
                     }
                 );
                 
                 return { 
-                    action: 'no_station_affordable', 
+                    action: 'no_station_available', 
                     stationAnalysis,
                     selectedStation: null
                 };
             }
             
-            // 3. Station eröffnen (erstmal simulieren)
-            console.log('\n💡 SIMULATION: Station-Eröffnung würde jetzt durchgeführt');
-            console.log(`   🏗️ Öffne Station: ${selectedStation.name} (${selectedStation.code})`);
-            console.log(`   💰 Kosten: KOMPLETT KOSTENLOS! 🆓`);
-            console.log(`   👥 Personal: AUCH KOSTENLOS! 🆓`);
-            console.log(`   ✈️ Geplante Route: ${selectedStation.route}`);
-            console.log('   📋 Nächste Schritte:');
-            console.log(`     1. Station eröffnen: 0 AS$`);
-            console.log(`     2. Personal einstellen: 0 AS$`);
-            console.log(`     3. Route planen: ${this.airlineInfo.hub} ↔ ${selectedStation.code}`);
-            console.log(`     4. Flugzeug zuweisen: ${aircraftRecommendation.model}`);
-            
             // Für echte Eröffnung später:
-            // const result = await this.openNewStation(selectedStation.code);
+            await this.openNewStation(selectedStation.code); //const result = 
             
             // Log decision
             const decisionId = decisionLogger.logDecision(
@@ -273,7 +232,6 @@ class StationManager {
                 { 
                     aircraftInfo: stationAnalysis.aircraftInfo,
                     selectedStation,
-                    budget: stationAnalysis.budget,
                     totalRecommendations: stationAnalysis.stations.length,
                     existingStations: stationAnalysis.existingStations.length,
                     route: selectedStation.route,

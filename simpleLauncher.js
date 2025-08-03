@@ -8,7 +8,6 @@ async function runIntegratedAirlineBot() {
     const manager = new IntegratedAirlineManager();
     
     try {
-        // Führe vollständiges Airline-Management aus
         const result = await manager.manageAirline();
         
         console.log('\n====================================================');
@@ -25,9 +24,7 @@ async function runIntegratedAirlineBot() {
         
         if (result.stationResult?.selectedStation) {
             console.log('\n🏢 STATION RECOMMENDATION:');
-            console.log(`   Station: ${result.stationResult.selectedStation.name} (${result.stationResult.selectedStation.code})`);
-            console.log(`   Country: ${result.stationResult.selectedStation.country}`);
-            console.log(`   Cost: ${result.stationResult.selectedStation.estimatedCost.toLocaleString()} AS$`);
+            console.log(`   Station: ${result.stationResult.selectedStation.name} (${result.stationResult.selectedStation.code}), ${result.stationResult.selectedStation.country}`);
             console.log(`   Route: ${result.stationResult.selectedStation.route}`);
             console.log(`   Expected Passengers: ${result.stationResult.selectedStation.expectedPassengers}/day`);
             console.log(`   Reasoning: ${result.stationResult.selectedStation.reasoning}`);
@@ -83,7 +80,6 @@ async function runIntegratedAirlineBot() {
     }
 }
 
-// Führe Bot aus wenn direkt aufgerufen
 if (require.main === module) {
     runIntegratedAirlineBot()
         .then(() => {

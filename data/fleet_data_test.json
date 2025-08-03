@@ -1,0 +1,55 @@
+{
+  "timestamp": "2025-08-02T21:45:00.000Z",
+  "totalAircraft": 3,
+  "fleet": [
+    {
+      "registration": "D-ABCD",
+      "type": "Boeing 737-800",
+      "status": "On Ground",
+      "family": "Boeing",
+      "passengers": 189,
+      "cargo": "0 kg",
+      "range": "2,000-6,000 km",
+      "speed": "830 km/h",
+      "purchasePrice": 45000000,
+      "hasRealSpecs": true
+    },
+    {
+      "registration": "D-EFGH",
+      "type": "Airbus A320-200",
+      "status": "On Ground",
+      "family": "Airbus",
+      "passengers": 180,
+      "cargo": "0 kg",
+      "range": "3,000-6,000 km",
+      "speed": "840 km/h",
+      "purchasePrice": 42000000,
+      "hasRealSpecs": true
+    },
+    {
+      "registration": "D-IJKL",
+      "type": "Embraer ERJ-145",
+      "status": "On Ground",
+      "family": "Embraer",
+      "passengers": 50,
+      "cargo": "0 kg",
+      "range": "2,000-3,000 km",
+      "speed": "750 km/h",
+      "purchasePrice": 18000000,
+      "hasRealSpecs": true
+    }
+  ],
+  "aircraftTypes": [
+    "Boeing 737-800",
+    "Airbus A320-200",
+    "Embraer ERJ-145"
+  ],
+  "families": [
+    "Boeing",
+    "Airbus",
+    "Embraer"
+  ],
+  "totalPassengerCapacity": 419,
+  "realSpecsCount": 3,
+  "estimatedSpecsCount": 0
+}

@@ -1512,5 +1512,983 @@
     },
     "outcome": null,
     "profitability": null
+  },
+  {
+    "id": "mdumkc5idt0x4hvsdld",
+    "timestamp": "2025-08-02T19:07:46.182Z",
+    "category": "aircraft_leasing",
+    "decision": "AI empfiehlt Leasing: LET 410 NG (10x) für QuestAir",
+    "reasoning": "AI-Empfehlung basierend auf Modell-Analyse",
+    "data": {
+      "airline": {
+        "name": "QuestAir",
+        "code": "QXX",
+        "hub": "SFO"
+      },
+      "availableOptions": 181,
+      "budget": 8000000,
+      "totalSecurityDeposit": 2636500,
+      "weeklyRateCost": 263650,
+      "currentBalance": 10000000,
+      "canAfford": true,
+      "affordabilityRatio": 3.7929072634174092,
+      "leasingType": "two_stage_analysis",
+      "familyChosen": "410",
+      "analyzedAircraftCount": 2,
+      "totalAircraftInFamily": 2
+    },
+    "outcome": "simulated_success",
+    "profitability": 8.5,
+    "updatedAt": "2025-08-02T19:07:48.186Z"
+  },
+  {
+    "id": "mdumlid9zweczig06td",
+    "timestamp": "2025-08-02T19:08:40.893Z",
+    "category": "station_management",
+    "decision": "AI empfiehlt Station: Denver International Airport (DEN) für LET 410 NG",
+    "reasoning": "Denver ist ein bedeutender Verkehrsknotenpunkt und verfügt über hohe Passagiernachfrage. Die Stadt ist auch ein wichtiges Drehkreuz für United Airlines, wodhalb es einen starken Markt für QuestAir gibt. Mit einer Reichweite von 240-2100 km sind die LET 410 NG perfekt geeignet für den Inlandsflug Denver ↔ SFO (Hub). Es wird geschätzt, dass täglich 360 Passagiere diese Route benutzen werden.",
+    "data": {
+      "aircraftInfo": {
+        "model": "LET 410 NG",
+        "quantity": 10,
+        "passengers": 19,
+        "range": "240-2,100 km"
+      },
+      "selectedStation": {
+        "rank": 1,
+        "name": "Denver International Airport",
+        "code": "DEN",
+        "country": "USA",
+        "reasoning": "Denver ist ein bedeutender Verkehrsknotenpunkt und verfügt über hohe Passagiernachfrage. Die Stadt ist auch ein wichtiges Drehkreuz für United Airlines, wodhalb es einen starken Markt für QuestAir gibt. Mit einer Reichweite von 240-2100 km sind die LET 410 NG perfekt geeignet für den Inlandsflug Denver ↔ SFO (Hub). Es wird geschätzt, dass täglich 360 Passagiere diese Route benutzen werden.",
+        "route": "SFO ↔ DEN",
+        "expectedPassengers": 100
+      },
+      "totalRecommendations": 5,
+      "existingStations": 1,
+      "route": "SFO ↔ DEN",
+      "expectedPassengers": 100
+    },
+    "outcome": null,
+    "profitability": null
+  },
+  {
+    "id": "mdumlif6xuukwunmkw",
+    "timestamp": "2025-08-02T19:08:40.962Z",
+    "category": "integrated_airline_management",
+    "decision": "Integriertes Airline-Management Fehler",
+    "reasoning": "Fehler aufgetreten: Cannot read properties of undefined (reading 'toLocaleString')",
+    "data": {
+      "error": "TypeError: Cannot read properties of undefined (reading 'toLocaleString')\n    at IntegratedAirlineManager.manageAirline (/Users/alexpolan/Projects/airlinesim-bot2/modules/integratedAirlineManager.js:65:87)\n    at async runIntegratedAirlineBot (/Users/alexpolan/Projects/airlinesim-bot2/simpleLauncher.js:12:24)"
+    },
+    "outcome": null,
+    "profitability": null
+  },
+  {
+    "id": "mdumlif61vhz2fxuzbr",
+    "timestamp": "2025-08-02T19:08:40.962Z",
+    "category": "system",
+    "decision": "Integrated bot execution failed",
+    "reasoning": "Error occurred: Cannot read properties of undefined (reading 'toLocaleString')",
+    "data": {
+      "error": "TypeError: Cannot read properties of undefined (reading 'toLocaleString')\n    at IntegratedAirlineManager.manageAirline (/Users/alexpolan/Projects/airlinesim-bot2/modules/integratedAirlineManager.js:65:87)\n    at async runIntegratedAirlineBot (/Users/alexpolan/Projects/airlinesim-bot2/simpleLauncher.js:12:24)"
+    },
+    "outcome": null,
+    "profitability": null
+  },
+  {
+    "id": "mdumo2zygfkla56216o",
+    "timestamp": "2025-08-02T19:10:40.942Z",
+    "category": "aircraft_leasing",
+    "decision": "AI empfiehlt Leasing: Boeing 737-9 HGW (8x) für QuestAir",
+    "reasoning": "AI-Empfehlung basierend auf Modell-Analyse",
+    "data": {
+      "airline": {
+        "name": "QuestAir",
+        "code": "QXX",
+        "hub": "SFO"
+      },
+      "availableOptions": 181,
+      "budget": 8000000,
+      "totalSecurityDeposit": 20338000,
+      "weeklyRateCost": 2033800,
+      "currentBalance": 10000000,
+      "canAfford": false,
+      "affordabilityRatio": 0.491690431704199,
+      "leasingType": "two_stage_analysis",
+      "familyChosen": "737 MAX",
+      "analyzedAircraftCount": 4,
+      "totalAircraftInFamily": 6
+    },
+    "outcome": "simulated_success",
+    "profitability": 8.5,
+    "updatedAt": "2025-08-02T19:10:42.945Z"
+  },
+  {
+    "id": "mdump189g4pc3z4i2qq",
+    "timestamp": "2025-08-02T19:11:25.305Z",
+    "category": "station_management",
+    "decision": "AI empfiehlt Station: London Heathrow (LHR) für Boeing 737-9 HGW",
+    "reasoning": "Eine internationale Destination mit hoher Nachfrage, die gut in die Reichweite des Flugzeugs passt. Der Flughafen verfügt über einen großen Netzwerk-Effekt und bietet gute Anbindungen an weitere Ziele im europäischen Raum.",
+    "data": {
+      "aircraftInfo": {
+        "model": "Boeing 737-9 HGW",
+        "quantity": 8,
+        "passengers": 220,
+        "range": "5,350-7,750 km"
+      },
+      "selectedStation": {
+        "rank": 1,
+        "name": "London Heathrow",
+        "code": "LHR",
+        "country": "Vereinigtes Königreich",
+        "reasoning": "Eine internationale Destination mit hoher Nachfrage, die gut in die Reichweite des Flugzeugs passt. Der Flughafen verfügt über einen großen Netzwerk-Effekt und bietet gute Anbindungen an weitere Ziele im europäischen Raum.",
+        "route": "SFO ↔ LHR",
+        "expectedPassengers": 100
+      },
+      "totalRecommendations": 5,
+      "existingStations": 1,
+      "route": "SFO ↔ LHR",
+      "expectedPassengers": 100
+    },
+    "outcome": null,
+    "profitability": null
+  },
+  {
+    "id": "mdump1admv3ih2avinc",
+    "timestamp": "2025-08-02T19:11:25.381Z",
+    "category": "integrated_airline_management",
+    "decision": "Vollständiges Airline Setup: Boeing 737-9 HGW + London Heathrow",
+    "reasoning": "AI empfiehlt 8x Boeing 737-9 HGW und Station LHR für optimalen Start",
+    "data": {
+      "aircraftRecommendation": {
+        "model": "Boeing 737-9 HGW",
+        "aircraft": {
+          "model": "Boeing 737-9 HGW",
+          "family": "737 MAX",
+          "passengers": 220,
+          "cargo": "8,617 kg",
+          "range": "5,350-7,750 km",
+          "speed": "840 km/h",
+          "priceText": "50,845,000 AS$",
+          "purchasePrice": 50845000,
+          "securityDeposit": 2542250,
+          "weeklyRate": 254225,
+          "initialCost": 2542250,
+          "available": true,
+          "onAuction": 146
+        },
+        "quantity": 8,
+        "reasoning": "AI-Empfehlung basierend auf Modell-Analyse",
+        "familyChoice": {
+          "selectedFamily": {
+            "name": "737 MAX",
+            "aircraft": [
+              {
+                "model": "Boeing 737-8",
+                "family": "737 MAX",
+                "passengers": 189,
+                "cargo": "7,267 kg",
+                "range": "2,215-4,939 km",
+                "speed": "840 km/h",
+                "priceText": "38,928,000 AS$",
+                "purchasePrice": 38928000,
+                "securityDeposit": 1946400,
+                "weeklyRate": 194640,
+                "initialCost": 1946400,
+                "available": true,
+                "onAuction": 258
+              },
+              {
+                "model": "Boeing 737-8-200",
+                "family": "737 MAX",
+                "passengers": 210,
+                "cargo": "7,267 kg",
+                "range": "2,215-4,939 km",
+                "speed": "840 km/h",
+                "priceText": "39,033,000 AS$",
+                "purchasePrice": 39033000,
+                "securityDeposit": 1951650,
+                "weeklyRate": 195165,
+                "initialCost": 1951650,
+                "available": true,
+                "onAuction": 70
+              },
+              {
+                "model": "Boeing 737-9",
+                "family": "737 MAX",
+                "passengers": 220,
+                "cargo": "8,617 kg",
+                "range": "3,350-6,450 km",
+                "speed": "840 km/h",
+                "priceText": "40,959,000 AS$",
+                "purchasePrice": 40959000,
+                "securityDeposit": 2047950,
+                "weeklyRate": 204795,
+                "initialCost": 2047950,
+                "available": true,
+                "onAuction": 10
+              },
+              {
+                "model": "Boeing 737-8 HGW",
+                "family": "737 MAX",
+                "passengers": 189,
+                "cargo": "7,267 kg",
+                "range": "4,650-8,180 km",
+                "speed": "840 km/h",
+                "priceText": "46,542,000 AS$",
+                "purchasePrice": 46542000,
+                "securityDeposit": 2327100,
+                "weeklyRate": 232710,
+                "initialCost": 2327100,
+                "available": true,
+                "onAuction": 273
+              },
+              {
+                "model": "Boeing 737-8-200 HGW",
+                "family": "737 MAX",
+                "passengers": 210,
+                "cargo": "7,267 kg",
+                "range": "4,650-8,180 km",
+                "speed": "840 km/h",
+                "priceText": "46,647,000 AS$",
+                "purchasePrice": 46647000,
+                "securityDeposit": 2332350,
+                "weeklyRate": 233235,
+                "initialCost": 2332350,
+                "available": true,
+                "onAuction": 31
+              },
+              {
+                "model": "Boeing 737-9 HGW",
+                "family": "737 MAX",
+                "passengers": 220,
+                "cargo": "8,617 kg",
+                "range": "5,350-7,750 km",
+                "speed": "840 km/h",
+                "priceText": "50,845,000 AS$",
+                "purchasePrice": 50845000,
+                "securityDeposit": 2542250,
+                "weeklyRate": 254225,
+                "initialCost": 2542250,
+                "available": true,
+                "onAuction": 146
+              }
+            ],
+            "minSecurityDeposit": 1946400,
+            "maxSecurityDeposit": 2542250,
+            "minPassengers": 189,
+            "maxPassengers": 220,
+            "totalModels": 6
+          },
+          "reasoning": "Die 737 MAX Familie bietet das beste Verhältnis aus Gewinn pro Flug und erschwinglichen Startkosten. Sie ist ideal für den Aufbau einer hochprofitorientierten und schnell wachsenden Airline im Hub SFO, da sie eine große Zahl von Passagieren bei niedrigen Betriebskosten transportiert. Der Hub SFO bietet zahlreiche lukrative Routen-Möglichkeiten und die 737 MAX kann diese effizient bearbeiten. Das Modell mit den meisten Sitzplätzen ist die 737 MAX 10, die eine Kapazität von bis zu 240 Passagieren bietet.",
+          "targetPassengers": 240,
+          "aiResponse": " FAMILIE: 737 MAX\nGRUND: Die 737 MAX Familie bietet das beste Verhältnis aus Gewinn pro Flug und erschwinglichen Startkosten. Sie ist ideal für den Aufbau einer hochprofitorientierten und schnell wachsenden Airline im Hub SFO, da sie eine große Zahl von Passagieren bei niedrigen Betriebskosten transportiert. Der Hub SFO bietet zahlreiche lukrative Routen-Möglichkeiten und die 737 MAX kann diese effizient bearbeiten. Das Modell mit den meisten Sitzplätzen ist die 737 MAX 10, die eine Kapazität von bis zu 240 Passagieren bietet.\nPASSAGIER_ZIEL: 240\n        \n"
+        },
+        "totalSecurityDeposit": 20338000,
+        "weeklyRateCost": 2033800,
+        "securityDepositPerUnit": 2542250,
+        "weeklyRatePerUnit": 254225,
+        "totalCost": 20338000,
+        "pricePerUnit": 2542250,
+        "aiResponse": " Empfehlung: Boeing 737-9 HGW\nAnzahl: 8 (maximal unter Budget-Limit)\nGründe: Das Modell Boeing 737-9 HGW bietet ein günstiges Verhältnis von Gewinn und Gesamtkosten. Es verfügt über eine größere Passagierkapazität als das nächstgünstigere Modell (737-8-200) und kann damit mehr Sitzplätze mitsamt den zusätzlichen Kosten für Bestuhlung vermieten, wodurch es zu höheren Gewinnen führt. Zudem ist die Reichweite mit bis zu 7,750 km ausreichend für Routen zwischen SFO und anderen großen Flughäfen in Nordamerika. Das Modell verfügt über eine höhere Geschwindigkeit als die meisten anderen Max-Flugzeuge, was es attraktiv macht für den Passagierverkehr. Die Security Deposit ist mit 2,542,250 AS$ vergleichsweise hoch, aber durch die Wahl der maximalen Anzahl von Flugzeugen wird sie auf einen vertretbaren Prozentsatz des Budgets gehalten. Die Wochenrate liegt bei 254,225 AS$, was ebenfalls unter dem Budget-Limit bleibt. Insgesamt ist das Modell Boeing 737-9 HGW das beste Wahl für den Aufbau einer hochprofitable Airline in SFO aufgrund seines günstigen Preis-Leistungs-Verhältnisses und seiner Eignung für Langstreckenflüge.",
+        "aiSecurityEstimate": 0,
+        "aiWeeklyEstimate": 0,
+        "analyzedAircraftCount": 4,
+        "totalAircraftInFamily": 6,
+        "decisionId": "mdumo2zygfkla56216o",
+        "balanceCheck": {
+          "amount": 10000000,
+          "currency": "AS$",
+          "rawAmount": "10,000,000",
+          "isPositive": true,
+          "timestamp": "2025-08-02T19:10:40.941Z",
+          "url": "https://free2.airlinesim.aero/action/portal/index",
+          "canAfford": false,
+          "affordabilityRatio": 0.491690431704199
+        }
+      },
+      "stationRecommendation": {
+        "rank": 1,
+        "name": "London Heathrow",
+        "code": "LHR",
+        "country": "Vereinigtes Königreich",
+        "reasoning": "Eine internationale Destination mit hoher Nachfrage, die gut in die Reichweite des Flugzeugs passt. Der Flughafen verfügt über einen großen Netzwerk-Effekt und bietet gute Anbindungen an weitere Ziele im europäischen Raum.",
+        "route": "SFO ↔ LHR",
+        "expectedPassengers": 100
+      },
+      "totalInitialCost": 20338000,
+      "totalWeeklyCost": 2033800,
+      "aircraftDecisionId": "mdumo2zygfkla56216o",
+      "stationDecisionId": "mdump189g4pc3z4i2qq",
+      "budgetAnalysis": {
+        "initialBalance": 10000000,
+        "afterAircraft": -10338000,
+        "afterStation": -10338000,
+        "canAffordBoth": false
+      }
+    },
+    "outcome": null,
+    "profitability": null
+  },
+  {
+    "id": "mdump1ae48rs9sd1sh1",
+    "timestamp": "2025-08-02T19:11:25.382Z",
+    "category": "system",
+    "decision": "Integrated bot execution failed",
+    "reasoning": "Error occurred: Cannot read properties of undefined (reading 'toLocaleString')",
+    "data": {
+      "error": "TypeError: Cannot read properties of undefined (reading 'toLocaleString')\n    at runIntegratedAirlineBot (/Users/alexpolan/Projects/airlinesim-bot2/simpleLauncher.js:30:88)"
+    },
+    "outcome": null,
+    "profitability": null
+  },
+  {
+    "id": "mdumzy67vaegd5s298m",
+    "timestamp": "2025-08-02T19:19:54.559Z",
+    "category": "aircraft_leasing",
+    "decision": "AI empfiehlt Leasing: Airbus A319neo heavy (5x) für QuestAir",
+    "reasoning": "Das A319neo heavy bietet das beste Verhältnis aus Passagierkapazität, Reichweite und Gewinnpotenzial für QuestAir. Mit einem Sitzplatzangebot von 156 Personen pro Flugzeug kann die Airline eine hohe Auslastung erzielen, was zu höheren Einnahmen führt. Darüber hinaus verfügt das Modell über ausreichende Reichweite für zielgerichtete Routen und ermöglicht es dem Unternehmen, schnell wachsende Märkte zu erschließen. Die zusätzlichen Kosten von ca. 50-200.000 AS$ pro Flugzeug durch Bestuhlung sind angemessen in Relation zum höheren Gesamtgewinn potenzial und können daher in Kauf genommen werden.",
+    "data": {
+      "airline": {
+        "name": "QuestAir",
+        "code": "QXX",
+        "hub": "SFO"
+      },
+      "availableOptions": 181,
+      "budget": 8000000,
+      "totalSecurityDeposit": 10966500,
+      "weeklyRateCost": 1096650,
+      "currentBalance": 10000000,
+      "canAfford": false,
+      "affordabilityRatio": 0.911867961519172,
+      "leasingType": "two_stage_analysis",
+      "familyChosen": "A319 / A320 / A321 NEO",
+      "analyzedAircraftCount": 7,
+      "totalAircraftInFamily": 11
+    },
+    "outcome": "simulated_success",
+    "profitability": 8.5,
+    "updatedAt": "2025-08-02T19:19:56.565Z"
+  },
+  {
+    "id": "mdun02dt71uvf61wc9d",
+    "timestamp": "2025-08-02T19:20:00.017Z",
+    "category": "station_management",
+    "decision": "Station-Management Fehler",
+    "reasoning": "Fehler aufgetreten: Maximum call stack size exceeded",
+    "data": {
+      "error": "RangeError: Maximum call stack size exceeded\n    at StationManager.cl (/Users/alexpolan/Projects/airlinesim-bot2/modules/stationManager.js:37:14)\n    at StationManager.cl (/Users/alexpolan/Projects/airlinesim-bot2/modules/stationManager.js:37:14)\n    at StationManager.cl (/Users/alexpolan/Projects/airlinesim-bot2/modules/stationManager.js:37:14)\n    at StationManager.cl (/Users/alexpolan/Projects/airlinesim-bot2/modules/stationManager.js:37:14)\n    at StationManager.cl (/Users/alexpolan/Projects/airlinesim-bot2/modules/stationManager.js:37:14)\n    at StationManager.cl (/Users/alexpolan/Projects/airlinesim-bot2/modules/stationManager.js:37:14)\n    at StationManager.cl (/Users/alexpolan/Projects/airlinesim-bot2/modules/stationManager.js:37:14)\n    at StationManager.cl (/Users/alexpolan/Projects/airlinesim-bot2/modules/stationManager.js:37:14)\n    at StationManager.cl (/Users/alexpolan/Projects/airlinesim-bot2/modules/stationManager.js:37:14)\n    at StationManager.cl (/Users/alexpolan/Projects/airlinesim-bot2/modules/stationManager.js:37:14)",
+      "aircraftRecommendation": "Airbus A319neo heavy"
+    },
+    "outcome": null,
+    "profitability": null
+  },
+  {
+    "id": "mdun02ga4e8xpes6kfw",
+    "timestamp": "2025-08-02T19:20:00.106Z",
+    "category": "integrated_airline_management",
+    "decision": "Integriertes Airline-Management Fehler",
+    "reasoning": "Fehler aufgetreten: Maximum call stack size exceeded",
+    "data": {
+      "error": "RangeError: Maximum call stack size exceeded\n    at StationManager.cl (/Users/alexpolan/Projects/airlinesim-bot2/modules/stationManager.js:37:14)\n    at StationManager.cl (/Users/alexpolan/Projects/airlinesim-bot2/modules/stationManager.js:37:14)\n    at StationManager.cl (/Users/alexpolan/Projects/airlinesim-bot2/modules/stationManager.js:37:14)\n    at StationManager.cl (/Users/alexpolan/Projects/airlinesim-bot2/modules/stationManager.js:37:14)\n    at StationManager.cl (/Users/alexpolan/Projects/airlinesim-bot2/modules/stationManager.js:37:14)\n    at StationManager.cl (/Users/alexpolan/Projects/airlinesim-bot2/modules/stationManager.js:37:14)\n    at StationManager.cl (/Users/alexpolan/Projects/airlinesim-bot2/modules/stationManager.js:37:14)\n    at StationManager.cl (/Users/alexpolan/Projects/airlinesim-bot2/modules/stationManager.js:37:14)\n    at StationManager.cl (/Users/alexpolan/Projects/airlinesim-bot2/modules/stationManager.js:37:14)\n    at StationManager.cl (/Users/alexpolan/Projects/airlinesim-bot2/modules/stationManager.js:37:14)"
+    },
+    "outcome": null,
+    "profitability": null
+  },
+  {
+    "id": "mdun02ga5765styezj",
+    "timestamp": "2025-08-02T19:20:00.106Z",
+    "category": "system",
+    "decision": "Integrated bot execution failed",
+    "reasoning": "Error occurred: Maximum call stack size exceeded",
+    "data": {
+      "error": "RangeError: Maximum call stack size exceeded\n    at StationManager.cl (/Users/alexpolan/Projects/airlinesim-bot2/modules/stationManager.js:37:14)\n    at StationManager.cl (/Users/alexpolan/Projects/airlinesim-bot2/modules/stationManager.js:37:14)\n    at StationManager.cl (/Users/alexpolan/Projects/airlinesim-bot2/modules/stationManager.js:37:14)\n    at StationManager.cl (/Users/alexpolan/Projects/airlinesim-bot2/modules/stationManager.js:37:14)\n    at StationManager.cl (/Users/alexpolan/Projects/airlinesim-bot2/modules/stationManager.js:37:14)\n    at StationManager.cl (/Users/alexpolan/Projects/airlinesim-bot2/modules/stationManager.js:37:14)\n    at StationManager.cl (/Users/alexpolan/Projects/airlinesim-bot2/modules/stationManager.js:37:14)\n    at StationManager.cl (/Users/alexpolan/Projects/airlinesim-bot2/modules/stationManager.js:37:14)\n    at StationManager.cl (/Users/alexpolan/Projects/airlinesim-bot2/modules/stationManager.js:37:14)\n    at StationManager.cl (/Users/alexpolan/Projects/airlinesim-bot2/modules/stationManager.js:37:14)"
+    },
+    "outcome": null,
+    "profitability": null
+  },
+  {
+    "id": "mdun635jksak11wzhq8",
+    "timestamp": "2025-08-02T19:24:40.951Z",
+    "category": "aircraft_leasing",
+    "decision": "AI empfiehlt Leasing: Boeing 737-8 HGW (15x) für QuestAir",
+    "reasoning": "Das Boeing 737-8 HGW Modell ist perfekt für den Aufbau einer profitablen Fluggesellschaft. Es bietet einen guten Gewinn-Verbrauch-Verhältnis und verfügt über eine größere Reichweite, wodurch es mehrere Ziele bedienen kann. Das Modell hat auch mehr Passagierkapazität als das Standardmodell 737-8, was zu höheren Einnahmen bei gleicher Kapazität führt. Die zusätzlichen Kosten durch den Hochleistungs-Tank sind gering und werden von der erhöhten Reichweite kompensiert. Mit einem Start mit 15 Flugzeugen kann eine große Airline aufgebaut werden, die sich schnell entwickeln lässt.",
+    "data": {
+      "airline": {
+        "name": "QuestAir",
+        "code": "QXX",
+        "hub": "SFO"
+      },
+      "availableOptions": 181,
+      "budget": 8000000,
+      "totalSecurityDeposit": 34906500,
+      "weeklyRateCost": 3490650,
+      "currentBalance": 10000000,
+      "canAfford": false,
+      "affordabilityRatio": 0.28647959549081115,
+      "leasingType": "two_stage_analysis",
+      "familyChosen": "737 MAX",
+      "analyzedAircraftCount": 2,
+      "totalAircraftInFamily": 6
+    },
+    "outcome": "simulated_success",
+    "profitability": 8.5,
+    "updatedAt": "2025-08-02T19:24:42.953Z"
+  },
+  {
+    "id": "mdun73jvd4blypjx9p9",
+    "timestamp": "2025-08-02T19:25:28.123Z",
+    "category": "station_management",
+    "decision": "AI empfiehlt Station: Tokyo Narita International Airport (NRT) für Boeing 737-8 HGW",
+    "reasoning": "Tokyo is a major business hub and has high passenger demand. NRT offers connections to various cities in Asia, providing opportunities for point-to-point and hub-and-spoke routes. The Boeing 737 MAX's range makes it an ideal aircraft for this route, with potential profitability due to high ticket prices and moderate competition.",
+    "data": {
+      "aircraftInfo": {
+        "model": "Boeing 737-8 HGW",
+        "quantity": 15,
+        "passengers": 189,
+        "range": "4,650-8,180 km"
+      },
+      "selectedStation": {
+        "rank": 1,
+        "name": "Tokyo Narita International Airport",
+        "code": "NRT",
+        "country": "Japan",
+        "reasoning": "Tokyo is a major business hub and has high passenger demand. NRT offers connections to various cities in Asia, providing opportunities for point-to-point and hub-and-spoke routes. The Boeing 737 MAX's range makes it an ideal aircraft for this route, with potential profitability due to high ticket prices and moderate competition.",
+        "route": "SFO ↔ NRT",
+        "expectedPassengers": 100
+      },
+      "totalRecommendations": 5,
+      "existingStations": 1,
+      "route": "SFO ↔ NRT",
+      "expectedPassengers": 100
+    },
+    "outcome": null,
+    "profitability": null
+  },
+  {
+    "id": "mdun73momsmvtxdmgd",
+    "timestamp": "2025-08-02T19:25:28.224Z",
+    "category": "integrated_airline_management",
+    "decision": "Vollständiges Airline Setup: Boeing 737-8 HGW + Tokyo Narita International Airport",
+    "reasoning": "AI empfiehlt 15x Boeing 737-8 HGW und Station NRT für optimalen Start",
+    "data": {
+      "aircraftRecommendation": {
+        "model": "Boeing 737-8 HGW",
+        "aircraft": {
+          "model": "Boeing 737-8 HGW",
+          "family": "737 MAX",
+          "passengers": 189,
+          "cargo": "7,267 kg",
+          "range": "4,650-8,180 km",
+          "speed": "840 km/h",
+          "priceText": "46,542,000 AS$",
+          "purchasePrice": 46542000,
+          "securityDeposit": 2327100,
+          "weeklyRate": 232710,
+          "initialCost": 2327100,
+          "available": true,
+          "onAuction": 273
+        },
+        "quantity": 15,
+        "reasoning": "Das Boeing 737-8 HGW Modell ist perfekt für den Aufbau einer profitablen Fluggesellschaft. Es bietet einen guten Gewinn-Verbrauch-Verhältnis und verfügt über eine größere Reichweite, wodurch es mehrere Ziele bedienen kann. Das Modell hat auch mehr Passagierkapazität als das Standardmodell 737-8, was zu höheren Einnahmen bei gleicher Kapazität führt. Die zusätzlichen Kosten durch den Hochleistungs-Tank sind gering und werden von der erhöhten Reichweite kompensiert. Mit einem Start mit 15 Flugzeugen kann eine große Airline aufgebaut werden, die sich schnell entwickeln lässt.",
+        "familyChoice": {
+          "selectedFamily": {
+            "name": "737 MAX",
+            "aircraft": [
+              {
+                "model": "Boeing 737-8",
+                "family": "737 MAX",
+                "passengers": 189,
+                "cargo": "7,267 kg",
+                "range": "2,215-4,939 km",
+                "speed": "840 km/h",
+                "priceText": "38,928,000 AS$",
+                "purchasePrice": 38928000,
+                "securityDeposit": 1946400,
+                "weeklyRate": 194640,
+                "initialCost": 1946400,
+                "available": true,
+                "onAuction": 258
+              },
+              {
+                "model": "Boeing 737-8-200",
+                "family": "737 MAX",
+                "passengers": 210,
+                "cargo": "7,267 kg",
+                "range": "2,215-4,939 km",
+                "speed": "840 km/h",
+                "priceText": "39,033,000 AS$",
+                "purchasePrice": 39033000,
+                "securityDeposit": 1951650,
+                "weeklyRate": 195165,
+                "initialCost": 1951650,
+                "available": true,
+                "onAuction": 70
+              },
+              {
+                "model": "Boeing 737-9",
+                "family": "737 MAX",
+                "passengers": 220,
+                "cargo": "8,617 kg",
+                "range": "3,350-6,450 km",
+                "speed": "840 km/h",
+                "priceText": "40,959,000 AS$",
+                "purchasePrice": 40959000,
+                "securityDeposit": 2047950,
+                "weeklyRate": 204795,
+                "initialCost": 2047950,
+                "available": true,
+                "onAuction": 10
+              },
+              {
+                "model": "Boeing 737-8 HGW",
+                "family": "737 MAX",
+                "passengers": 189,
+                "cargo": "7,267 kg",
+                "range": "4,650-8,180 km",
+                "speed": "840 km/h",
+                "priceText": "46,542,000 AS$",
+                "purchasePrice": 46542000,
+                "securityDeposit": 2327100,
+                "weeklyRate": 232710,
+                "initialCost": 2327100,
+                "available": true,
+                "onAuction": 273
+              },
+              {
+                "model": "Boeing 737-8-200 HGW",
+                "family": "737 MAX",
+                "passengers": 210,
+                "cargo": "7,267 kg",
+                "range": "4,650-8,180 km",
+                "speed": "840 km/h",
+                "priceText": "46,647,000 AS$",
+                "purchasePrice": 46647000,
+                "securityDeposit": 2332350,
+                "weeklyRate": 233235,
+                "initialCost": 2332350,
+                "available": true,
+                "onAuction": 31
+              },
+              {
+                "model": "Boeing 737-9 HGW",
+                "family": "737 MAX",
+                "passengers": 220,
+                "cargo": "8,617 kg",
+                "range": "5,350-7,750 km",
+                "speed": "840 km/h",
+                "priceText": "50,845,000 AS$",
+                "purchasePrice": 50845000,
+                "securityDeposit": 2542250,
+                "weeklyRate": 254225,
+                "initialCost": 2542250,
+                "available": true,
+                "onAuction": 146
+              }
+            ],
+            "minSecurityDeposit": 1946400,
+            "maxSecurityDeposit": 2542250,
+            "minPassengers": 189,
+            "maxPassengers": 220,
+            "totalModels": 6
+          },
+          "reasoning": "AI-Empfehlung basierend auf Familie-Analyse",
+          "targetPassengers": 150,
+          "aiResponse": " Familie: Boeing 737 MAX\nGründe: Die Boeing 737 MAX bietet eine hohe Kapazität bei niedrigen Betriebskosten und ist daher besonders geeignet für die Aufbau einer hochprofitable Fluggesellschaft. SFO ist ein großer Verkehrsflughafen mit vielen inländischen und ausländischen Zielen, wodurch die 737 MAX ihre volle Kapazität ausnutzen kann. Darüber hinaus verfügt der Hub über viele lukrative Routen, wie z. B. nach Los Angeles oder nach San Diego, die von einer 737 MAX optimal abgedeckt werden können. Für SFO ist eine Version mit etwa 180 Passagieren optimal, um ein gutes Verhältnis zwischen Gewinn pro Flug und Startkosten aufrechtzuerhalten."
+        },
+        "totalSecurityDeposit": 34906500,
+        "weeklyRateCost": 3490650,
+        "securityDepositPerUnit": 2327100,
+        "weeklyRatePerUnit": 232710,
+        "totalCost": 34906500,
+        "pricePerUnit": 2327100,
+        "aiResponse": " EMPFEHLUNG: Boeing 737-8 HGW\nANZAHL: 15\nGRUND: Das Boeing 737-8 HGW Modell ist perfekt für den Aufbau einer profitablen Fluggesellschaft. Es bietet einen guten Gewinn-Verbrauch-Verhältnis und verfügt über eine größere Reichweite, wodurch es mehrere Ziele bedienen kann. Das Modell hat auch mehr Passagierkapazität als das Standardmodell 737-8, was zu höheren Einnahmen bei gleicher Kapazität führt. Die zusätzlichen Kosten durch den Hochleistungs-Tank sind gering und werden von der erhöhten Reichweite kompensiert. Mit einem Start mit 15 Flugzeugen kann eine große Airline aufgebaut werden, die sich schnell entwickeln lässt.\nSECURITY_DEPOSITS: 3,486,050 AS$ (für 15 Flugzeuge)\nWOCHENKOSTEN: 232,710 AS$ (ab der zweiten Woche für jeden Flugzeug)",
+        "aiSecurityEstimate": 3486050,
+        "aiWeeklyEstimate": 232710,
+        "analyzedAircraftCount": 2,
+        "totalAircraftInFamily": 6,
+        "decisionId": "mdun635jksak11wzhq8",
+        "balanceCheck": {
+          "amount": 10000000,
+          "currency": "AS$",
+          "rawAmount": "10,000,000",
+          "isPositive": true,
+          "timestamp": "2025-08-02T19:24:40.949Z",
+          "url": "https://free2.airlinesim.aero/action/portal/index",
+          "canAfford": false,
+          "affordabilityRatio": 0.28647959549081115
+        }
+      },
+      "stationRecommendation": {
+        "rank": 1,
+        "name": "Tokyo Narita International Airport",
+        "code": "NRT",
+        "country": "Japan",
+        "reasoning": "Tokyo is a major business hub and has high passenger demand. NRT offers connections to various cities in Asia, providing opportunities for point-to-point and hub-and-spoke routes. The Boeing 737 MAX's range makes it an ideal aircraft for this route, with potential profitability due to high ticket prices and moderate competition.",
+        "route": "SFO ↔ NRT",
+        "expectedPassengers": 100
+      },
+      "totalInitialCost": 34906500,
+      "totalWeeklyCost": 3490650,
+      "aircraftDecisionId": "mdun635jksak11wzhq8",
+      "stationDecisionId": "mdun73jvd4blypjx9p9",
+      "budgetAnalysis": {
+        "initialBalance": 10000000,
+        "afterAircraft": -24906500,
+        "afterStation": -24906500,
+        "canAffordBoth": false
+      }
+    },
+    "outcome": null,
+    "profitability": null
+  },
+  {
+    "id": "mdunp0qpcbifornz0e9",
+    "timestamp": "2025-08-02T19:39:24.289Z",
+    "category": "station_management",
+    "decision": "AI empfiehlt Station: Tokyo Narita International Airport (NRT) für Mixed Fleet (Boeing 737-800, Airbus A320-200, Embraer ERJ-145)",
+    "reasoning": "Tokyo is a major financial center and one of the busiest cities in the world. With its proximity to SFO's Hub, this route offers high demand and low competition due to limited direct flights from other airlines. The estimated daily passengers for this route are 400.",
+    "data": {
+      "aircraftInfo": {
+        "model": "Mixed Fleet (Boeing 737-800, Airbus A320-200, Embraer ERJ-145)",
+        "quantity": 3,
+        "passengers": 140,
+        "range": "2,000-6,000 km | 3,000-6,000 km | 2,000-3,000 km"
+      },
+      "selectedStation": {
+        "rank": 1,
+        "name": "Tokyo Narita International Airport",
+        "code": "NRT",
+        "country": "Japan",
+        "reasoning": "Tokyo is a major financial center and one of the busiest cities in the world. With its proximity to SFO's Hub, this route offers high demand and low competition due to limited direct flights from other airlines. The estimated daily passengers for this route are 400.",
+        "route": "SFO ↔ NRT",
+        "expectedPassengers": 300
+      },
+      "totalRecommendations": 5,
+      "existingStations": 1,
+      "route": "SFO ↔ NRT",
+      "expectedPassengers": 300
+    },
+    "outcome": "simulated_success",
+    "profitability": 8.8,
+    "updatedAt": "2025-08-02T19:39:26.295Z"
+  },
+  {
+    "id": "mdvjyrryq1nn7vdw4uk",
+    "timestamp": "2025-08-03T10:42:46.942Z",
+    "category": "aircraft_leasing",
+    "decision": "AI empfiehlt Leasing: Airbus A319neo heavy (4x) für QuestAir",
+    "reasoning": "AI-Empfehlung basierend auf Modell-Analyse",
+    "data": {
+      "airline": {
+        "name": "QuestAir",
+        "code": "QXX",
+        "hub": "SFO"
+      },
+      "availableOptions": 181,
+      "budget": 8000000,
+      "totalSecurityDeposit": 8773200,
+      "weeklyRateCost": 877320,
+      "currentBalance": 10000000,
+      "canAfford": true,
+      "affordabilityRatio": 1.139834951898965,
+      "leasingType": "two_stage_analysis",
+      "familyChosen": "A319 / A320 / A321 NEO",
+      "analyzedAircraftCount": 7,
+      "totalAircraftInFamily": 11
+    },
+    "outcome": "simulated_success",
+    "profitability": 8.5,
+    "updatedAt": "2025-08-03T10:42:48.947Z"
+  },
+  {
+    "id": "mdvjzjl79zy5ur32ij6",
+    "timestamp": "2025-08-03T10:43:22.987Z",
+    "category": "station_management",
+    "decision": "AI empfiehlt Station: Tokyo Narita International Airport (NRT) für Airbus A319neo heavy",
+    "reasoning": "Tokyo is a major business hub and has high passenger demand. The route from SFO to NRT has moderate competition with potential for higher fares.",
+    "data": {
+      "aircraftInfo": {
+        "model": "Airbus A319neo heavy",
+        "quantity": 4,
+        "passengers": 156,
+        "range": "5,050-9,190 km"
+      },
+      "selectedStation": {
+        "rank": 1,
+        "name": "Tokyo Narita International Airport",
+        "code": "NRT",
+        "country": "Japan",
+        "reasoning": "Tokyo is a major business hub and has high passenger demand. The route from SFO to NRT has moderate competition with potential for higher fares.",
+        "route": "SFO ↔ NRT",
+        "expectedPassengers": 100
+      },
+      "totalRecommendations": 5,
+      "existingStations": 1,
+      "route": "SFO ↔ NRT",
+      "expectedPassengers": 100
+    },
+    "outcome": null,
+    "profitability": null
+  },
+  {
+    "id": "mdvjzjn8e40mwka0jma",
+    "timestamp": "2025-08-03T10:43:23.060Z",
+    "category": "integrated_airline_management",
+    "decision": "Integriertes Airline-Management Fehler",
+    "reasoning": "Fehler aufgetreten: totalInitialCost is not defined",
+    "data": {
+      "error": "ReferenceError: totalInitialCost is not defined\n    at IntegratedAirlineManager.manageAirline (/Users/alexpolan/Projects/airlinesim-bot2/modules/integratedAirlineManager.js:73:21)\n    at async runIntegratedAirlineBot (/Users/alexpolan/Projects/airlinesim-bot2/simpleLauncher.js:11:24)"
+    },
+    "outcome": null,
+    "profitability": null
+  },
+  {
+    "id": "mdvjzjn9u86579pcuy",
+    "timestamp": "2025-08-03T10:43:23.061Z",
+    "category": "system",
+    "decision": "Integrated bot execution failed",
+    "reasoning": "Error occurred: totalInitialCost is not defined",
+    "data": {
+      "error": "ReferenceError: totalInitialCost is not defined\n    at IntegratedAirlineManager.manageAirline (/Users/alexpolan/Projects/airlinesim-bot2/modules/integratedAirlineManager.js:73:21)\n    at async runIntegratedAirlineBot (/Users/alexpolan/Projects/airlinesim-bot2/simpleLauncher.js:11:24)"
+    },
+    "outcome": null,
+    "profitability": null
+  },
+  {
+    "id": "mdvk3buodcqq7m3dsf",
+    "timestamp": "2025-08-03T10:46:19.584Z",
+    "category": "aircraft_leasing",
+    "decision": "AI empfiehlt Leasing: Boeing 737-8 HGW (10x) für QuestAir",
+    "reasoning": "Die größere Reichweite und die höhere Passagierkapazität machen das Modell Boeing 737-8 HGW ideal für den Aufbau einer hochprofitorientierten Fluglinie. Es ermöglicht es, mehr Flüge zu starten und dadurch mehr Passagiere pro Zeitraum zu befördern, was zu höheren Gewinnen führt.",
+    "data": {
+      "airline": {
+        "name": "QuestAir",
+        "code": "QXX",
+        "hub": "SFO"
+      },
+      "availableOptions": 181,
+      "budget": 8000000,
+      "totalSecurityDeposit": 23271000,
+      "weeklyRateCost": 2327100,
+      "currentBalance": 10000000,
+      "canAfford": false,
+      "affordabilityRatio": 0.4297193932362168,
+      "leasingType": "two_stage_analysis",
+      "familyChosen": "737 MAX",
+      "analyzedAircraftCount": 2,
+      "totalAircraftInFamily": 6
+    },
+    "outcome": "simulated_success",
+    "profitability": 8.5,
+    "updatedAt": "2025-08-03T10:46:21.588Z"
+  },
+  {
+    "id": "mdvk4go7paw4cshzcg",
+    "timestamp": "2025-08-03T10:47:12.487Z",
+    "category": "station_management",
+    "decision": "AI empfiehlt Station: Tokyo Narita International Airport (NRT) für Boeing 737-8 HGW",
+    "reasoning": "Tokyo is another major economic hub in Asia and experiences significant business traffic. The Boeing 737-8 HGW can easily reach NRT from SFO with its maximum range of 8,180 km. Estimated daily passengers: 650",
+    "data": {
+      "aircraftInfo": {
+        "model": "Boeing 737-8 HGW",
+        "quantity": 10,
+        "passengers": 189,
+        "range": "4,650-8,180 km"
+      },
+      "selectedStation": {
+        "rank": 2,
+        "name": "Tokyo Narita International Airport",
+        "code": "NRT",
+        "country": "Japan",
+        "reasoning": "Tokyo is another major economic hub in Asia and experiences significant business traffic. The Boeing 737-8 HGW can easily reach NRT from SFO with its maximum range of 8,180 km. Estimated daily passengers: 650",
+        "route": "SFO ↔ NRT",
+        "expectedPassengers": 140
+      },
+      "totalRecommendations": 5,
+      "existingStations": 1,
+      "route": "SFO ↔ NRT",
+      "expectedPassengers": 140
+    },
+    "outcome": "simulated_success",
+    "profitability": 8.8,
+    "updatedAt": "2025-08-03T10:47:14.490Z"
+  },
+  {
+    "id": "mdvk4ofwzgz37btooc",
+    "timestamp": "2025-08-03T10:47:22.556Z",
+    "category": "integrated_airline_management",
+    "decision": "Vollständiges Airline Setup: Boeing 737-8 HGW + Tokyo Narita International Airport",
+    "reasoning": "AI empfiehlt 10x Boeing 737-8 HGW und Station NRT für optimalen Start",
+    "data": {
+      "aircraftRecommendation": {
+        "model": "Boeing 737-8 HGW",
+        "aircraft": {
+          "model": "Boeing 737-8 HGW",
+          "family": "737 MAX",
+          "passengers": 189,
+          "cargo": "7,267 kg",
+          "range": "4,650-8,180 km",
+          "speed": "840 km/h",
+          "priceText": "46,542,000 AS$",
+          "purchasePrice": 46542000,
+          "securityDeposit": 2327100,
+          "weeklyRate": 232710,
+          "initialCost": 2327100,
+          "available": true,
+          "onAuction": 273
+        },
+        "quantity": 10,
+        "reasoning": "Die größere Reichweite und die höhere Passagierkapazität machen das Modell Boeing 737-8 HGW ideal für den Aufbau einer hochprofitorientierten Fluglinie. Es ermöglicht es, mehr Flüge zu starten und dadurch mehr Passagiere pro Zeitraum zu befördern, was zu höheren Gewinnen führt.",
+        "familyChoice": {
+          "selectedFamily": {
+            "name": "737 MAX",
+            "aircraft": [
+              {
+                "model": "Boeing 737-8",
+                "family": "737 MAX",
+                "passengers": 189,
+                "cargo": "7,267 kg",
+                "range": "2,215-4,939 km",
+                "speed": "840 km/h",
+                "priceText": "38,928,000 AS$",
+                "purchasePrice": 38928000,
+                "securityDeposit": 1946400,
+                "weeklyRate": 194640,
+                "initialCost": 1946400,
+                "available": true,
+                "onAuction": 258
+              },
+              {
+                "model": "Boeing 737-8-200",
+                "family": "737 MAX",
+                "passengers": 210,
+                "cargo": "7,267 kg",
+                "range": "2,215-4,939 km",
+                "speed": "840 km/h",
+                "priceText": "39,033,000 AS$",
+                "purchasePrice": 39033000,
+                "securityDeposit": 1951650,
+                "weeklyRate": 195165,
+                "initialCost": 1951650,
+                "available": true,
+                "onAuction": 70
+              },
+              {
+                "model": "Boeing 737-9",
+                "family": "737 MAX",
+                "passengers": 220,
+                "cargo": "8,617 kg",
+                "range": "3,350-6,450 km",
+                "speed": "840 km/h",
+                "priceText": "40,959,000 AS$",
+                "purchasePrice": 40959000,
+                "securityDeposit": 2047950,
+                "weeklyRate": 204795,
+                "initialCost": 2047950,
+                "available": true,
+                "onAuction": 10
+              },
+              {
+                "model": "Boeing 737-8 HGW",
+                "family": "737 MAX",
+                "passengers": 189,
+                "cargo": "7,267 kg",
+                "range": "4,650-8,180 km",
+                "speed": "840 km/h",
+                "priceText": "46,542,000 AS$",
+                "purchasePrice": 46542000,
+                "securityDeposit": 2327100,
+                "weeklyRate": 232710,
+                "initialCost": 2327100,
+                "available": true,
+                "onAuction": 273
+              },
+              {
+                "model": "Boeing 737-8-200 HGW",
+                "family": "737 MAX",
+                "passengers": 210,
+                "cargo": "7,267 kg",
+                "range": "4,650-8,180 km",
+                "speed": "840 km/h",
+                "priceText": "46,647,000 AS$",
+                "purchasePrice": 46647000,
+                "securityDeposit": 2332350,
+                "weeklyRate": 233235,
+                "initialCost": 2332350,
+                "available": true,
+                "onAuction": 31
+              },
+              {
+                "model": "Boeing 737-9 HGW",
+                "family": "737 MAX",
+                "passengers": 220,
+                "cargo": "8,617 kg",
+                "range": "5,350-7,750 km",
+                "speed": "840 km/h",
+                "priceText": "50,845,000 AS$",
+                "purchasePrice": 50845000,
+                "securityDeposit": 2542250,
+                "weeklyRate": 254225,
+                "initialCost": 2542250,
+                "available": true,
+                "onAuction": 146
+              }
+            ],
+            "minSecurityDeposit": 1946400,
+            "maxSecurityDeposit": 2542250,
+            "minPassengers": 189,
+            "maxPassengers": 220,
+            "totalModels": 6
+          },
+          "reasoning": "AI-Empfehlung basierend auf Familie-Analyse",
+          "targetPassengers": 150,
+          "aiResponse": " Familie: Boeing 737 MAX\nGründe: Die Boeing 737 MAX ist die perfekte Flugzeugfamilie für den Aufbau einer hochprofitablen und schnell wachsenden Airline an SFO, da sie leistungsstarke und effiziente Kurz- und Mittelstreckenmaschinen sind. Sie bieten ein gutes Verhältnis von Sitzplatzkapazität zu Betriebskosten und haben einen modernen Treibstoffverbrauch, was zu einer niedrigeren Betriebs- und Unterhaltungskosten pro Stunde führt. Zusätzlich verfügen sie über eine große Reichweite und ermöglichen es dem Unternehmen, schnell neue Routen einzurichten und nach wachsenden Märkten auszubauen. Mit einer maximalen Sitzplatzkapazität von 204 Passagieren bietet das Modell Boeing 737 MAX-10 das beste Verhältnis von Gewinn pro Flug zu Startkosten für ein Airline an SFO.\nPassagierziel: Maximale Sitzplatzkapazität von 204 Passagieren für das Modell Boeing 737 MAX-10"
+        },
+        "totalSecurityDeposit": 23271000,
+        "weeklyRateCost": 2327100,
+        "securityDepositPerUnit": 2327100,
+        "weeklyRatePerUnit": 232710,
+        "totalCost": 23271000,
+        "pricePerUnit": 2327100,
+        "aiResponse": " EMPFEHLUNG: Boeing 737-8 HGW\nANZAHL: 10\nGRUND: Die größere Reichweite und die höhere Passagierkapazität machen das Modell Boeing 737-8 HGW ideal für den Aufbau einer hochprofitorientierten Fluglinie. Es ermöglicht es, mehr Flüge zu starten und dadurch mehr Passagiere pro Zeitraum zu befördern, was zu höheren Gewinnen führt.\nSECURITY_DEPOSITS: 23,271,000 AS$ (für die ersten 10 Flugzeuge)\nWOCHENKOSTEN: 2,327,100 AS$ pro Flugzeug (ab Woche 2) = 23,271,000 AS$ insgesamt (nur für die ersten 10 Flugzeuge)",
+        "aiSecurityEstimate": 23271000,
+        "aiWeeklyEstimate": 2327100,
+        "analyzedAircraftCount": 2,
+        "totalAircraftInFamily": 6,
+        "decisionId": "mdvk3buodcqq7m3dsf",
+        "balanceCheck": {
+          "amount": 10000000,
+          "currency": "AS$",
+          "rawAmount": "10,000,000",
+          "isPositive": true,
+          "timestamp": "2025-08-03T10:46:19.583Z",
+          "url": "https://free2.airlinesim.aero/action/portal/index",
+          "canAfford": false,
+          "affordabilityRatio": 0.4297193932362168
+        }
+      },
+      "stationRecommendation": {
+        "rank": 2,
+        "name": "Tokyo Narita International Airport",
+        "code": "NRT",
+        "country": "Japan",
+        "reasoning": "Tokyo is another major economic hub in Asia and experiences significant business traffic. The Boeing 737-8 HGW can easily reach NRT from SFO with its maximum range of 8,180 km. Estimated daily passengers: 650",
+        "route": "SFO ↔ NRT",
+        "expectedPassengers": 140
+      },
+      "totalInitialCost": 23271000,
+      "totalWeeklyCost": 2327100,
+      "aircraftDecisionId": "mdvk3buodcqq7m3dsf",
+      "stationDecisionId": "mdvk4go7paw4cshzcg",
+      "budgetAnalysis": {
+        "initialBalance": 10000000,
+        "afterAircraft": -13271000,
+        "afterStation": -13271000,
+        "canAffordBoth": false
+      }
+    },
+    "outcome": null,
+    "profitability": null
   }
 ]

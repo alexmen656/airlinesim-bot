@@ -58,6 +58,220 @@ class SimpleAircraftManager {
     }
 
     /**
+     * Extrahiert detaillierte Flugzeug-Informationen aus der Fleet
+     * @returns {Array} Array mit Flugzeug-Objekten der aktuellen Fleet
+     */
+    async getFleetData() {
+        console.log('🔍 Extrahiere Fleet-Daten...');
+        
+        await this.page.goto('https://free2.airlinesim.aero/app/fleets?1');
+        await new Promise(resolve => setTimeout(resolve, 2000));
+
+        const fleetData = await this.page.evaluate(() => {
+            const aircraftList = [];
+            
+            // Suche nach Flugzeug-Tabelle
+            const rows = document.querySelectorAll('table tbody tr');
+            
+            rows.forEach(row => {
+                const cells = row.querySelectorAll('td');
+                if (cells.length >= 4) {
+                    // Flugzeug-Typ extrahieren
+                    const typeCell = cells[1];
+                    const typeLink = typeCell.querySelector('a');
+                    
+                    if (typeLink) {
+                        const type = typeLink.textContent.trim();
+                        
+                        // Registrierung extrahieren
+                        const regCell = cells[0];
+                        const registration = regCell.textContent.trim();
+                        
+                        // Status extrahieren
+                        const statusCell = cells[2];
+                        const status = statusCell.textContent.trim();
+                        
+                        // Basis-Informationen sammeln
+                        aircraftList.push({
+                            registration,
+                            type,
+                            status,
+                            family: type.split(' ')[0] // Erster Teil ist meist die Familie
+                        });
+                    }
+                }
+            });
+            
+            return aircraftList;
+        });
+
+        // Erweitere Fleet-Daten mit echten Spezifikationen aus dem Aircraft Cache
+        const enhancedFleetData = await this.enhanceFleetDataWithSpecs(fleetData);
+        
+        // Speichere Fleet-Daten persistent
+        await this.saveFleetData(enhancedFleetData);
+
+        console.log(`✈️ Gefunden: ${enhancedFleetData.length} Flugzeuge in der Fleet`);
+        enhancedFleetData.forEach(aircraft => {
+            console.log(`   - ${aircraft.registration}: ${aircraft.type} (${aircraft.passengers} Passagiere, ${aircraft.range}, Status: ${aircraft.status})`);
+        });
+        
+        return enhancedFleetData;
+    }
+
+    /**
+     * Erweitert Fleet-Daten mit echten Spezifikationen aus dem Aircraft Cache
+     * @param {Array} fleetData - Basis Fleet-Daten
+     * @returns {Array} Erweiterte Fleet-Daten mit echten Spezifikationen
+     */
+    async enhanceFleetDataWithSpecs(fleetData) {
+        // Lade alle verfügbaren Flugzeug-Spezifikationen
+        const availableAircraft = await this.aircraftDataService.getAvailableAircraft(this.page, false);
+        
+        // Erstelle einen Map für schnelle Suche
+        const aircraftSpecsMap = new Map();
+        availableAircraft.forEach(aircraft => {
+            aircraftSpecsMap.set(aircraft.model, aircraft);
+        });
+
+        // Erweitere jedes Fleet-Flugzeug mit echten Spezifikationen
+        const enhancedFleetData = fleetData.map(fleetAircraft => {
+            const specs = aircraftSpecsMap.get(fleetAircraft.type);
+            
+            if (specs) {
+                return {
+                    ...fleetAircraft,
+                    passengers: specs.passengers || 0,
+                    cargo: specs.cargo || '0 kg',
+                    range: specs.range || 'Unknown',
+                    speed: specs.speed || 'Unknown',
+                    purchasePrice: specs.purchasePrice || 0,
+                    family: specs.family || fleetAircraft.family,
+                    available: specs.available || false,
+                    hasRealSpecs: true
+                };
+            } else {
+                // Fallback: Verwende Schätzungen basierend auf Flugzeugtyp
+                return {
+                    ...fleetAircraft,
+                    passengers: this.estimatePassengers(fleetAircraft.type),
+                    cargo: '0 kg',
+                    range: this.estimateRange(fleetAircraft.type),
+                    speed: 'Unknown',
+                    purchasePrice: 0,
+                    hasRealSpecs: false
+                };
+            }
+        });
+
+        return enhancedFleetData;
+    }
+
+    /**
+     * Schätzt Passagieranzahl basierend auf Flugzeugtyp (Fallback)
+     */
+    estimatePassengers(type) {
+        if (type.includes('737')) return 189;
+        if (type.includes('A320')) return 180;
+        if (type.includes('A319')) return 156;
+        if (type.includes('410')) return 19;
+        if (type.includes('777')) return 400;
+        if (type.includes('A380')) return 850;
+        if (type.includes('208')) return 9;
+        if (type.includes('Islander')) return 9;
+        return 150; // Default
+    }
+
+    /**
+     * Schätzt Reichweite basierend auf Flugzeugtyp (Fallback)
+     */
+    estimateRange(type) {
+        if (type.includes('737')) return '2,000-6,000 km';
+        if (type.includes('A320')) return '3,000-6,000 km';
+        if (type.includes('777')) return '9,000-15,000 km';
+        if (type.includes('A380')) return '15,000+ km';
+        if (type.includes('410')) return '240-2,100 km';
+        if (type.includes('208')) return '185-1,820 km';
+        if (type.includes('Islander')) return '260-1,400 km';
+        return '3,000 km'; // Default
+    }
+
+    /**
+     * Speichert Fleet-Daten persistent in data/fleet_data.json
+     * @param {Array} fleetData - Fleet-Daten zum Speichern
+     */
+    async saveFleetData(fleetData) {
+        const fs = require('fs').promises;
+        const path = require('path');
+        
+        const fleetDataObj = {
+            timestamp: new Date().toISOString(),
+            totalAircraft: fleetData.length,
+            fleet: fleetData,
+            aircraftTypes: [...new Set(fleetData.map(a => a.type))], // Alle einzigartigen Typen
+            families: [...new Set(fleetData.map(a => a.family))], // Alle einzigartigen Familien
+            totalPassengerCapacity: fleetData.reduce((sum, a) => sum + (a.passengers || 0), 0),
+            realSpecsCount: fleetData.filter(a => a.hasRealSpecs).length,
+            estimatedSpecsCount: fleetData.filter(a => !a.hasRealSpecs).length
+        };
+
+        const fleetDataPath = path.join(__dirname, '..', 'data', 'fleet_data.json');
+        
+        try {
+            await fs.writeFile(fleetDataPath, JSON.stringify(fleetDataObj, null, 2));
+            console.log(`💾 Fleet-Daten gespeichert: ${fleetDataPath}`);
+            console.log(`   📊 ${fleetDataObj.totalAircraft} Flugzeuge, ${fleetDataObj.totalPassengerCapacity} Passagierplätze gesamt`);
+            console.log(`   ✅ ${fleetDataObj.realSpecsCount} mit echten Spezifikationen, ${fleetDataObj.estimatedSpecsCount} geschätzt`);
+        } catch (error) {
+            console.error('❌ Fehler beim Speichern der Fleet-Daten:', error.message);
+        }
+    }
+
+    /**
+     * Lädt gespeicherte Fleet-Daten aus data/fleet_data.json
+     * @returns {Object|null} Fleet-Daten oder null wenn nicht vorhanden
+     */
+    async loadSavedFleetData() {
+        const fs = require('fs').promises;
+        const path = require('path');
+        
+        const fleetDataPath = path.join(__dirname, '..', 'data', 'fleet_data.json');
+        
+        try {
+            const data = await fs.readFile(fleetDataPath, 'utf8');
+            const fleetData = JSON.parse(data);
+            
+            console.log(`📂 Fleet-Daten geladen: ${fleetData.totalAircraft} Flugzeuge (Stand: ${new Date(fleetData.timestamp).toLocaleString()})`);
+            
+            return fleetData;
+        } catch (error) {
+            if (error.code === 'ENOENT') {
+                console.log('📂 Keine gespeicherten Fleet-Daten gefunden');
+            } else {
+                console.error('❌ Fehler beim Laden der Fleet-Daten:', error.message);
+            }
+            return null;
+        }
+    }
+
+    /**
+     * Gibt alle Flugzeugtypen aus der aktuellen Fleet zurück
+     * @returns {Array} Array mit allen einzigartigen Flugzeugtypen
+     */
+    async getAllFleetAircraftTypes() {
+        const savedFleetData = await this.loadSavedFleetData();
+        
+        if (savedFleetData && savedFleetData.aircraftTypes) {
+            console.log(`🛩️ Flugzeugtypen in der Fleet: ${savedFleetData.aircraftTypes.join(', ')}`);
+            return savedFleetData.aircraftTypes;
+        }
+        
+        // Fallback: Lade aktuelle Fleet-Daten
+        const currentFleetData = await this.getFleetData();
+        return [...new Set(currentFleetData.map(a => a.type))];
+    }
+
+    /**
      * Updates current balance and checks affordability
      * @param {number} requiredAmount - Amount needed for purchase (optional)
      * @returns {Object} Balance info with affordability check
